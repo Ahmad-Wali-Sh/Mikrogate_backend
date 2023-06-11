@@ -1,5 +1,5 @@
 FROM python:3.9-alpine
-LABEL maintainer = "Mahmood Afzali"
+LABEL maintainer = "Ahmad Wali Sharify"
 
 ENV PYTHONUNBUFFERED 1
 
