@@ -7,7 +7,7 @@ from django.db.models import Q
 
 from core.models import Amendment, Contracts, Project, Tag, Stage, Task, LinkDetails,\
     CheckList, Installation, Troubleshoot, ChangeLocation,\
-    OnlineSupport, TaskLog, Message
+    OnlineSupport, TaskLog, Message, Payment, InstallationConfirm
 
 from taskmanager import serializers
 
@@ -249,6 +249,37 @@ class MessageViewSet(viewsets.GenericViewSet,
     """Manage Message in the database"""
     queryset = Message.objects.all()
     serializer_class = serializers.MessageSerializer
+    authentication_classes = (TokenAuthentication,)
+    permission_classes = (IsAuthenticated,)
+
+    def get_queryset(self):
+        return self.queryset
+
+    def perform_create(self, serializer):
+        serializer.save(user=self.request.user)
+
+
+class PaymentViewSet(viewsets.GenericViewSet,
+                        mixins.ListModelMixin,
+                        mixins.CreateModelMixin):
+    """ Payment Clear Serializer"""
+    queryset = Payment.objects.all()
+    serializer_class = serializers.PaymentSerializer
+    authentication_classes = (TokenAuthentication,)
+    permission_classes = (IsAuthenticated,)
+
+    def get_queryset(self):
+        return self.queryset
+
+    def perform_create(self, serializer):
+        serializer.save(user=self.request.user)
+
+class InstallationConfirmViewSet(viewsets.GenericViewSet,
+                        mixins.ListModelMixin,
+                        mixins.CreateModelMixin):
+    """ Installation Confirm Serializer"""
+    queryset = InstallationConfirm.objects.all()
+    serializer_class = serializers.InstallationConfirmSerializer
     authentication_classes = (TokenAuthentication,)
     permission_classes = (IsAuthenticated,)
 

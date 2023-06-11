@@ -39,11 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'import_export',
+    'auditlog',
+    'user',
     'rest_framework',
     'corsheaders',
     'rest_framework.authtoken',
     'core',
-    'user',
     'sales',
     'taskmanager',
     'drf_spectacular',
@@ -59,6 +60,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'auditlog.middleware.AuditlogMiddleware',
 ]
 
 REST_FLEX_FIELDS = {"EXPAND_PARAM": "include"}
@@ -97,10 +99,9 @@ WSGI_APPLICATION = 'app.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'HOST': os.environ.get('DB_HOST'),
-        'NAME': os.environ.get('DB_NAME'),
-        'USER': os.environ.get('DB_USER'),
-        'PASSWORD': os.environ.get('DB_PASS'),
+        'PASSWORD': 'Ahmadwali$8',
+        'NAME': 'Mikrogatedb_v1',
+        'USER': 'postgres'
     }
 }
 

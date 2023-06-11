@@ -10,6 +10,11 @@ from dateutil.relativedelta import relativedelta
 from datetime import datetime
 from django.conf import settings
 from django.template.defaultfilters import date
+from auditlog.models import AuditlogHistoryField
+from auditlog.registry import AuditlogModelRegistry, auditlog
+
+
+m2m_only_auditlog = AuditlogModelRegistry(create=False, update=False, delete=False)
 
 def user_avatar_file_path(instance, filename):
     """Generate file path for new user avatar"""
@@ -20,6 +25,7 @@ def user_avatar_file_path(instance, filename):
 
 
 class UserManager(BaseUserManager):
+
 
     def create_user(self, email, password=None, **extra_fields):
         """Creates and saves a new user"""
@@ -55,6 +61,7 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     def __str__(self):
         return self.name
+
 
 
 class Router(models.Model):
@@ -96,14 +103,11 @@ class Antenna(models.Model):
 
 
 
-
-
-
 class Package(models.Model):
     """Package to be used in a contract"""
     name = models.CharField(max_length=255)
     type = models.CharField(max_length=50)
-    price = models.IntegerField()
+    price = models.IntegerField(default=0)
     available = models.BooleanField(default=False)
     user = models.ForeignKey(
         settings.AUTH_USER_MODEL,
@@ -119,10 +123,12 @@ class Package(models.Model):
         return self.name
 
 
+@auditlog.register()
 class Contracts(models.Model):
     """Contracts Objects"""
 
     """PESONAL INFO"""
+    
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.DO_NOTHING)
     contract_number = models.CharField(max_length=50, unique=True)
     contract_id = models.CharField(max_length=50, blank=True)
@@ -139,6 +145,15 @@ class Contracts(models.Model):
     status = models.ForeignKey("ContractStatus", on_delete=models.CASCADE)
     note = models.TextField(blank=True)
 
+    changes = AuditlogHistoryField()
+
+    def get_additional_data(self):
+        object_details = {
+            "update_by_id": self.user.id
+        }
+        return object_details
+
+
     def __str__(self):
         return self.name
 
@@ -151,12 +166,13 @@ class ContractTypes(models.Model):
         return self.name
 
 
+
 class ContractPackage(models.Model):
     """Contract's Package"""
     contract = models.ForeignKey(Contracts, on_delete=models.CASCADE)
-    package = models.ForeignKey(Package, on_delete=models.CASCADE)
+    package = models.ForeignKey(Package, default='', on_delete=models.CASCADE)
     price = models.CharField(max_length=255, blank=True)
-
+    changes = AuditlogHistoryField()
 
 class ContractAntenna(models.Model):
     """Contract's Antenna"""
@@ -169,6 +185,7 @@ class ContractAntenna(models.Model):
     Lease_amount = models.IntegerField(default=0)
     total_amount = models.IntegerField(default=0)
     collected = models.BooleanField(default=False)
+    changes = AuditlogHistoryField()
 
 
 
@@ -183,6 +200,7 @@ class ContractRouter(models.Model):
     Lease_amount = models.IntegerField(default=0)
     total_amount = models.IntegerField(default=0)
     collected = models.BooleanField(default=False)
+    changes = AuditlogHistoryField()
 
 
 class ContractPayment(models.Model):
@@ -195,6 +213,7 @@ class ContractPayment(models.Model):
     lease_deposit = models.IntegerField(default=0)
     grand_total = models.IntegerField(default=0)
     currency = models.ForeignKey("ContractCurrency", on_delete=models.DO_NOTHING)
+    changes = AuditlogHistoryField()
 
 
 class ContractOtherService(models.Model):
@@ -204,6 +223,7 @@ class ContractOtherService(models.Model):
     description = models.TextField(blank=True)
     payment_method = models.CharField(max_length=100, blank=True)
     price = models.IntegerField(blank=True)
+    changes = AuditlogHistoryField()
 
 
 class ContractCurrency(models.Model):
@@ -219,6 +239,7 @@ class ContractCurrency(models.Model):
 class ContractStatus(models.Model):
     """Contract status object"""
     name = models.CharField(max_length=100)
+    changes = AuditlogHistoryField()
 
     def __str__(self):
         return self.name
@@ -516,3 +537,41 @@ class Message(models.Model):
 
     def __str__(self):
         return self.body
+
+
+class Payment(models.Model):
+    """Payment Clear for Tasks """
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.DO_NOTHING
+    )
+    task = models.ForeignKey(Task, on_delete=models.DO_NOTHING)
+    payment = models.BooleanField(default=False)
+    updated = models.DateTimeField(auto_now=True)
+    created = models.DateTimeField(auto_now_add=True)
+
+    class Meta: 
+        ordering = ['-updated', '-created']
+
+
+class InstallationConfirm(models.Model):
+    """Payment Clear for Tasks """
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.DO_NOTHING
+    )
+    task = models.ForeignKey(Task, on_delete=models.DO_NOTHING)
+    confirm = models.BooleanField(default=False)
+    updated = models.DateTimeField(auto_now=True)
+    created = models.DateTimeField(auto_now_add=True)
+
+    class Meta: 
+        ordering = ['-updated', '-created']
+
+auditlog.register(User)
+auditlog.register(Contracts)
+auditlog.register(ContractPackage)
+auditlog.register(ContractAntenna)
+auditlog.register(ContractOtherService)
+auditlog.register(ContractRouter)
+auditlog.register(ContractPayment)

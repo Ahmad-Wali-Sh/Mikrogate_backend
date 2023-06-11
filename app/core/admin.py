@@ -31,7 +31,11 @@ class UserAdmin(BaseUserAdmin):
 admin.site.register(models.User, UserAdmin)
 admin.site.register(models.Router)
 admin.site.register(models.Antenna)
-admin.site.register(models.Package)
+
+@admin.register(models.Package)
+class PackageAdmin(admin.ModelAdmin):
+    list_display = ('name', 'available', 'type', 'price')
+
 admin.site.register(models.Log)
 admin.site.register(models.Project)
 admin.site.register(models.Tag)
@@ -55,3 +59,6 @@ admin.site.register(models.ContractPayment)
 admin.site.register(models.ContractTypes)
 admin.site.register(models.ContractCurrency)
 admin.site.register(models.ContractStatus)
+
+admin.site.register(models.Payment)
+admin.site.register(models.InstallationConfirm)

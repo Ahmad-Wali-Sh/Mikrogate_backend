@@ -74,9 +74,17 @@ class ContractCurrencySerializer(serializers.ModelSerializer):
         read_only_fields = ('id',)
 
 
+class ChangeHistoryField(serializers.ListField):
+    childs = serializers.JSONField()
+
+    def to_representation(self, data):
+        return super().to_representation(data.values('id', 'changes', 'timestamp', 'action', 'actor_id'))
+
 class ContractsSerializer(serializers.ModelSerializer):
     """Serialzier for contracts objects"""
 
+    changes = ChangeHistoryField(read_only=True)
+  
     status = serializers.PrimaryKeyRelatedField(
         queryset=ContractStatus.objects.all())
     contract_type = serializers.PrimaryKeyRelatedField(
@@ -99,8 +107,11 @@ class ContractsSerializer(serializers.ModelSerializer):
                   'activation',
                   'valid',
                   'status',
-                  'note',)
-        read_only_fields = ('id', 'user',)
+                  'note',
+                  'changes',)
+        read_only_fields = ('id', 'user', 'changes',)
+
+        
 
 
 class ContractsDetailSerializer(ContractsSerializer):
@@ -111,6 +122,8 @@ class ContractsDetailSerializer(ContractsSerializer):
 
 class ContractPackageSerialzier(serializers.ModelSerializer):
     """Serializer for contract package objects"""
+    changes = ChangeHistoryField(read_only=True)
+
     contract = serializers.PrimaryKeyRelatedField(
         queryset=Contracts.objects.all()
     )
@@ -124,8 +137,9 @@ class ContractPackageSerialzier(serializers.ModelSerializer):
             'contract',
             'package',
             'price',
+            'changes'
         )
-        read_only_fields = ('id',)
+        read_only_fields = ('id', 'changes')
 
 
 class ContractPackageDetailSerializer(ContractPackageSerialzier):
@@ -135,6 +149,7 @@ class ContractPackageDetailSerializer(ContractPackageSerialzier):
 
 class ContractAntennaSerializer(serializers.ModelSerializer):
     """serialzier for contract antenna objects"""
+    changes = ChangeHistoryField(read_only=True)
     contract = serializers.PrimaryKeyRelatedField(
         queryset = Contracts.objects.all()
     )
@@ -154,8 +169,9 @@ class ContractAntennaSerializer(serializers.ModelSerializer):
             'Lease_amount',
             'total_amount',
             'collected',
+            'changes'
         )
-        read_only_fields = ('id',)
+        read_only_fields = ('id', 'changes')
 
 
 class ContractAntennaDetailSerializer(ContractAntennaSerializer):
@@ -165,6 +181,9 @@ class ContractAntennaDetailSerializer(ContractAntennaSerializer):
 
 class ContractRouterSerializer(serializers.ModelSerializer):
     """serializer for contract router objects"""
+
+    changes = ChangeHistoryField(read_only=True)
+
     contract = serializers.PrimaryKeyRelatedField(
         queryset = Contracts.objects.all()
     )
@@ -184,8 +203,9 @@ class ContractRouterSerializer(serializers.ModelSerializer):
             'Lease_amount',
             'total_amount',
             'collected',
+            'changes'
         )
-        read_only_fields = ('id',)
+        read_only_fields = ('id','changes')
 
 
 class ContractRouterDetailSerializer(ContractRouterSerializer):
@@ -195,6 +215,8 @@ class ContractRouterDetailSerializer(ContractRouterSerializer):
 
 class ContractPaymentSerializer(serializers.ModelSerializer):
     """Serializer for contract payment objects"""
+    changes = ChangeHistoryField(read_only=True) 
+
     contract = serializers.PrimaryKeyRelatedField(
         queryset=Contracts.objects.all()
     )
@@ -213,8 +235,9 @@ class ContractPaymentSerializer(serializers.ModelSerializer):
             'lease_deposit',
             'grand_total',
             'currency',
+            'changes'
         )
-        read_only_fields = ('id',)
+        read_only_fields = ('id','changes')
 
 
 class ContractPaymentDetailSerializer(ContractPaymentSerializer):
@@ -223,10 +246,13 @@ class ContractPaymentDetailSerializer(ContractPaymentSerializer):
 
 class ContractOtherServiceSerializer(serializers.ModelSerializer):
     """Serializer for contract other service objects"""
+
+    changes = ChangeHistoryField(read_only=True)
+
     contract = serializers.PrimaryKeyRelatedField(
         queryset=Contracts.objects.all()
     )
     class Meta:
         model = ContractOtherService
-        fields = ('id', 'contract', 'service_type', 'description', 'payment_method', 'price')
+        fields = ('id', 'contract', 'service_type', 'description', 'payment_method', 'price','changes')
         read_only_fields = ('id',)

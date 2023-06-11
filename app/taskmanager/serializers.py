@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from core.models import Amendment, Message, OnlineSupport, Project,\
      Tag, Stage, Task, LinkDetails, CheckList, Installation,\
-     TaskLog, Troubleshoot, ChangeLocation, Contracts, User
+     TaskLog, Troubleshoot, ChangeLocation, Contracts, User, Payment, InstallationConfirm
 
 from user.serializers import UserSerializer
 
@@ -31,7 +31,6 @@ class StageSerializer(serializers.ModelSerializer):
         model = Stage
         fields = ('id', 'name')
         read_only_fields = ('id',)
-
 
 class TaskContractSerializer(serializers.ModelSerializer):
     """Serializer for the task contract"""
@@ -220,3 +219,20 @@ class MessageSerializer(serializers.ModelSerializer):
         model = Message
         fields = ('id', 'user', 'task', 'to', 'body', 'created')
         read_only_fields = ('id',)
+
+
+class PaymentSerializer(serializers.ModelSerializer):
+    """" Serializer for Payment Clear"""
+
+    class Meta: 
+        model = Payment
+        fields = ('id', 'task', 'payment', 'updated', 'created')
+        read_only_fields = ('id',)
+
+class InstallationConfirmSerializer(serializers.ModelSerializer):
+    """ Serializer for InstallationConfirm"""
+
+    class Meta: 
+        model = InstallationConfirm
+        fields = ('id', 'task', 'confirm', 'updated', 'created')
+        read_only_fields = ('id', )
