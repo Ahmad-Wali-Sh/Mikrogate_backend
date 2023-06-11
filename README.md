@@ -1,2 +1,2 @@
-# crm_api
-API for CRM
+# MikroGate CRM
+Mikrogate CRM backend written in Django - Django Rest Framework 
