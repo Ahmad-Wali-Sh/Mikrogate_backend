@@ -2,6 +2,9 @@ from rest_framework import viewsets, mixins
 from rest_framework.decorators import action
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.permissions import IsAuthenticated
+from django_filters.rest_framework import DjangoFilterBackend
+from rest_framework import viewsets, filters
+import django_filters
 
 from django.db.models import Q
 
@@ -12,6 +15,7 @@ from core.models import Amendment, Contracts, Project, Tag, Stage, Task, LinkDet
 from taskmanager import serializers
 
 from datetime import datetime
+import django_filters
 
 import pytz
 # Create your views here.
@@ -49,21 +53,31 @@ class StageViewSet(BaseTaskManagetAttrViewSetWithUser):
     serializer_class = serializers.StageSerializer
 
 
+class TaskFilterSet(django_filters.FilterSet):
+    created = django_filters.DateTimeFromToRangeFilter()
+    class Meta:
+        model = Task
+        fields = ['user','contract', 'project', 'deadline', 'tag', 'stage','assigned', 'created',]
+
+
+
 class TaskViewSet(viewsets.ModelViewSet):
     """Manage Tasks in the database"""
     queryset = Task.objects.all()
     serializer_class = serializers.TaskSerializer
     authentication_classes = (TokenAuthentication,)
+    filter_backends = [DjangoFilterBackend,]
+    filterset_class = TaskFilterSet
     permission_classes = (IsAuthenticated,)
 
-    def get_queryset(self):
-        contract = self.request.query_params.get('contract')
-        if contract:
-            return self.queryset.filter(
-                Q(contracts__contract_number__icontains=contract)
-            )
-        else:
-            return self.queryset
+    # def get_queryset(self):
+    #     contract = self.request.query_params.get('contract')
+    #     if contract:
+    #         return self.queryset.filter(
+    #             Q(contracts__contract_number__icontains=contract)
+    #         )
+    #     else:
+    #         return self.queryset
 
     def get_serializer_class(self):
 

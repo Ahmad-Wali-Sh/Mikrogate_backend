@@ -3,6 +3,10 @@ from rest_framework.decorators import action
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.pagination import PageNumberPagination
+from django_filters.rest_framework import DjangoFilterBackend
+from rest_framework import viewsets, filters
+import django_filters
+import rest_framework_filters as restfilters
 
 from django.db.models import Q
 
@@ -86,6 +90,14 @@ class LogViewSet(viewsets.ModelViewSet):
         """Create a new object"""
         serializer.save(user=self.request.user)
 
+    
+
+
+class ContractFilterSet(django_filters.FilterSet):
+    date = django_filters.DateTimeFromToRangeFilter()
+    class Meta:
+        model = Contracts
+        fields = ['user','contract_number', 'contract_id', 'date', 'activation', 'valid','status', 'contract_type', 'contractpackage__package', 'contractrouter__router', 'contractantenna__antenna']
 
 class ContractsViewSet(viewsets.ModelViewSet):
     """Manage contracts in the database"""
@@ -93,6 +105,10 @@ class ContractsViewSet(viewsets.ModelViewSet):
     serializer_class = serializers.ContractsSerializer
     authentication_classes = (TokenAuthentication,)
     permission_classes = (IsAuthenticated,)
+    filter_backends = [DjangoFilterBackend, filters.OrderingFilter]
+    filterset_class = ContractFilterSet
+    ordering_fields = ['contract_number', 'date',]
+    ordering = ['date', 'contract_number']
 
     def get_serializer_class(self):
         """Return apropriate serializer class"""
@@ -280,104 +296,3 @@ class ContractTypesViewSet(viewsets.GenericViewSet,
     authentication_classes = (TokenAuthentication,)
     permission_classes = (IsAuthenticated,)
 
-
-# class ContractViewSet(viewsets.ModelViewSet):
-#     """Manage contracts in the database"""
-#     # @action(methods='POST', detail=True, url_path='contracts')
-#     # serializer_class = serializers.ContractSerializer
-
-#     def get_serializer_class(self):
-#         """Return apropriate serializer class"""
-#         if self.action == 'list' or self.action == 'retrieve':
-#             return serializers.ContractSerializerGET
-#         else:
-#             return serializers.ContractSerializerPOST
-#     queryset = Contract.objects.all()
-#     authentication_classes = (TokenAuthentication,)
-#     permission_classes = (IsAuthenticated,)
-#     pagination_class = PageNumberPagination
-
-#     def _params_to_ints(self, qs):
-#         """Convert a list of string IDs to list of integers"""
-#         return [int(str_id) for str_id in qs.split(',')]
-
-#     def get_queryset(self):
-#         """Retrieve contracts for the authenticated user"""
-#         contract_no = self.request.query_params.get('contract-no')
-#         poc_number = self.request.query_params.get('poc_number')
-#         router = self.request.query_params.get('has-router')
-#         antenna = self.request.query_params.get('has-antenna')
-#         package = self.request.query_params.get('has-package')
-#         device_type = self.request.query_params.get('device-type')
-#         package_type = self.request.query_params.get('package-type')
-#         device_condition = self.request.query_params.get('device-condition')
-#         status = self.request.query_params.get('contract-status')
-
-#         start_date = self.request.query_params.get('start_date')
-#         # start_date = "2022-06-06"
-#         end_date = self.request.query_params.get('end_date')
-#         # end_date = "2022-06-21"
-
-#         # date_as_string = request.POST['date-search']
-
-#         # print(date_search)
-
-#         queryset = self.queryset
-#         # pagination_class = self.pagination_class
-
-#         if status:
-#             return queryset.filter(status__icontains=status)
-
-#         if start_date:
-#             parsed_date1 = datetime.strptime(start_date, '%Y-%m-%d')
-#             kabul_timezone = pytz.timezone('Asia/Kabul')
-#             date_search1 = kabul_timezone.localize(parsed_date1)
-#             parsed_date2 = datetime.strptime(end_date, '%Y-%m-%d')
-#             date_search2 = kabul_timezone.localize(parsed_date2)
-#             print(date_search1)
-#             print(date_search2)
-#             return queryset.filter(created__gte=date_search1, created__lte=date_search2)
-
-#         if device_condition:
-#             return queryset.filter(
-#                 Q(ann_cond__icontains=device_condition) |
-#                 Q(rou_cond__icontains=device_condition)
-#             )
-
-#         if device_type:
-#             device_id = self._params_to_ints(device_type)
-#             return queryset.filter(customerDevices__id__in=device_id)
-
-#         if package_type:
-#             # packaage_id = self._params_to_ints(package_type)
-#             return queryset.filter(packages__icontains=package_type)
-
-#         if poc_number:
-#             return queryset.filter(poc_number__icontains=poc_number)
-
-#         if contract_no:
-#             return queryset.filter(contract_no__icontains=contract_no)
-
-#         if router == "1":
-#             return queryset.filter(router__isnull=False)
-
-#         if router == "0":
-#             return queryset.filter(router=True)
-
-#         if antenna == "1":
-#             return queryset.filter(antenna__isnull=False)
-
-#         if antenna == "0":
-#             return queryset.filter(antenna=True)
-
-#         if package == "1":
-#             return queryset.filter(packages__isnull=False)
-
-#         if package == "0":
-#             return queryset.filter(packages__isnull=True)
-
-#         return self.queryset.filter(user=self.request.user)
-
-#     def perform_create(self, serializer):
-#         """Create a new contract"""
-#         return serializer.save(user=self.request.user)
