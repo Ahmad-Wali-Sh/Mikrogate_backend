@@ -55,9 +55,10 @@ class StageViewSet(BaseTaskManagetAttrViewSetWithUser):
 
 class TaskFilterSet(django_filters.FilterSet):
     created = django_filters.DateTimeFromToRangeFilter()
+    deadline = django_filters.DateFromToRangeFilter()
     class Meta:
         model = Task
-        fields = ['user','contract', 'project', 'deadline', 'tag', 'stage','assigned', 'created',]
+        fields = ['user','contract__contract_number', 'project', 'deadline', 'tag', 'stage','assigned__id', 'created','contract__contract_id']
 
 
 
@@ -66,9 +67,11 @@ class TaskViewSet(viewsets.ModelViewSet):
     queryset = Task.objects.all()
     serializer_class = serializers.TaskSerializer
     authentication_classes = (TokenAuthentication,)
-    filter_backends = [DjangoFilterBackend,]
+    filter_backends = [DjangoFilterBackend,filters.OrderingFilter]
     filterset_class = TaskFilterSet
     permission_classes = (IsAuthenticated,)
+    ordering_fields = ['created', 'deadline', 'contract']
+    ordering = ['created', 'deadline', 'contract']
 
     # def get_queryset(self):
     #     contract = self.request.query_params.get('contract')
