@@ -212,7 +212,7 @@ class MessageSerializer(serializers.ModelSerializer):
     )
     to = serializers.PrimaryKeyRelatedField(
         many=True,
-        queryset=User.objects.all()
+    queryset=User.objects.all()
     )
 
     class Meta:
