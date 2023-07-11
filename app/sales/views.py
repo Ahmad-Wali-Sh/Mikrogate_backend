@@ -7,6 +7,7 @@ from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import viewsets, filters
 import django_filters
 import rest_framework_filters as restfilters
+from .permissions import D7896DjangoModelPermissions
 
 from django.db.models import Q
 
@@ -104,7 +105,7 @@ class ContractsViewSet(viewsets.ModelViewSet):
     queryset = Contracts.objects.all()
     serializer_class = serializers.ContractsSerializer
     authentication_classes = (TokenAuthentication,)
-    permission_classes = (IsAuthenticated,)
+    permission_classes = (IsAuthenticated, D7896DjangoModelPermissions)
     filter_backends = [DjangoFilterBackend, filters.OrderingFilter]
     filterset_class = ContractFilterSet
     ordering_fields = ['contract_number', 'date',]

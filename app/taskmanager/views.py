@@ -5,6 +5,7 @@ from rest_framework.permissions import IsAuthenticated
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import viewsets, filters
 import django_filters
+from .permissions import D7896DjangoModelPermissions
 
 from django.db.models import Q
 
@@ -39,18 +40,20 @@ class ProjectViewSet(BaseTaskManagetAttrViewSetWithUser):
     """Manage Tasks in the database"""
     queryset = Project.objects.all()
     serializer_class = serializers.ProjectSerializer
-
+    permission_classes = [D7896DjangoModelPermissions]
 
 class TagViewSet(BaseTaskManagetAttrViewSetWithUser):
     """Manage Tags in the database"""
     queryset = Tag.objects.all()
     serializer_class = serializers.TagSerializer
+    permission_classes = [D7896DjangoModelPermissions]
 
 
 class StageViewSet(BaseTaskManagetAttrViewSetWithUser):
     """Manage Stages in the database"""
     queryset = Stage.objects.all()
     serializer_class = serializers.StageSerializer
+    permission_classes = [D7896DjangoModelPermissions]
 
 
 class TaskFilterSet(django_filters.FilterSet):
@@ -72,6 +75,7 @@ class TaskViewSet(viewsets.ModelViewSet):
     permission_classes = (IsAuthenticated,)
     ordering_fields = ['created', 'deadline', 'contract']
     ordering = ['created', 'deadline', 'contract']
+    permission_classes = [D7896DjangoModelPermissions]
 
     # def get_queryset(self):
     #     contract = self.request.query_params.get('contract')
@@ -98,7 +102,8 @@ class LinkDetailsViewSet(viewsets.ModelViewSet):
     queryset = LinkDetails.objects.all()
     serializer_class = serializers.LinkDetailsSerializer
     authentication_classes = (TokenAuthentication,)
-    permission_classes = (IsAuthenticated,)
+    permission_classes = (IsAuthenticated, D7896DjangoModelPermissions)
+    
 
     def get_queryset(self):
 
@@ -117,7 +122,7 @@ class CheckListViewSet(viewsets.ModelViewSet):
     queryset = CheckList.objects.all()
     serializer_class = serializers.CheckListSerializer
     authentication_classes = (TokenAuthentication,)
-    permission_classes = (IsAuthenticated,)
+    permission_classes = (IsAuthenticated, D7896DjangoModelPermissions)
 
     def get_queryset(self):
         task_id = self.request.query_params.get('id')
@@ -134,7 +139,7 @@ class InstallationViewSet(viewsets.ModelViewSet):
     queryset = Installation.objects.all()
     serializer_class = serializers.InstallationSerializer
     authentication_classes = (TokenAuthentication,)
-    permission_classes = (IsAuthenticated,)
+    permission_classes = (IsAuthenticated, D7896DjangoModelPermissions)
 
     def get_queryset(self):
         task_id = self.request.query_params.get('id')
@@ -152,7 +157,7 @@ class TroubleshootViewSet(viewsets.ModelViewSet):
     queryset = Troubleshoot.objects.all()
     serializer_class = serializers.TroubleshootSerializer
     authentication_classes = (TokenAuthentication,)
-    permission_classes = (IsAuthenticated,)
+    permission_classes = (IsAuthenticated, D7896DjangoModelPermissions)
 
     def get_queryset(self):
         task_id = self.request.query_params.get('id')
@@ -170,7 +175,7 @@ class ChangeLocationViewSet(viewsets.ModelViewSet):
     queryset = ChangeLocation.objects.all()
     serializer_class = serializers.ChangeLocationSerializer
     authentication_classes = (TokenAuthentication,)
-    permission_classes = (IsAuthenticated,)
+    permission_classes = (IsAuthenticated, D7896DjangoModelPermissions)
 
     def get_queryset(self):
         task_id = self.request.query_params.get('id')
@@ -187,7 +192,7 @@ class OnlineSupportViewSet(viewsets.ModelViewSet):
     queryset = OnlineSupport.objects.all()
     serializer_class = serializers.OnlineSupportSerializer
     authentication_classes = (TokenAuthentication,)
-    permission_classes = (IsAuthenticated,)
+    permission_classes = (IsAuthenticated, D7896DjangoModelPermissions)
 
     def get_queryset(self):
         task_id = self.request.query_params.get('id')
@@ -216,7 +221,7 @@ class AmendmentViewSet(viewsets.GenericViewSet,
     queryset = Amendment.objects.all()
     serializer_class = serializers.AmendmentSerializer
     authentication_classes = (TokenAuthentication,)
-    permission_classes = (IsAuthenticated,)
+    permission_classes = (IsAuthenticated, D7896DjangoModelPermissions)
 
     def get_queryset(self):
         task_id = self.request.query_params.get('id')
@@ -242,7 +247,7 @@ class TaskLogViewSet(viewsets.GenericViewSet,
     queryset = TaskLog.objects.all()
     serializer_class = serializers.TaskLogSerializer
     authentication_classes = (TokenAuthentication,)
-    permission_classes = (IsAuthenticated,)
+    permission_classes = (IsAuthenticated, D7896DjangoModelPermissions)
 
     def get_serializer_class(self):
         if self.action == 'list' or self.action == 'retrieve':
@@ -267,7 +272,7 @@ class MessageViewSet(viewsets.GenericViewSet,
     queryset = Message.objects.all()
     serializer_class = serializers.MessageSerializer
     authentication_classes = (TokenAuthentication,)
-    permission_classes = (IsAuthenticated,)
+    permission_classes = (IsAuthenticated,D7896DjangoModelPermissions)
 
     def get_queryset(self):
         return self.queryset
@@ -283,7 +288,7 @@ class PaymentViewSet(viewsets.GenericViewSet,
     queryset = Payment.objects.all()
     serializer_class = serializers.PaymentSerializer
     authentication_classes = (TokenAuthentication,)
-    permission_classes = (IsAuthenticated,)
+    permission_classes = (IsAuthenticated,D7896DjangoModelPermissions)
 
     def get_queryset(self):
         return self.queryset
@@ -298,7 +303,7 @@ class InstallationConfirmViewSet(viewsets.GenericViewSet,
     queryset = InstallationConfirm.objects.all()
     serializer_class = serializers.InstallationConfirmSerializer
     authentication_classes = (TokenAuthentication,)
-    permission_classes = (IsAuthenticated,)
+    permission_classes = (IsAuthenticated, D7896DjangoModelPermissions)
 
     def get_queryset(self):
         return self.queryset
