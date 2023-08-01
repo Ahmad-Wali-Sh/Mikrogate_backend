@@ -6,7 +6,6 @@ from rest_framework.pagination import PageNumberPagination
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import viewsets, filters
 import django_filters
-import rest_framework_filters as restfilters
 from .permissions import D7896DjangoModelPermissions
 
 from django.db.models import Q
