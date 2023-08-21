@@ -139,9 +139,9 @@ class Contracts(models.Model):
     organization = models.CharField(max_length=100, blank=True)
     email = models.EmailField(blank=True)
     address = models.CharField(max_length=255, blank=True)
-    date = models.DateTimeField(default=datetime.now())
-    activation = models.DateTimeField(default=datetime.now())
-    valid = models.DateTimeField(default=datetime.now() + relativedelta(years=1))
+    date = models.DateField(blank=True, null=True)
+    activation = models.DateField(blank=True, null=True)
+    valid = models.DateField(blank=True, null=True)
     status = models.ForeignKey("ContractStatus", on_delete=models.CASCADE)
     note = models.TextField(blank=True)
 
