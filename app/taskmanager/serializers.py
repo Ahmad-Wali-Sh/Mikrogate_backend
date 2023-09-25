@@ -40,6 +40,12 @@ class TaskContractSerializer(serializers.ModelSerializer):
         fields = ('id', 'contract_number', 'contract_id', 'organization', 'name', 'contact', 'address',)
         read_only_fields = ('id',)
 
+class ChangeHistoryField(serializers.ListField):
+    childs = serializers.JSONField()
+
+    def to_representation(self, data):
+        return super().to_representation(data.values('id', 'changes', 'timestamp', 'action', 'actor_id'))
+
 
 class TaskSerializer(serializers.ModelSerializer):
     """Serializer for Task-Manager's Task"""
@@ -69,10 +75,12 @@ class TaskSerializer(serializers.ModelSerializer):
         many=True
     )
 
+    changes = ChangeHistoryField(read_only=True)
+
     class Meta:
         model = Task
         fields = ('id', 'user', 'title', 'contract', 'project',
-                  'tag', 'deadline', 'stage', 'assigned', 'description' )
+                  'tag', 'deadline', 'stage', 'assigned', 'description', 'created', 'changes' )
         read_only_fields = ('id', 'user',)
 
 

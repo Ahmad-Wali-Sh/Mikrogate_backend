@@ -107,7 +107,7 @@ class ContractsViewSet(viewsets.ModelViewSet):
     permission_classes = (IsAuthenticated, D7896DjangoModelPermissions)
     filter_backends = [DjangoFilterBackend, filters.OrderingFilter]
     filterset_class = ContractFilterSet
-    ordering_fields = ['contract_number', 'date',]
+    ordering_fields = ['contract_number', 'date','contract_id']
     ordering = ['date', 'contract_number']
 
     def get_serializer_class(self):

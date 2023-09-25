@@ -153,6 +153,15 @@ class Contracts(models.Model):
         }
         return object_details
 
+    def save (self, *args, **kwargs):
+        last_id_obj = Contracts.objects.latest('contract_id')
+        if (self.contract_id):
+            pass
+        else: 
+            if (last_id_obj):
+                self.contract_id = "id" + str(int(last_id_obj.contract_id[2:10]) + 1)
+        super(Contracts, self).save(*args, **kwargs)
+
 
     def __str__(self):
         return self.name
@@ -296,7 +305,7 @@ class Stage(models.Model):
     def __str__(self):
         return self.name
 
-
+@auditlog.register()
 class Task(models.Model):
     user = models.ForeignKey(
         settings.AUTH_USER_MODEL,
@@ -314,6 +323,7 @@ class Task(models.Model):
     read = models.BooleanField(default=False)
     updated = models.DateTimeField(auto_now=True)
     created = models.DateTimeField(auto_now_add=True)
+    changes = AuditlogHistoryField()
 
     class Meta:
         ordering = ['-updated', '-created']
@@ -326,12 +336,12 @@ class LinkDetails(models.Model):
     task = models.ForeignKey(Task, on_delete=models.DO_NOTHING)
     installation_type = models.CharField(max_length=100, blank=True)
     device = models.CharField(max_length=255, blank=True)
-    access_point = models.CharField(max_length=10, blank=True)
-    signal = models.CharField(max_length=10, blank=True)
-    ccq = models.CharField(max_length=10, blank=True)
-    cable = models.IntegerField(null=True, blank=True)
-    connector = models.IntegerField(null=True, blank=True)
-    payment = models.IntegerField(null=True, blank=True)
+    access_point = models.CharField(max_length=50, blank=True)
+    signal = models.CharField(max_length=50, blank=True)
+    ccq = models.CharField(max_length=50, blank=True)
+    cable = models.CharField(null=True, blank=True)
+    connector = models.CharField(null=True, blank=True)
+    payment = models.CharField(null=True, blank=True)
     bill_number = models.IntegerField(null=True, blank=True)
     installation_date = models.DateTimeField()
     additional_details = models.TextField(blank=True)
