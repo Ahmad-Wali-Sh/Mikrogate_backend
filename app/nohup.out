@@ -1075,3 +1075,324 @@ Not Found: /uploads/user/2e9aea7b-10c9-47fb-91ed-aa52bc3e8612.jpg
 [25/Sep/2023 11:00:51] "GET /api/sales/contract/ HTTP/1.1" 200 147347
 [25/Sep/2023 11:00:55] "GET /api/sales/contract/?user=&contract_number=&contract_id=&date_after=&date_before=&activation=&valid=&status=1&contract_type=&contractpackage__package=&contractrouter__router=&ordering=contract_number&contractantenna__antenna= HTTP/1.1" 200 31448
 [25/Sep/2023 11:01:45] "GET /api/sales/contract/?user=&contract_number=&contract_id=&date_after=&date_before=&activation=&valid=&status=1&contract_type=&contractpackage__package=&contractrouter__router=&ordering=-contract_number&contractantenna__antenna= HTTP/1.1" 200 31448
+[25/Sep/2023 11:05:00] "POST /api/taskmanager/task/ HTTP/1.1" 201 311
+[25/Sep/2023 11:05:09] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 11:05:09] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+Unauthorized: /api/taskmanager/task/
+[25/Sep/2023 11:05:11] "GET /api/taskmanager/task/ HTTP/1.1" 401 58
+[25/Sep/2023 11:05:11] "GET /api/taskmanager/project/ HTTP/1.1" 200 208
+[25/Sep/2023 11:05:11] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 11:05:11] "GET /api/taskmanager/tag/ HTTP/1.1" 200 101
+[25/Sep/2023 11:05:11] "GET /api/user/me/ HTTP/1.1" 200 194
+[25/Sep/2023 11:05:12] "GET /api/taskmanager/payment/ HTTP/1.1" 200 52
+[25/Sep/2023 11:05:12] "GET /api/taskmanager/installationConfirm/ HTTP/1.1" 200 174
+[25/Sep/2023 11:05:12] "GET /api/taskmanager/stage/ HTTP/1.1" 200 158
+[25/Sep/2023 11:05:12] "GET /api/taskmanager/project/ HTTP/1.1" 200 208
+[25/Sep/2023 11:05:12] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 11:05:13] "GET /api/sales/contract/ HTTP/1.1" 200 147347
+[25/Sep/2023 11:05:13] "GET /api/taskmanager/task/ HTTP/1.1" 200 4266
+[25/Sep/2023 11:05:13] "GET /api/user/me/ HTTP/1.1" 200 194
+[25/Sep/2023 11:05:13] "GET /api/taskmanager/tag/ HTTP/1.1" 200 101
+[25/Sep/2023 11:05:13] "GET /api/taskmanager/installationConfirm/ HTTP/1.1" 200 174
+[25/Sep/2023 11:05:13] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 11:05:13] "GET /api/taskmanager/payment/ HTTP/1.1" 200 52
+Unauthorized: /api/taskmanager/task/
+[25/Sep/2023 11:05:13] "GET /api/taskmanager/task/ HTTP/1.1" 401 58
+[25/Sep/2023 11:05:13] "GET /api/taskmanager/stage/ HTTP/1.1" 200 158
+[25/Sep/2023 11:05:13] "OPTIONS /api/taskmanager/task/?contract__contract_number=&created_after=&created_before=&deadline_after=&deadline_before=&ordering=contract&project=&stage=&tag=&user=&assigned__id=&contract__contract_id= HTTP/1.1" 200 0
+Not Found: /uploads/user/57925e3f-cf4a-4a4f-8f74-5d28e9bf4733.jpg
+[25/Sep/2023 11:05:14] "GET /uploads/user/57925e3f-cf4a-4a4f-8f74-5d28e9bf4733.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/26eb6e8d-aa35-4032-b564-439ddbde463a.jpg
+[25/Sep/2023 11:05:14] "GET /uploads/user/26eb6e8d-aa35-4032-b564-439ddbde463a.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/21916a40-1865-4583-bd0f-8d3c84a3c525.jpg
+[25/Sep/2023 11:05:14] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 11:05:14] "GET /uploads/user/21916a40-1865-4583-bd0f-8d3c84a3c525.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/b3c92f43-a458-4bea-8076-448aca8495f6.jpg
+[25/Sep/2023 11:05:14] "GET /uploads/user/b3c92f43-a458-4bea-8076-448aca8495f6.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 11:05:14] "GET /api/taskmanager/task/ HTTP/1.1" 200 4266
+[25/Sep/2023 11:05:14] "GET /api/taskmanager/task/?contract__contract_number=&created_after=&created_before=&deadline_after=&deadline_before=&ordering=contract&project=&stage=&tag=&user=&assigned__id=&contract__contract_id= HTTP/1.1" 200 4266
+Not Found: /uploads/user/31309ece-29d1-462c-bb28-9436ef370aee.jpg
+[25/Sep/2023 11:05:14] "GET /uploads/user/31309ece-29d1-462c-bb28-9436ef370aee.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/55027785-295c-4c51-9f03-b1ed05e0ce8f.jpg
+[25/Sep/2023 11:05:14] "GET /uploads/user/55027785-295c-4c51-9f03-b1ed05e0ce8f.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/2e9aea7b-10c9-47fb-91ed-aa52bc3e8612.jpg
+[25/Sep/2023 11:05:14] "GET /uploads/user/2e9aea7b-10c9-47fb-91ed-aa52bc3e8612.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 11:05:14] "GET /api/sales/contract/ HTTP/1.1" 200 147347
+[25/Sep/2023 11:06:07] "OPTIONS /api/taskmanager/task/4/ HTTP/1.1" 200 0
+[25/Sep/2023 11:06:07] "OPTIONS /api/taskmanager/installation/?id=4 HTTP/1.1" 200 0
+[25/Sep/2023 11:06:07] "OPTIONS /api/taskmanager/linkDetails/?id=4 HTTP/1.1" 200 0
+[25/Sep/2023 11:06:07] "GET /api/user/me/ HTTP/1.1" 200 194
+[25/Sep/2023 11:06:07] "GET /api/taskmanager/payment/ HTTP/1.1" 200 52
+[25/Sep/2023 11:06:07] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 11:06:07] "OPTIONS /api/taskmanager/taskLog/?id=4 HTTP/1.1" 200 0
+[25/Sep/2023 11:06:07] "GET /api/taskmanager/installationConfirm/ HTTP/1.1" 200 174
+[25/Sep/2023 11:06:07] "OPTIONS /api/taskmanager/task/4/ HTTP/1.1" 200 0
+[25/Sep/2023 11:06:07] "OPTIONS /api/taskmanager/installation/?id=4 HTTP/1.1" 200 0
+[25/Sep/2023 11:06:07] "OPTIONS /api/taskmanager/linkDetails/?id=4 HTTP/1.1" 200 0
+[25/Sep/2023 11:06:07] "OPTIONS /api/taskmanager/taskLog/?id=4 HTTP/1.1" 200 0
+[25/Sep/2023 11:06:07] "GET /api/user/me/ HTTP/1.1" 200 194
+[25/Sep/2023 11:06:07] "GET /api/taskmanager/payment/ HTTP/1.1" 200 52
+[25/Sep/2023 11:06:07] "GET /api/taskmanager/installationConfirm/ HTTP/1.1" 200 174
+[25/Sep/2023 11:06:08] "GET /api/taskmanager/installation/?id=4 HTTP/1.1" 200 52
+[25/Sep/2023 11:06:08] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 11:06:08] "GET /api/taskmanager/task/4/ HTTP/1.1" 200 1541
+[25/Sep/2023 11:06:08] "GET /api/taskmanager/linkDetails/?id=4 HTTP/1.1" 200 52
+[25/Sep/2023 11:06:08] "GET /api/taskmanager/taskLog/?id=4 HTTP/1.1" 200 52
+[25/Sep/2023 11:06:08] "GET /api/user/me/ HTTP/1.1" 200 194
+[25/Sep/2023 11:06:08] "GET /api/taskmanager/installation/?id=4 HTTP/1.1" 200 52
+[25/Sep/2023 11:06:08] "GET /api/taskmanager/task/4/ HTTP/1.1" 200 1541
+[25/Sep/2023 11:06:08] "GET /api/taskmanager/linkDetails/?id=4 HTTP/1.1" 200 52
+[25/Sep/2023 11:06:08] "GET /api/taskmanager/taskLog/?id=4 HTTP/1.1" 200 52
+[25/Sep/2023 11:06:08] "GET /api/user/me/ HTTP/1.1" 200 194
+Not Found: /uploads/user/57925e3f-cf4a-4a4f-8f74-5d28e9bf4733.jpg
+[25/Sep/2023 11:06:11] "GET /uploads/user/57925e3f-cf4a-4a4f-8f74-5d28e9bf4733.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/26eb6e8d-aa35-4032-b564-439ddbde463a.jpg
+[25/Sep/2023 11:06:11] "GET /uploads/user/26eb6e8d-aa35-4032-b564-439ddbde463a.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/21916a40-1865-4583-bd0f-8d3c84a3c525.jpg
+[25/Sep/2023 11:06:11] "GET /uploads/user/21916a40-1865-4583-bd0f-8d3c84a3c525.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/b3c92f43-a458-4bea-8076-448aca8495f6.jpg
+[25/Sep/2023 11:06:11] "GET /uploads/user/b3c92f43-a458-4bea-8076-448aca8495f6.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/31309ece-29d1-462c-bb28-9436ef370aee.jpg
+[25/Sep/2023 11:06:11] "GET /uploads/user/31309ece-29d1-462c-bb28-9436ef370aee.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/55027785-295c-4c51-9f03-b1ed05e0ce8f.jpg
+[25/Sep/2023 11:06:11] "GET /uploads/user/55027785-295c-4c51-9f03-b1ed05e0ce8f.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/2e9aea7b-10c9-47fb-91ed-aa52bc3e8612.jpg
+[25/Sep/2023 11:06:11] "GET /uploads/user/2e9aea7b-10c9-47fb-91ed-aa52bc3e8612.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 11:06:35] "OPTIONS /api/taskmanager/installation/ HTTP/1.1" 200 0
+[25/Sep/2023 11:06:35] "POST /api/taskmanager/installation/ HTTP/1.1" 201 86
+Unauthorized: /api/taskmanager/task/
+[25/Sep/2023 11:06:57] "GET /api/taskmanager/task/ HTTP/1.1" 401 58
+[25/Sep/2023 11:06:57] "GET /api/taskmanager/project/ HTTP/1.1" 200 208
+[25/Sep/2023 11:06:57] "GET /api/taskmanager/tag/ HTTP/1.1" 200 101
+[25/Sep/2023 11:06:57] "GET /api/user/me/ HTTP/1.1" 200 194
+[25/Sep/2023 11:06:57] "GET /api/taskmanager/payment/ HTTP/1.1" 200 52
+[25/Sep/2023 11:06:58] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 11:06:58] "GET /api/taskmanager/installationConfirm/ HTTP/1.1" 200 174
+[25/Sep/2023 11:06:58] "GET /api/taskmanager/stage/ HTTP/1.1" 200 158
+[25/Sep/2023 11:06:58] "GET /api/taskmanager/project/ HTTP/1.1" 200 208
+[25/Sep/2023 11:06:58] "GET /api/user/me/ HTTP/1.1" 200 194
+[25/Sep/2023 11:06:58] "GET /api/taskmanager/tag/ HTTP/1.1" 200 101
+[25/Sep/2023 11:06:58] "GET /api/taskmanager/installationConfirm/ HTTP/1.1" 200 174
+[25/Sep/2023 11:06:58] "GET /api/taskmanager/payment/ HTTP/1.1" 200 52
+[25/Sep/2023 11:06:58] "GET /api/taskmanager/stage/ HTTP/1.1" 200 158
+[25/Sep/2023 11:06:58] "GET /api/taskmanager/task/ HTTP/1.1" 200 4266
+[25/Sep/2023 11:06:58] "GET /api/user/users/ HTTP/1.1" 200 4824
+Unauthorized: /api/taskmanager/task/
+[25/Sep/2023 11:06:58] "GET /api/taskmanager/task/ HTTP/1.1" 401 58
+[25/Sep/2023 11:06:58] "GET /api/user/users/ HTTP/1.1" 200 4824
+Not Found: /uploads/user/57925e3f-cf4a-4a4f-8f74-5d28e9bf4733.jpg
+[25/Sep/2023 11:06:58] "GET /uploads/user/57925e3f-cf4a-4a4f-8f74-5d28e9bf4733.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/26eb6e8d-aa35-4032-b564-439ddbde463a.jpg
+[25/Sep/2023 11:06:58] "GET /uploads/user/26eb6e8d-aa35-4032-b564-439ddbde463a.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/21916a40-1865-4583-bd0f-8d3c84a3c525.jpg
+[25/Sep/2023 11:06:58] "GET /uploads/user/21916a40-1865-4583-bd0f-8d3c84a3c525.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/b3c92f43-a458-4bea-8076-448aca8495f6.jpg
+[25/Sep/2023 11:06:59] "GET /uploads/user/b3c92f43-a458-4bea-8076-448aca8495f6.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 11:06:59] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 11:06:59] "GET /api/taskmanager/task/ HTTP/1.1" 200 4266
+Not Found: /uploads/user/31309ece-29d1-462c-bb28-9436ef370aee.jpg
+[25/Sep/2023 11:06:59] "GET /uploads/user/31309ece-29d1-462c-bb28-9436ef370aee.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/55027785-295c-4c51-9f03-b1ed05e0ce8f.jpg
+[25/Sep/2023 11:06:59] "GET /uploads/user/55027785-295c-4c51-9f03-b1ed05e0ce8f.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/2e9aea7b-10c9-47fb-91ed-aa52bc3e8612.jpg
+[25/Sep/2023 11:06:59] "GET /uploads/user/2e9aea7b-10c9-47fb-91ed-aa52bc3e8612.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 11:06:59] "GET /api/sales/contract/ HTTP/1.1" 200 147347
+[25/Sep/2023 11:07:00] "GET /api/taskmanager/task/?contract__contract_number=&created_after=&created_before=&deadline_after=&deadline_before=&ordering=contract&project=&stage=&tag=&user=&assigned__id=&contract__contract_id= HTTP/1.1" 200 4266
+[25/Sep/2023 11:07:01] "GET /api/sales/contract/ HTTP/1.1" 200 147347
+[25/Sep/2023 11:07:03] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 11:07:03] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 11:07:07] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 11:07:07] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 11:07:18] "GET /api/user/me/ HTTP/1.1" 200 194
+[25/Sep/2023 11:07:18] "GET /api/user/me/ HTTP/1.1" 200 194
+[25/Sep/2023 11:07:19] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 11:07:19] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 11:07:24] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 11:07:24] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 11:07:27] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 11:07:27] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+Not Found: /
+[25/Sep/2023 11:07:43] "GET / HTTP/1.1" 404 2937
+[25/Sep/2023 11:07:46] "GET /admin/ HTTP/1.1" 200 19322
+[25/Sep/2023 11:07:48] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 11:07:49] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 11:07:49] "GET /admin/core/user/ HTTP/1.1" 200 24217
+[25/Sep/2023 11:07:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3333
+[25/Sep/2023 11:07:50] "GET /static/static/admin/img/search.svg HTTP/1.1" 200 458
+Unauthorized: /api/taskmanager/task/
+[25/Sep/2023 11:07:51] "GET /api/taskmanager/task/ HTTP/1.1" 401 58
+[25/Sep/2023 11:07:51] "GET /api/taskmanager/project/ HTTP/1.1" 200 208
+[25/Sep/2023 11:07:51] "GET /api/user/me/ HTTP/1.1" 200 194
+[25/Sep/2023 11:07:51] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 11:07:51] "GET /api/taskmanager/tag/ HTTP/1.1" 200 101
+[25/Sep/2023 11:07:51] "GET /api/taskmanager/installationConfirm/ HTTP/1.1" 200 174
+[25/Sep/2023 11:07:51] "GET /api/taskmanager/payment/ HTTP/1.1" 200 52
+[25/Sep/2023 11:07:51] "GET /api/taskmanager/stage/ HTTP/1.1" 200 158
+[25/Sep/2023 11:07:51] "GET /api/taskmanager/project/ HTTP/1.1" 200 208
+[25/Sep/2023 11:07:51] "GET /api/user/me/ HTTP/1.1" 200 194
+[25/Sep/2023 11:07:51] "GET /api/taskmanager/tag/ HTTP/1.1" 200 101
+[25/Sep/2023 11:07:51] "GET /api/taskmanager/installationConfirm/ HTTP/1.1" 200 174
+[25/Sep/2023 11:07:51] "GET /api/taskmanager/payment/ HTTP/1.1" 200 52
+[25/Sep/2023 11:07:52] "GET /api/taskmanager/stage/ HTTP/1.1" 200 158
+[25/Sep/2023 11:07:52] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 11:07:52] "GET /api/taskmanager/task/ HTTP/1.1" 200 4266
+Unauthorized: /api/taskmanager/task/
+[25/Sep/2023 11:07:52] "GET /api/taskmanager/task/ HTTP/1.1" 401 58
+[25/Sep/2023 11:07:52] "GET /api/user/users/ HTTP/1.1" 200 4824
+Not Found: /uploads/user/57925e3f-cf4a-4a4f-8f74-5d28e9bf4733.jpg
+[25/Sep/2023 11:07:52] "GET /uploads/user/57925e3f-cf4a-4a4f-8f74-5d28e9bf4733.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/26eb6e8d-aa35-4032-b564-439ddbde463a.jpg
+[25/Sep/2023 11:07:52] "GET /uploads/user/26eb6e8d-aa35-4032-b564-439ddbde463a.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/21916a40-1865-4583-bd0f-8d3c84a3c525.jpg
+[25/Sep/2023 11:07:52] "GET /uploads/user/21916a40-1865-4583-bd0f-8d3c84a3c525.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/b3c92f43-a458-4bea-8076-448aca8495f6.jpg
+[25/Sep/2023 11:07:52] "GET /uploads/user/b3c92f43-a458-4bea-8076-448aca8495f6.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/31309ece-29d1-462c-bb28-9436ef370aee.jpg
+[25/Sep/2023 11:07:52] "GET /uploads/user/31309ece-29d1-462c-bb28-9436ef370aee.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 11:07:52] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 11:07:52] "GET /api/taskmanager/task/ HTTP/1.1" 200 4266
+Not Found: /uploads/user/55027785-295c-4c51-9f03-b1ed05e0ce8f.jpg
+[25/Sep/2023 11:07:52] "GET /uploads/user/55027785-295c-4c51-9f03-b1ed05e0ce8f.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/2e9aea7b-10c9-47fb-91ed-aa52bc3e8612.jpg
+[25/Sep/2023 11:07:52] "GET /uploads/user/2e9aea7b-10c9-47fb-91ed-aa52bc3e8612.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 11:07:53] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 11:07:53] "GET /api/user/me/ HTTP/1.1" 200 194
+[25/Sep/2023 11:07:53] "GET /api/sales/contract-status/ HTTP/1.1" 200 204
+[25/Sep/2023 11:07:53] "GET /api/taskmanager/payment/ HTTP/1.1" 200 52
+[25/Sep/2023 11:07:53] "GET /api/taskmanager/installationConfirm/ HTTP/1.1" 200 174
+[25/Sep/2023 11:07:53] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 11:07:53] "GET /api/taskmanager/stage/ HTTP/1.1" 200 158
+[25/Sep/2023 11:07:53] "GET /api/sales/packages/ HTTP/1.1" 200 35579
+[25/Sep/2023 11:07:53] "GET /api/taskmanager/project/ HTTP/1.1" 200 208
+[25/Sep/2023 11:07:53] "GET /api/taskmanager/tag/ HTTP/1.1" 200 101
+[25/Sep/2023 11:07:53] "GET /api/taskmanager/task/ HTTP/1.1" 200 4266
+[25/Sep/2023 11:07:54] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 11:07:54] "GET /api/sales/contract-status/ HTTP/1.1" 200 204
+[25/Sep/2023 11:07:54] "GET /api/user/me/ HTTP/1.1" 200 194
+[25/Sep/2023 11:07:54] "GET /api/taskmanager/payment/ HTTP/1.1" 200 52
+[25/Sep/2023 11:07:54] "GET /api/sales/contract/ HTTP/1.1" 200 147347
+[25/Sep/2023 11:07:54] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 11:07:54] "GET /api/taskmanager/installationConfirm/ HTTP/1.1" 200 174
+[25/Sep/2023 11:07:54] "GET /api/taskmanager/stage/ HTTP/1.1" 200 158
+[25/Sep/2023 11:07:54] "GET /api/sales/packages/ HTTP/1.1" 200 35579
+[25/Sep/2023 11:07:54] "GET /api/taskmanager/project/ HTTP/1.1" 200 208
+[25/Sep/2023 11:07:54] "GET /api/taskmanager/task/ HTTP/1.1" 200 4266
+[25/Sep/2023 11:07:54] "GET /api/taskmanager/tag/ HTTP/1.1" 200 101
+Not Found: /uploads/user/57925e3f-cf4a-4a4f-8f74-5d28e9bf4733.jpg
+[25/Sep/2023 11:07:54] "GET /uploads/user/57925e3f-cf4a-4a4f-8f74-5d28e9bf4733.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 11:07:54] "GET /api/user/users/ HTTP/1.1" 200 4824
+Not Found: /uploads/user/26eb6e8d-aa35-4032-b564-439ddbde463a.jpg
+[25/Sep/2023 11:07:55] "GET /uploads/user/26eb6e8d-aa35-4032-b564-439ddbde463a.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/21916a40-1865-4583-bd0f-8d3c84a3c525.jpg
+[25/Sep/2023 11:07:55] "GET /uploads/user/21916a40-1865-4583-bd0f-8d3c84a3c525.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 11:07:55] "GET /api/user/users/ HTTP/1.1" 200 4824
+Not Found: /uploads/user/b3c92f43-a458-4bea-8076-448aca8495f6.jpg
+[25/Sep/2023 11:07:55] "GET /uploads/user/b3c92f43-a458-4bea-8076-448aca8495f6.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/31309ece-29d1-462c-bb28-9436ef370aee.jpg
+[25/Sep/2023 11:07:55] "GET /uploads/user/31309ece-29d1-462c-bb28-9436ef370aee.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/55027785-295c-4c51-9f03-b1ed05e0ce8f.jpg
+[25/Sep/2023 11:07:55] "GET /uploads/user/55027785-295c-4c51-9f03-b1ed05e0ce8f.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/2e9aea7b-10c9-47fb-91ed-aa52bc3e8612.jpg
+[25/Sep/2023 11:07:55] "GET /uploads/user/2e9aea7b-10c9-47fb-91ed-aa52bc3e8612.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 11:07:55] "GET /admin/core/user/14/change/ HTTP/1.1" 200 33112
+[25/Sep/2023 11:07:55] "GET /static/static/admin/css/forms.css HTTP/1.1" 200 8944
+[25/Sep/2023 11:07:55] "GET /admin/jsi18n/ HTTP/1.1" 200 3333
+[25/Sep/2023 11:07:55] "GET /static/static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+[25/Sep/2023 11:07:55] "GET /static/static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+[25/Sep/2023 11:07:55] "GET /static/static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+[25/Sep/2023 11:07:57] "GET /api/sales/contract/ HTTP/1.1" 200 147347
+[25/Sep/2023 11:07:57] "GET /api/sales/contract/?user=&contract_number=&contract_id=&date_after=&date_before=&activation=&valid=&status=&contract_type=&contractpackage__package=&contractrouter__router=&ordering=contract_number&contractantenna__antenna= HTTP/1.1" 200 148508
+[25/Sep/2023 11:07:58] "GET /api/sales/contract/ HTTP/1.1" 200 147347
+[25/Sep/2023 11:07:59] "GET /api/sales/contract/ HTTP/1.1" 200 147347
+[25/Sep/2023 11:08:01] "GET /admin/auth/group/ HTTP/1.1" 200 16454
+[25/Sep/2023 11:08:01] "GET /admin/jsi18n/ HTTP/1.1" 200 3333
+[25/Sep/2023 11:08:02] "GET /admin/auth/group/3/change/ HTTP/1.1" 200 27848
+[25/Sep/2023 11:08:02] "GET /admin/jsi18n/ HTTP/1.1" 200 3333
+[25/Sep/2023 11:08:44] "GET /api/sales/contract/?user=&contract_number=&contract_id=&date_after=&date_before=&activation=&valid=&status=&contract_type=&contractpackage__package=&contractrouter__router=&ordering=contract_number&contractantenna__antenna= HTTP/1.1" 200 148508
+[25/Sep/2023 11:08:53] "GET /api/sales/contract/?user=&contract_number=&contract_id=&date_after=&date_before=&activation=&valid=&status=&contract_type=&contractpackage__package=&contractrouter__router=&ordering=-contract_number&contractantenna__antenna= HTTP/1.1" 200 150046
+[25/Sep/2023 11:09:37] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 11:09:37] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+Unauthorized: /api/taskmanager/task/
+[25/Sep/2023 11:09:40] "GET /api/taskmanager/task/ HTTP/1.1" 401 58
+[25/Sep/2023 11:09:41] "GET /api/taskmanager/project/ HTTP/1.1" 200 208
+[25/Sep/2023 11:09:41] "GET /api/user/me/ HTTP/1.1" 200 194
+[25/Sep/2023 11:09:41] "GET /api/taskmanager/tag/ HTTP/1.1" 200 101
+[25/Sep/2023 11:09:41] "GET /api/taskmanager/payment/ HTTP/1.1" 200 52
+[25/Sep/2023 11:09:41] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 11:09:41] "GET /api/taskmanager/stage/ HTTP/1.1" 200 158
+[25/Sep/2023 11:09:41] "GET /api/taskmanager/installationConfirm/ HTTP/1.1" 200 174
+[25/Sep/2023 11:09:41] "GET /api/user/me/ HTTP/1.1" 200 194
+[25/Sep/2023 11:09:41] "GET /api/taskmanager/project/ HTTP/1.1" 200 208
+[25/Sep/2023 11:09:41] "GET /api/taskmanager/tag/ HTTP/1.1" 200 101
+[25/Sep/2023 11:09:41] "GET /api/taskmanager/payment/ HTTP/1.1" 200 52
+[25/Sep/2023 11:09:41] "GET /api/taskmanager/stage/ HTTP/1.1" 200 158
+[25/Sep/2023 11:09:41] "GET /api/taskmanager/task/ HTTP/1.1" 200 4266
+[25/Sep/2023 11:09:41] "GET /api/taskmanager/installationConfirm/ HTTP/1.1" 200 174
+Unauthorized: /api/taskmanager/task/
+[25/Sep/2023 11:09:41] "GET /api/taskmanager/task/ HTTP/1.1" 401 58
+[25/Sep/2023 11:09:41] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 11:09:41] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 11:09:41] "GET /api/taskmanager/task/ HTTP/1.1" 200 4266
+[25/Sep/2023 11:09:42] "GET /api/user/users/ HTTP/1.1" 200 4824
+Not Found: /uploads/user/57925e3f-cf4a-4a4f-8f74-5d28e9bf4733.jpg
+[25/Sep/2023 11:09:42] "GET /uploads/user/57925e3f-cf4a-4a4f-8f74-5d28e9bf4733.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/26eb6e8d-aa35-4032-b564-439ddbde463a.jpg
+[25/Sep/2023 11:09:42] "GET /uploads/user/26eb6e8d-aa35-4032-b564-439ddbde463a.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/21916a40-1865-4583-bd0f-8d3c84a3c525.jpg
+[25/Sep/2023 11:09:42] "GET /uploads/user/21916a40-1865-4583-bd0f-8d3c84a3c525.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/b3c92f43-a458-4bea-8076-448aca8495f6.jpg
+[25/Sep/2023 11:09:42] "GET /uploads/user/b3c92f43-a458-4bea-8076-448aca8495f6.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 11:09:42] "GET /api/sales/contract/ HTTP/1.1" 200 147347
+Not Found: /uploads/user/31309ece-29d1-462c-bb28-9436ef370aee.jpg
+[25/Sep/2023 11:09:42] "GET /uploads/user/31309ece-29d1-462c-bb28-9436ef370aee.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/55027785-295c-4c51-9f03-b1ed05e0ce8f.jpg
+[25/Sep/2023 11:09:43] "GET /uploads/user/55027785-295c-4c51-9f03-b1ed05e0ce8f.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/2e9aea7b-10c9-47fb-91ed-aa52bc3e8612.jpg
+[25/Sep/2023 11:09:43] "GET /uploads/user/2e9aea7b-10c9-47fb-91ed-aa52bc3e8612.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 11:09:43] "GET /api/sales/contract/ HTTP/1.1" 200 147347
+[25/Sep/2023 11:09:56] "GET /api/taskmanager/task/?contract__contract_number=&created_after=&created_before=&deadline_after=&deadline_before=&ordering=contract&project=&stage=&tag=&user=&assigned__id=&contract__contract_id= HTTP/1.1" 200 4266
+[25/Sep/2023 11:10:02] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 11:10:03] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 11:11:30] "GET /api/user/me/ HTTP/1.1" 200 194
+[25/Sep/2023 11:11:30] "GET /api/taskmanager/payment/ HTTP/1.1" 200 52
+[25/Sep/2023 11:11:30] "GET /api/sales/contract-status/ HTTP/1.1" 200 204
+[25/Sep/2023 11:11:30] "GET /api/sales/packages/ HTTP/1.1" 200 35579
+[25/Sep/2023 11:11:31] "GET /api/taskmanager/installationConfirm/ HTTP/1.1" 200 174
+[25/Sep/2023 11:11:31] "GET /api/taskmanager/stage/ HTTP/1.1" 200 158
+[25/Sep/2023 11:11:31] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 11:11:31] "GET /api/taskmanager/project/ HTTP/1.1" 200 208
+[25/Sep/2023 11:11:31] "GET /api/taskmanager/task/ HTTP/1.1" 200 4266
+[25/Sep/2023 11:11:31] "GET /api/user/me/ HTTP/1.1" 200 194
+[25/Sep/2023 11:11:31] "GET /api/sales/contract-status/ HTTP/1.1" 200 204
+[25/Sep/2023 11:11:31] "GET /api/taskmanager/tag/ HTTP/1.1" 200 101
+[25/Sep/2023 11:11:31] "GET /api/taskmanager/payment/ HTTP/1.1" 200 52
+[25/Sep/2023 11:11:31] "GET /api/taskmanager/installationConfirm/ HTTP/1.1" 200 174
+[25/Sep/2023 11:11:31] "GET /api/sales/packages/ HTTP/1.1" 200 35579
+[25/Sep/2023 11:11:31] "GET /api/taskmanager/stage/ HTTP/1.1" 200 158
+[25/Sep/2023 11:11:31] "GET /api/taskmanager/project/ HTTP/1.1" 200 208
+[25/Sep/2023 11:11:31] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 11:11:31] "GET /api/taskmanager/tag/ HTTP/1.1" 200 101
+Not Found: /uploads/user/57925e3f-cf4a-4a4f-8f74-5d28e9bf4733.jpg
+[25/Sep/2023 11:11:31] "GET /uploads/user/57925e3f-cf4a-4a4f-8f74-5d28e9bf4733.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 11:11:31] "GET /api/taskmanager/task/ HTTP/1.1" 200 4266
+[25/Sep/2023 11:11:31] "GET /api/user/users/ HTTP/1.1" 200 4824
+Not Found: /uploads/user/26eb6e8d-aa35-4032-b564-439ddbde463a.jpg
+[25/Sep/2023 11:11:31] "GET /uploads/user/26eb6e8d-aa35-4032-b564-439ddbde463a.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/21916a40-1865-4583-bd0f-8d3c84a3c525.jpg
+Not Found: /uploads/user/b3c92f43-a458-4bea-8076-448aca8495f6.jpg
+[25/Sep/2023 11:11:32] "GET /uploads/user/21916a40-1865-4583-bd0f-8d3c84a3c525.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 11:11:32] "GET /uploads/user/b3c92f43-a458-4bea-8076-448aca8495f6.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 11:11:32] "GET /api/user/users/ HTTP/1.1" 200 4824
+Not Found: /uploads/user/31309ece-29d1-462c-bb28-9436ef370aee.jpg
+[25/Sep/2023 11:11:32] "GET /uploads/user/31309ece-29d1-462c-bb28-9436ef370aee.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/55027785-295c-4c51-9f03-b1ed05e0ce8f.jpg
+[25/Sep/2023 11:11:32] "GET /uploads/user/55027785-295c-4c51-9f03-b1ed05e0ce8f.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/2e9aea7b-10c9-47fb-91ed-aa52bc3e8612.jpg
+[25/Sep/2023 11:11:32] "GET /uploads/user/2e9aea7b-10c9-47fb-91ed-aa52bc3e8612.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 11:11:32] "GET /api/sales/contract/ HTTP/1.1" 200 147347
+[25/Sep/2023 11:11:34] "GET /api/sales/contract/?user=&contract_number=&contract_id=&date_after=&date_before=&activation=&valid=&status=&contract_type=&contractpackage__package=&contractrouter__router=&ordering=contract_number&contractantenna__antenna= HTTP/1.1" 200 148508
+[25/Sep/2023 11:11:35] "GET /api/sales/contract/ HTTP/1.1" 200 147347
+[25/Sep/2023 11:11:44] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 11:11:44] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 11:11:46] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 11:11:46] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
