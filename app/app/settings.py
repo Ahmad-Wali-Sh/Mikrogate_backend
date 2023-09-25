@@ -100,7 +100,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'HOST': 'localhost',
-        'NAME': 'Mikrogatedb_v1',
+        'NAME': 'mikrogatedb_v1',
         'USER': 'postgres',
         'PASSWORD': 'Ahmadwali$8',
     }
@@ -145,11 +145,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_URL = '/static/static/'
-STATIC_MEDIA = '/static/media/'
+STATIC_URL = 'static/static/'
+STATIC_MEDIA = 'static/media/'
 
-MEDIA_ROOT = '/vol/web/media'
-STATIC_ROOT = '/vol/web/static'
+MEDIA_ROOT = 'vol/web/media'
+STATIC_ROOT = 'vol/web/static'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

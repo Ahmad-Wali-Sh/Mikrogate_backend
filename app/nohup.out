@@ -1,0 +1,1077 @@
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 25, 2023 - 10:18:24
+Django version 4.1.5, using settings 'app.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+Not Found: /
+[25/Sep/2023 10:19:45] "GET / HTTP/1.1" 404 2937
+Not Found: /favicon.ico
+[25/Sep/2023 10:19:49] "GET /admin/ HTTP/1.1" 200 19489
+[25/Sep/2023 10:19:49] "GET /static/static/admin/css/base.css HTTP/1.1" 200 20344
+[25/Sep/2023 10:19:49,776] - Broken pipe from ('103.143.204.246', 51419)
+[25/Sep/2023 10:19:49] "GET /static/static/admin/css/dark_mode.css HTTP/1.1" 200 796
+[25/Sep/2023 10:19:49] "GET /static/static/admin/css/nav_sidebar.css HTTP/1.1" 200 2619
+[25/Sep/2023 10:19:49] "GET /static/static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[25/Sep/2023 10:19:49] "GET /static/static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[25/Sep/2023 10:19:58] "GET /admin/ HTTP/1.1" 200 19489
+[25/Sep/2023 10:19:59] "GET /admin/ HTTP/1.1" 200 19489
+[25/Sep/2023 10:20:01] "GET /admin/core/stage/ HTTP/1.1" 200 16050
+[25/Sep/2023 10:20:01] "GET /static/static/admin/js/jquery.init.js HTTP/1.1" 200 347
+[25/Sep/2023 10:20:01] "GET /admin/jsi18n/ HTTP/1.1" 200 3333
+[25/Sep/2023 10:20:01] "GET /static/static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[25/Sep/2023 10:20:03] "GET /admin/core/contracts/ HTTP/1.1" 200 38136
+[25/Sep/2023 10:20:03] "GET /admin/jsi18n/ HTTP/1.1" 200 3333
+[25/Sep/2023 10:20:09] "GET /admin/core/contracts/6077/change/ HTTP/1.1" 200 27405
+[25/Sep/2023 10:20:09] "GET /admin/jsi18n/ HTTP/1.1" 200 3333
+[25/Sep/2023 10:20:09] "GET /static/static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+[25/Sep/2023 10:20:09] "GET /static/static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+[25/Sep/2023 10:20:09] "GET /static/static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+[25/Sep/2023 10:20:09] "GET /static/static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+[25/Sep/2023 10:20:11] "GET /admin/core/contracts/ HTTP/1.1" 200 38136
+[25/Sep/2023 10:20:12] "GET /admin/core/contracts/6078/change/ HTTP/1.1" 200 27442
+[25/Sep/2023 10:20:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3333
+[25/Sep/2023 10:20:14] "GET /admin/core/contracts/ HTTP/1.1" 200 38136
+[25/Sep/2023 10:20:15] "GET /admin/core/contracts/6080/change/ HTTP/1.1" 200 27378
+[25/Sep/2023 10:20:16] "GET /admin/jsi18n/ HTTP/1.1" 200 3333
+[25/Sep/2023 10:20:17] "GET /admin/core/contracts/ HTTP/1.1" 200 38136
+[25/Sep/2023 10:20:18] "GET /admin/core/contracts/6081/change/ HTTP/1.1" 200 27414
+[25/Sep/2023 10:20:19] "GET /admin/jsi18n/ HTTP/1.1" 200 3333
+[25/Sep/2023 10:20:21] "GET /admin/core/contracts/ HTTP/1.1" 200 38136
+[25/Sep/2023 10:20:22] "GET /admin/core/contracts/6080/change/ HTTP/1.1" 200 27378
+[25/Sep/2023 10:20:23] "GET /admin/jsi18n/ HTTP/1.1" 200 3333
+[25/Sep/2023 10:20:27] "GET /admin/core/contracts/ HTTP/1.1" 200 38136
+[25/Sep/2023 10:20:43] "GET /admin/core/contracts/6078/change/ HTTP/1.1" 200 27442
+[25/Sep/2023 10:20:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3333
+[25/Sep/2023 10:20:44] "GET /admin/core/contracts/6078/delete/ HTTP/1.1" 200 14754
+[25/Sep/2023 10:20:44] "GET /static/static/admin/js/cancel.js HTTP/1.1" 200 884
+Not Found: /favicon.ico
+[25/Sep/2023 10:20:45] "GET /favicon.ico HTTP/1.1" 404 3055
+[25/Sep/2023 10:20:46] "POST /admin/core/contracts/6078/delete/ HTTP/1.1" 302 0
+[25/Sep/2023 10:20:46] "GET /admin/core/contracts/ HTTP/1.1" 200 38303
+[25/Sep/2023 10:20:46] "GET /admin/jsi18n/ HTTP/1.1" 200 3333
+[25/Sep/2023 10:20:46] "GET /static/static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[25/Sep/2023 10:20:48] "GET /admin/core/contracts/6079/change/ HTTP/1.1" 200 27446
+[25/Sep/2023 10:20:48] "GET /admin/jsi18n/ HTTP/1.1" 200 3333
+[25/Sep/2023 10:20:49] "GET /admin/core/contracts/6079/delete/ HTTP/1.1" 200 14754
+[25/Sep/2023 10:20:50] "POST /admin/core/contracts/6079/delete/ HTTP/1.1" 302 0
+[25/Sep/2023 10:20:51] "GET /admin/core/contracts/ HTTP/1.1" 200 38301
+[25/Sep/2023 10:20:51] "GET /admin/jsi18n/ HTTP/1.1" 200 3333
+[25/Sep/2023 10:20:52] "GET /admin/core/contracts/6080/change/ HTTP/1.1" 200 27378
+[25/Sep/2023 10:20:53] "GET /admin/jsi18n/ HTTP/1.1" 200 3333
+[25/Sep/2023 10:20:54] "GET /admin/core/contracts/6080/delete/ HTTP/1.1" 200 14754
+[25/Sep/2023 10:20:55] "POST /admin/core/contracts/6080/delete/ HTTP/1.1" 302 0
+[25/Sep/2023 10:20:55] "GET /admin/core/contracts/ HTTP/1.1" 200 38300
+[25/Sep/2023 10:20:56] "GET /admin/jsi18n/ HTTP/1.1" 200 3333
+[25/Sep/2023 10:20:57] "GET /admin/core/contracts/6081/change/ HTTP/1.1" 200 27414
+[25/Sep/2023 10:20:57] "GET /admin/jsi18n/ HTTP/1.1" 200 3333
+[25/Sep/2023 10:20:58] "GET /admin/core/contracts/6081/delete/ HTTP/1.1" 200 14754
+[25/Sep/2023 10:21:00] "POST /admin/core/contracts/6081/delete/ HTTP/1.1" 302 0
+[25/Sep/2023 10:21:00] "GET /admin/core/contracts/ HTTP/1.1" 200 38306
+[25/Sep/2023 10:21:01] "GET /admin/jsi18n/ HTTP/1.1" 200 3333
+[25/Sep/2023 10:21:05] "GET /admin/core/contracts/6077/change/ HTTP/1.1" 200 27405
+[25/Sep/2023 10:21:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3333
+[25/Sep/2023 10:21:07] "GET /admin/core/contracts/ HTTP/1.1" 200 38140
+[25/Sep/2023 10:22:34] "OPTIONS /api/user/me/ HTTP/1.1" 200 0
+[25/Sep/2023 10:22:34] "OPTIONS /api/sales/contract/?contract-status=1 HTTP/1.1" 200 0
+[25/Sep/2023 10:22:34] "OPTIONS /api/user/me/ HTTP/1.1" 200 0
+[25/Sep/2023 10:22:34] "OPTIONS /api/sales/contract/?contract-status=1 HTTP/1.1" 200 0
+[25/Sep/2023 10:22:34] "GET /api/user/me/ HTTP/1.1" 200 187
+[25/Sep/2023 10:22:34] "GET /api/user/me/ HTTP/1.1" 200 187
+[25/Sep/2023 10:22:34] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:22:34] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:22:36] "GET /api/user/me/ HTTP/1.1" 200 187
+[25/Sep/2023 10:22:36] "GET /api/user/me/ HTTP/1.1" 200 187
+[25/Sep/2023 10:22:37] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:22:37] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:25:05] "GET /api/user/me/ HTTP/1.1" 200 187
+[25/Sep/2023 10:25:05] "GET /api/user/me/ HTTP/1.1" 200 187
+[25/Sep/2023 10:25:06] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:25:06] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:25:13] "GET /api/user/me/ HTTP/1.1" 200 187
+[25/Sep/2023 10:25:13] "GET /api/user/me/ HTTP/1.1" 200 187
+[25/Sep/2023 10:25:13] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:25:13] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:25:14] "GET /api/user/me/ HTTP/1.1" 200 187
+[25/Sep/2023 10:25:14] "GET /api/user/me/ HTTP/1.1" 200 187
+[25/Sep/2023 10:25:14] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:25:14] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:27:32] "GET /api/user/me/ HTTP/1.1" 200 187
+[25/Sep/2023 10:27:32] "GET /api/user/me/ HTTP/1.1" 200 187
+[25/Sep/2023 10:27:33] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:27:33] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:27:40] "GET /api/user/me/ HTTP/1.1" 200 187
+[25/Sep/2023 10:27:40] "GET /api/user/me/ HTTP/1.1" 200 187
+[25/Sep/2023 10:27:40] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:27:41] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:27:42] "GET /api/user/me/ HTTP/1.1" 200 187
+[25/Sep/2023 10:27:42] "GET /api/user/me/ HTTP/1.1" 200 187
+[25/Sep/2023 10:27:42] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:27:42] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:27:43] "GET /api/user/me/ HTTP/1.1" 200 187
+[25/Sep/2023 10:27:43] "GET /api/user/me/ HTTP/1.1" 200 187
+[25/Sep/2023 10:27:44] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:27:44] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:27:59] "GET /api/user/me/ HTTP/1.1" 200 187
+[25/Sep/2023 10:27:59] "GET /api/user/me/ HTTP/1.1" 200 187
+[25/Sep/2023 10:27:59] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:27:59] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:28:03] "OPTIONS /api/user/token/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:04] "POST /api/user/token/ HTTP/1.1" 200 52
+[25/Sep/2023 10:28:04] "GET /api/user/me/ HTTP/1.1" 200 187
+[25/Sep/2023 10:28:04] "GET /api/user/me/ HTTP/1.1" 200 187
+[25/Sep/2023 10:28:04] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:28:04] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:28:07] "GET /api/user/me/ HTTP/1.1" 200 187
+[25/Sep/2023 10:28:07] "GET /api/user/me/ HTTP/1.1" 200 187
+[25/Sep/2023 10:28:07] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:28:07] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:28:13] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:28:14] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:28:14] "OPTIONS /api/sales/contract/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:14] "OPTIONS /api/user/users/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:14] "OPTIONS /api/sales/packages/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:14] "OPTIONS /api/sales/contract-status/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:14] "GET /api/user/me/ HTTP/1.1" 200 187
+[25/Sep/2023 10:28:14] "OPTIONS /api/taskmanager/payment/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:14] "OPTIONS /api/taskmanager/installationConfirm/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:14] "GET /api/user/me/ HTTP/1.1" 200 187
+/home/sales_mis/Task_Manager_Platform/env/lib/python3.10/site-packages/rest_framework/pagination.py:200: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'core.models.ContractStatus'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+[25/Sep/2023 10:28:14] "GET /api/sales/contract-status/ HTTP/1.1" 200 204
+[25/Sep/2023 10:28:14] "OPTIONS /api/taskmanager/task/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:14] "OPTIONS /api/user/users/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:14] "GET /api/taskmanager/payment/ HTTP/1.1" 200 52
+[25/Sep/2023 10:28:14] "GET /api/taskmanager/installationConfirm/ HTTP/1.1" 200 174
+[25/Sep/2023 10:28:14] "OPTIONS /api/taskmanager/stage/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:14] "OPTIONS /api/taskmanager/project/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:14] "GET /api/sales/packages/ HTTP/1.1" 200 35579
+/home/sales_mis/Task_Manager_Platform/env/lib/python3.10/site-packages/rest_framework/pagination.py:200: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'core.models.Stage'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+[25/Sep/2023 10:28:14] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 10:28:14] "OPTIONS /api/sales/contract/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:14] "GET /api/taskmanager/stage/ HTTP/1.1" 200 158
+[25/Sep/2023 10:28:15] "OPTIONS /api/user/users/ HTTP/1.1" 200 0
+/home/sales_mis/Task_Manager_Platform/env/lib/python3.10/site-packages/rest_framework/pagination.py:200: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'core.models.Project'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+[25/Sep/2023 10:28:15] "GET /api/taskmanager/task/ HTTP/1.1" 200 2724
+[25/Sep/2023 10:28:15] "GET /api/taskmanager/project/ HTTP/1.1" 200 208
+[25/Sep/2023 10:28:15] "OPTIONS /api/taskmanager/tag/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:15] "OPTIONS /api/sales/contract-status/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:15] "OPTIONS /api/sales/packages/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:15] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 10:28:15] "OPTIONS /api/taskmanager/payment/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:15] "GET /uploads/user/39b920ce-9e0d-4042-a68e-9b35cc5dc8cf.png HTTP/1.1" 304 0
+[25/Sep/2023 10:28:15] "GET /uploads/user/8d8c1452-5a2b-40b2-a2e1-f362291ba640.png HTTP/1.1" 304 0
+[25/Sep/2023 10:28:15] "GET /uploads/user/45688fe3-d268-419a-86f0-1d54eb1a13b5.png HTTP/1.1" 304 0
+[25/Sep/2023 10:28:15] "GET /uploads/user/cb5a6c43-6530-4561-8be7-9174024d5e92.png HTTP/1.1" 304 0
+/home/sales_mis/Task_Manager_Platform/env/lib/python3.10/site-packages/rest_framework/pagination.py:200: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'core.models.Tag'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+Not Found: /uploads/user/57925e3f-cf4a-4a4f-8f74-5d28e9bf4733.jpg
+[25/Sep/2023 10:28:15] "GET /uploads/user/57925e3f-cf4a-4a4f-8f74-5d28e9bf4733.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 10:28:15] "GET /api/taskmanager/tag/ HTTP/1.1" 200 101
+[25/Sep/2023 10:28:15] "GET /uploads/user/ed556967-2dc7-48dd-ada3-f9984a5482b7.png HTTP/1.1" 304 0
+[25/Sep/2023 10:28:15] "GET /uploads/user/861cd542-c5d7-4d2c-8f14-58e98900be9f.png HTTP/1.1" 200 250306
+[25/Sep/2023 10:28:15] "GET /api/sales/contract-status/ HTTP/1.1" 200 204
+[25/Sep/2023 10:28:15] "GET /uploads/user/7b6cb20b-bf23-4b28-be41-061df98f9455.png HTTP/1.1" 200 250306
+Not Found: /uploads/user/26eb6e8d-aa35-4032-b564-439ddbde463a.jpg
+[25/Sep/2023 10:28:15] "GET /uploads/user/b521b434-6a65-4d92-abd1-26d34956e1e1.png HTTP/1.1" 200 250306
+[25/Sep/2023 10:28:15] "GET /api/taskmanager/payment/ HTTP/1.1" 200 52
+[25/Sep/2023 10:28:15] "GET /uploads/user/371ef277-b75e-4e65-bdce-6d6aaf21295c.png HTTP/1.1" 304 0
+[25/Sep/2023 10:28:15] "GET /uploads/user/26eb6e8d-aa35-4032-b564-439ddbde463a.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 10:28:15] "GET /api/user/users/ HTTP/1.1" 200 4824
+Not Found: /uploads/user/21916a40-1865-4583-bd0f-8d3c84a3c525.jpg
+[25/Sep/2023 10:28:15] "GET /uploads/user/6afe8232-1a24-4788-81f0-d98ba5a3bb41.png HTTP/1.1" 200 250306
+Not Found: /uploads/user/b3c92f43-a458-4bea-8076-448aca8495f6.jpg
+[25/Sep/2023 10:28:15] "GET /uploads/user/0463d160-f0e9-44c7-a457-062621e314d9.png HTTP/1.1" 200 250306
+[25/Sep/2023 10:28:15] "GET /uploads/user/21916a40-1865-4583-bd0f-8d3c84a3c525.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 10:28:15] "GET /uploads/user/b3c92f43-a458-4bea-8076-448aca8495f6.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 10:28:15] "GET /api/sales/packages/ HTTP/1.1" 200 35579
+[25/Sep/2023 10:28:15] "OPTIONS /api/taskmanager/installationConfirm/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:15] "GET /uploads/user/8bd14d84-b8c5-407f-8017-f93d2fc4a2aa.png HTTP/1.1" 200 250306
+[25/Sep/2023 10:28:16] "OPTIONS /api/taskmanager/task/ HTTP/1.1" 200 0
+Not Found: /uploads/user/31309ece-29d1-462c-bb28-9436ef370aee.jpg
+[25/Sep/2023 10:28:16] "GET /uploads/user/e43bcce1-7328-4fa7-b540-8a367fac43ba.png HTTP/1.1" 200 250306
+[25/Sep/2023 10:28:16] "GET /uploads/user/ba081bea-0b10-4de0-a6b8-c919630ad4fa.png HTTP/1.1" 200 250306
+[25/Sep/2023 10:28:16] "GET /uploads/user/31309ece-29d1-462c-bb28-9436ef370aee.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 10:28:16] "OPTIONS /api/taskmanager/stage/ HTTP/1.1" 200 0
+Not Found: /uploads/user/55027785-295c-4c51-9f03-b1ed05e0ce8f.jpg
+[25/Sep/2023 10:28:16] "GET /uploads/user/55027785-295c-4c51-9f03-b1ed05e0ce8f.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 10:28:16] "GET /uploads/user/b517dc93-0f58-4821-90ce-7ca357403a57.png HTTP/1.1" 304 0
+[25/Sep/2023 10:28:16] "GET /uploads/user/e513c145-a738-4683-8a57-d0677fd6ddf2.png HTTP/1.1" 200 250306
+[25/Sep/2023 10:28:16] "GET /uploads/user/ed2728a5-2199-40af-b569-2a25bc362110.png HTTP/1.1" 304 0
+[25/Sep/2023 10:28:16] "GET /api/taskmanager/installationConfirm/ HTTP/1.1" 200 174
+Not Found: /uploads/user/2e9aea7b-10c9-47fb-91ed-aa52bc3e8612.jpg
+[25/Sep/2023 10:28:16] "GET /uploads/user/2e9aea7b-10c9-47fb-91ed-aa52bc3e8612.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 10:28:16] "GET /uploads/user/4c1dc25d-b315-447a-9013-6e897517a9a4.png HTTP/1.1" 200 250306
+[25/Sep/2023 10:28:16] "GET /api/taskmanager/stage/ HTTP/1.1" 200 158
+[25/Sep/2023 10:28:16] "OPTIONS /api/user/users/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:16] "OPTIONS /api/taskmanager/project/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:16] "GET /api/taskmanager/task/ HTTP/1.1" 200 2724
+[25/Sep/2023 10:28:16] "GET /api/taskmanager/project/ HTTP/1.1" 200 208
+[25/Sep/2023 10:28:16] "OPTIONS /api/taskmanager/tag/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:16] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:28:16] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:28:17] "GET /api/taskmanager/tag/ HTTP/1.1" 200 101
+[25/Sep/2023 10:28:17] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 10:28:18] "OPTIONS /api/sales/router/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:18] "OPTIONS /api/sales/antenna/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:18] "GET /api/user/me/ HTTP/1.1" 200 187
+[25/Sep/2023 10:28:18] "GET /api/sales/contract/ HTTP/1.1" 200 147347
+[25/Sep/2023 10:28:18] "GET /api/user/me/ HTTP/1.1" 200 187
+[25/Sep/2023 10:28:18] "GET /api/sales/contract-status/ HTTP/1.1" 200 204
+[25/Sep/2023 10:28:18] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 10:28:18] "GET /api/sales/antenna/ HTTP/1.1" 200 2149
+[25/Sep/2023 10:28:18] "GET /api/sales/packages/ HTTP/1.1" 200 35579
+[25/Sep/2023 10:28:18] "GET /api/sales/contract-status/ HTTP/1.1" 200 204
+[25/Sep/2023 10:28:18] "GET /api/sales/router/ HTTP/1.1" 200 2329
+[25/Sep/2023 10:28:18] "GET /api/sales/packages/ HTTP/1.1" 200 35579
+[25/Sep/2023 10:28:18] "GET /api/sales/router/ HTTP/1.1" 200 2329
+[25/Sep/2023 10:28:18] "GET /api/sales/antenna/ HTTP/1.1" 200 2149
+[25/Sep/2023 10:28:18] "GET /api/sales/contract-status/ HTTP/1.1" 200 204
+[25/Sep/2023 10:28:19] "GET /api/sales/contract/ HTTP/1.1" 200 147347
+[25/Sep/2023 10:28:19] "GET /api/user/me/ HTTP/1.1" 200 187
+[25/Sep/2023 10:28:19] "GET /api/sales/contract-status/ HTTP/1.1" 200 204
+[25/Sep/2023 10:28:19] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 10:28:19] "GET /api/user/me/ HTTP/1.1" 200 187
+[25/Sep/2023 10:28:19] "GET /api/sales/antenna/ HTTP/1.1" 200 2149
+[25/Sep/2023 10:28:19] "GET /api/sales/contract-status/ HTTP/1.1" 200 204
+[25/Sep/2023 10:28:19] "GET /api/sales/router/ HTTP/1.1" 200 2329
+[25/Sep/2023 10:28:19] "GET /api/user/me/ HTTP/1.1" 200 187
+[25/Sep/2023 10:28:19] "GET /api/sales/router/ HTTP/1.1" 200 2329
+[25/Sep/2023 10:28:20] "GET /api/sales/antenna/ HTTP/1.1" 200 2149
+[25/Sep/2023 10:28:20] "GET /api/sales/antenna/ HTTP/1.1" 200 2149
+[25/Sep/2023 10:28:20] "GET /api/sales/packages/ HTTP/1.1" 200 35579
+[25/Sep/2023 10:28:20] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 10:28:20] "GET /api/sales/router/ HTTP/1.1" 200 2329
+[25/Sep/2023 10:28:20] "GET /api/user/me/ HTTP/1.1" 200 187
+[25/Sep/2023 10:28:20] "GET /api/sales/packages/ HTTP/1.1" 200 35579
+[25/Sep/2023 10:28:21] "GET /api/sales/contract-status/ HTTP/1.1" 200 204
+[25/Sep/2023 10:28:21] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 10:28:23] "OPTIONS /api/user/me/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:23] "OPTIONS /api/sales/contract/?contract-status=1 HTTP/1.1" 200 0
+[25/Sep/2023 10:28:23] "OPTIONS /api/user/me/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:23] "OPTIONS /api/sales/contract/?contract-status=1 HTTP/1.1" 200 0
+[25/Sep/2023 10:28:23] "GET /api/user/me/ HTTP/1.1" 200 186
+[25/Sep/2023 10:28:23] "GET /api/user/me/ HTTP/1.1" 200 186
+[25/Sep/2023 10:28:24] "GET /api/sales/contract/ HTTP/1.1" 200 147347
+[25/Sep/2023 10:28:24] "OPTIONS /api/sales/contract-types/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:24] "OPTIONS /api/sales/contract-currency/ HTTP/1.1" 200 0
+/home/sales_mis/Task_Manager_Platform/env/lib/python3.10/site-packages/rest_framework/pagination.py:200: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'core.models.ContractTypes'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+[25/Sep/2023 10:28:24] "GET /api/sales/contract-types/ HTTP/1.1" 200 153
+/home/sales_mis/Task_Manager_Platform/env/lib/python3.10/site-packages/rest_framework/pagination.py:200: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'core.models.ContractCurrency'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+[25/Sep/2023 10:28:24] "GET /api/sales/contract-currency/ HTTP/1.1" 200 95
+[25/Sep/2023 10:28:24] "OPTIONS /api/sales/router/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:24] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:28:24] "OPTIONS /api/sales/antenna/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:24] "GET /api/sales/contract/ HTTP/1.1" 200 147347
+[25/Sep/2023 10:28:24] "GET /api/sales/router/ HTTP/1.1" 200 2329
+[25/Sep/2023 10:28:24] "GET /api/sales/contract/ HTTP/1.1" 200 147347
+[25/Sep/2023 10:28:24] "GET /uploads/user/4c1dc25d-b315-447a-9013-6e897517a9a4.png HTTP/1.1" 304 0
+[25/Sep/2023 10:28:24] "GET /api/sales/antenna/ HTTP/1.1" 200 2149
+[25/Sep/2023 10:28:25] "GET /api/sales/contract/ HTTP/1.1" 200 147347
+[25/Sep/2023 10:28:25] "GET /api/sales/contract/ HTTP/1.1" 200 147347
+[25/Sep/2023 10:28:25] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:28:26] "OPTIONS /api/sales/contract-types/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:27] "OPTIONS /api/sales/contract-currency/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:28] "OPTIONS /api/sales/packages/?available=true HTTP/1.1" 200 0
+[25/Sep/2023 10:28:28] "GET /api/sales/contract-types/ HTTP/1.1" 200 153
+[25/Sep/2023 10:28:28] "OPTIONS /api/sales/contract-types/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:28] "GET /api/sales/contract-currency/ HTTP/1.1" 200 95
+[25/Sep/2023 10:28:28] "GET /api/sales/contract/ HTTP/1.1" 200 147347
+[25/Sep/2023 10:28:28] "OPTIONS /api/sales/contract-currency/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:28] "GET /api/sales/packages/?available=true HTTP/1.1" 200 27515
+[25/Sep/2023 10:28:28] "OPTIONS /api/sales/packages/?available=true HTTP/1.1" 200 0
+[25/Sep/2023 10:28:28] "GET /api/sales/contract-types/ HTTP/1.1" 200 153
+[25/Sep/2023 10:28:28] "OPTIONS /api/sales/contract-types/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:28] "OPTIONS /api/sales/contract-currency/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:29] "GET /api/sales/contract-currency/ HTTP/1.1" 200 95
+[25/Sep/2023 10:28:29] "OPTIONS /api/sales/contract-types/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:29] "OPTIONS /api/sales/contract-currency/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:29] "OPTIONS /api/sales/contract-types/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:29] "OPTIONS /api/sales/contract-currency/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:29] "GET /api/sales/packages/?available=true HTTP/1.1" 200 27515
+[25/Sep/2023 10:28:29] "GET /api/sales/contract-currency/ HTTP/1.1" 200 95
+[25/Sep/2023 10:28:29] "GET /api/sales/contract-types/ HTTP/1.1" 200 153
+[25/Sep/2023 10:28:29] "GET /api/sales/contract-currency/ HTTP/1.1" 200 95
+[25/Sep/2023 10:28:29] "GET /api/sales/contract-currency/ HTTP/1.1" 200 95
+[25/Sep/2023 10:28:29] "GET /api/sales/contract-types/ HTTP/1.1" 200 153
+[25/Sep/2023 10:28:29] "GET /api/sales/contract-types/ HTTP/1.1" 200 153
+[25/Sep/2023 10:28:37] "GET /api/sales/antenna/ HTTP/1.1" 200 2149
+[25/Sep/2023 10:28:37] "GET /api/sales/contract-types/ HTTP/1.1" 200 153
+[25/Sep/2023 10:28:37] "GET /api/user/me/ HTTP/1.1" 200 187
+[25/Sep/2023 10:28:37] "GET /api/sales/contract-currency/ HTTP/1.1" 200 95
+[25/Sep/2023 10:28:37] "GET /api/sales/router/ HTTP/1.1" 200 2329
+[25/Sep/2023 10:28:37] "GET /api/sales/contract-status/ HTTP/1.1" 200 204
+[25/Sep/2023 10:28:37] "GET /api/sales/packages/?available=true HTTP/1.1" 200 27515
+[25/Sep/2023 10:28:37] "GET /api/sales/packages/?available=true HTTP/1.1" 200 27515
+[25/Sep/2023 10:28:37] "GET /api/user/me/ HTTP/1.1" 200 187
+[25/Sep/2023 10:28:37] "GET /api/sales/router/ HTTP/1.1" 200 2329
+[25/Sep/2023 10:28:37] "GET /api/sales/contract-currency/ HTTP/1.1" 200 95
+[25/Sep/2023 10:28:37] "GET /api/sales/contract-status/ HTTP/1.1" 200 204
+[25/Sep/2023 10:28:37] "GET /api/sales/antenna/ HTTP/1.1" 200 2149
+[25/Sep/2023 10:28:37] "GET /api/sales/contract-types/ HTTP/1.1" 200 153
+[25/Sep/2023 10:28:38] "GET /api/user/me/ HTTP/1.1" 200 187
+[25/Sep/2023 10:28:38] "GET /api/sales/router/ HTTP/1.1" 200 2329
+[25/Sep/2023 10:28:38] "GET /api/sales/contract-types/ HTTP/1.1" 200 153
+[25/Sep/2023 10:28:38] "GET /api/sales/antenna/ HTTP/1.1" 200 2149
+[25/Sep/2023 10:28:38] "GET /api/sales/packages/ HTTP/1.1" 200 35579
+[25/Sep/2023 10:28:38] "GET /api/sales/contract-status/ HTTP/1.1" 200 204
+[25/Sep/2023 10:28:38] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 10:28:39] "GET /api/sales/contract-currency/ HTTP/1.1" 200 95
+[25/Sep/2023 10:28:39] "GET /api/sales/contract-status/ HTTP/1.1" 200 204
+[25/Sep/2023 10:28:39] "GET /api/sales/contract-currency/ HTTP/1.1" 200 95
+[25/Sep/2023 10:28:39] "GET /api/user/me/ HTTP/1.1" 200 187
+[25/Sep/2023 10:28:39] "GET /api/sales/contract-types/ HTTP/1.1" 200 153
+[25/Sep/2023 10:28:39] "GET /api/sales/router/ HTTP/1.1" 200 2329
+[25/Sep/2023 10:28:39] "GET /api/sales/antenna/ HTTP/1.1" 200 2149
+[25/Sep/2023 10:28:39] "GET /api/sales/packages/ HTTP/1.1" 200 35579
+[25/Sep/2023 10:28:40] "GET /api/user/users/ HTTP/1.1" 200 4824
+Unauthorized: /api/taskmanager/task/
+[25/Sep/2023 10:28:40] "GET /api/taskmanager/task/ HTTP/1.1" 401 58
+[25/Sep/2023 10:28:40] "GET /api/taskmanager/project/ HTTP/1.1" 200 208
+[25/Sep/2023 10:28:40] "GET /api/taskmanager/tag/ HTTP/1.1" 200 101
+[25/Sep/2023 10:28:40] "GET /api/user/me/ HTTP/1.1" 200 187
+[25/Sep/2023 10:28:40] "GET /api/taskmanager/payment/ HTTP/1.1" 200 52
+[25/Sep/2023 10:28:40] "GET /api/taskmanager/stage/ HTTP/1.1" 200 158
+[25/Sep/2023 10:28:40] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 10:28:41] "GET /api/taskmanager/installationConfirm/ HTTP/1.1" 200 174
+[25/Sep/2023 10:28:41] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 10:28:41] "GET /api/taskmanager/task/ HTTP/1.1" 200 2724
+Not Found: /uploads/user/b3c92f43-a458-4bea-8076-448aca8495f6.jpg
+[25/Sep/2023 10:28:41] "GET /uploads/user/b3c92f43-a458-4bea-8076-448aca8495f6.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/57925e3f-cf4a-4a4f-8f74-5d28e9bf4733.jpg
+Not Found: /uploads/user/26eb6e8d-aa35-4032-b564-439ddbde463a.jpg
+[25/Sep/2023 10:28:41] "GET /uploads/user/57925e3f-cf4a-4a4f-8f74-5d28e9bf4733.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/57925e3f-cf4a-4a4f-8f74-5d28e9bf4733.jpg
+[25/Sep/2023 10:28:41] "GET /api/taskmanager/stage/ HTTP/1.1" 200 158
+Not Found: /uploads/user/21916a40-1865-4583-bd0f-8d3c84a3c525.jpg
+[25/Sep/2023 10:28:41] "GET /api/taskmanager/installationConfirm/ HTTP/1.1" 200 174
+[25/Sep/2023 10:28:41] "GET /uploads/user/21916a40-1865-4583-bd0f-8d3c84a3c525.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 10:28:41] "GET /uploads/user/57925e3f-cf4a-4a4f-8f74-5d28e9bf4733.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 10:28:41] "GET /uploads/user/26eb6e8d-aa35-4032-b564-439ddbde463a.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/b3c92f43-a458-4bea-8076-448aca8495f6.jpg
+[25/Sep/2023 10:28:41] "GET /uploads/user/b3c92f43-a458-4bea-8076-448aca8495f6.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/26eb6e8d-aa35-4032-b564-439ddbde463a.jpg
+[25/Sep/2023 10:28:41] "GET /uploads/user/26eb6e8d-aa35-4032-b564-439ddbde463a.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/31309ece-29d1-462c-bb28-9436ef370aee.jpg
+[25/Sep/2023 10:28:41] "GET /api/taskmanager/payment/ HTTP/1.1" 200 52
+Not Found: /uploads/user/21916a40-1865-4583-bd0f-8d3c84a3c525.jpg
+[25/Sep/2023 10:28:41] "GET /uploads/user/21916a40-1865-4583-bd0f-8d3c84a3c525.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 10:28:41] "GET /uploads/user/31309ece-29d1-462c-bb28-9436ef370aee.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/55027785-295c-4c51-9f03-b1ed05e0ce8f.jpg
+[25/Sep/2023 10:28:41] "GET /uploads/user/55027785-295c-4c51-9f03-b1ed05e0ce8f.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/2e9aea7b-10c9-47fb-91ed-aa52bc3e8612.jpg
+[25/Sep/2023 10:28:41] "GET /uploads/user/2e9aea7b-10c9-47fb-91ed-aa52bc3e8612.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 10:28:41] "GET /api/taskmanager/task/ HTTP/1.1" 200 2724
+[25/Sep/2023 10:28:41] "GET /api/user/me/ HTTP/1.1" 200 187
+Unauthorized: /api/taskmanager/task/
+[25/Sep/2023 10:28:41] "GET /api/taskmanager/task/ HTTP/1.1" 401 58
+[25/Sep/2023 10:28:41] "GET /api/taskmanager/tag/ HTTP/1.1" 200 101
+[25/Sep/2023 10:28:41] "GET /api/taskmanager/project/ HTTP/1.1" 200 208
+[25/Sep/2023 10:28:42] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 10:28:42] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 10:28:42] "OPTIONS /api/taskmanager/task/?contract__contract_number=&created_after=&created_before=&deadline_after=&deadline_before=&ordering=undefinedundefined&project=&stage=&tag=&assigned__id=8&contract__contract_id= HTTP/1.1" 200 0
+[25/Sep/2023 10:28:42] "GET /api/sales/contract/ HTTP/1.1" 200 147347
+[25/Sep/2023 10:28:42] "GET /api/taskmanager/task/?contract__contract_number=&created_after=&created_before=&deadline_after=&deadline_before=&ordering=undefinedundefined&project=&stage=&tag=&assigned__id=8&contract__contract_id= HTTP/1.1" 200 2101
+[25/Sep/2023 10:28:42] "GET /api/sales/contract/ HTTP/1.1" 200 147347
+[25/Sep/2023 10:28:43] "GET /api/sales/contract/ HTTP/1.1" 200 147347
+[25/Sep/2023 10:28:43] "GET /api/sales/contract/ HTTP/1.1" 200 147347
+[25/Sep/2023 10:28:44] "GET /api/taskmanager/task/?contract__contract_number=&created_after=&created_before=&deadline_after=&deadline_before=&ordering=undefinedundefined&project=&stage=&tag=&assigned__id=8&contract__contract_id= HTTP/1.1" 200 2101
+[25/Sep/2023 10:28:44] "GET /api/sales/contract/ HTTP/1.1" 200 147347
+[25/Sep/2023 10:28:44] "GET /api/sales/contract/ HTTP/1.1" 200 147347
+[25/Sep/2023 10:28:44] "GET /api/taskmanager/task/?contract__contract_number=&created_after=&created_before=&deadline_after=&deadline_before=&ordering=undefinedundefined&project=&stage=&tag=&assigned__id=8&contract__contract_id= HTTP/1.1" 200 2101
+[25/Sep/2023 10:28:45] "GET /api/taskmanager/task/?contract__contract_number=&created_after=&created_before=&deadline_after=&deadline_before=&ordering=undefinedundefined&project=&stage=&tag=&assigned__id=8&contract__contract_id= HTTP/1.1" 200 2101
+[25/Sep/2023 10:28:46] "GET /api/taskmanager/task/?contract__contract_number=&created_after=&created_before=&deadline_after=&deadline_before=&ordering=undefinedundefined&project=&stage=&tag=&assigned__id=8&contract__contract_id= HTTP/1.1" 200 2101
+[25/Sep/2023 10:28:46] "GET /api/user/me/ HTTP/1.1" 200 186
+[25/Sep/2023 10:28:46] "GET /api/user/me/ HTTP/1.1" 200 186
+[25/Sep/2023 10:28:46] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:28:46] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:28:56] "OPTIONS /api/sales/router/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:56] "OPTIONS /api/sales/antenna/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:56] "OPTIONS /api/sales/packages/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:56] "OPTIONS /api/sales/contract/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:56] "OPTIONS /api/user/users/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:56] "OPTIONS /api/sales/contract-types/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:56] "OPTIONS /api/sales/contract-status/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:56] "OPTIONS /api/sales/contract-currency/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:56] "OPTIONS /api/sales/antenna/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:56] "OPTIONS /api/sales/packages/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:56] "OPTIONS /api/sales/router/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:56] "OPTIONS /api/sales/contract/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:56] "OPTIONS /api/user/users/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:56] "OPTIONS /api/sales/contract-types/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:56] "OPTIONS /api/sales/contract-status/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:56] "OPTIONS /api/sales/contract-currency/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:57] "GET /api/sales/router/ HTTP/1.1" 200 2329
+[25/Sep/2023 10:28:57] "GET /api/sales/antenna/ HTTP/1.1" 200 2149
+[25/Sep/2023 10:28:57] "GET /api/sales/packages/ HTTP/1.1" 200 35579
+[25/Sep/2023 10:28:57] "GET /api/sales/contract-types/ HTTP/1.1" 200 153
+[25/Sep/2023 10:28:57] "GET /api/sales/contract-status/ HTTP/1.1" 200 204
+[25/Sep/2023 10:28:57] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 10:28:57] "GET /api/sales/contract-currency/ HTTP/1.1" 200 95
+[25/Sep/2023 10:28:57] "GET /api/user/me/ HTTP/1.1" 200 186
+[25/Sep/2023 10:28:57] "GET /api/sales/antenna/ HTTP/1.1" 200 2149
+[25/Sep/2023 10:28:57] "GET /api/sales/router/ HTTP/1.1" 200 2329
+[25/Sep/2023 10:28:57] "GET /api/sales/contract-types/ HTTP/1.1" 200 153
+[25/Sep/2023 10:28:57] "GET /api/sales/packages/ HTTP/1.1" 200 35579
+[25/Sep/2023 10:28:57] "GET /api/sales/contract-currency/ HTTP/1.1" 200 95
+[25/Sep/2023 10:28:57] "GET /api/user/me/ HTTP/1.1" 200 186
+[25/Sep/2023 10:28:57] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 10:28:57] "GET /api/user/me/ HTTP/1.1" 200 187
+[25/Sep/2023 10:28:57] "GET /api/user/me/ HTTP/1.1" 200 187
+[25/Sep/2023 10:28:57] "GET /api/taskmanager/installationConfirm/ HTTP/1.1" 200 174
+[25/Sep/2023 10:28:57] "GET /api/user/me/ HTTP/1.1" 200 187
+[25/Sep/2023 10:28:57] "GET /api/sales/contract-status/ HTTP/1.1" 200 204
+[25/Sep/2023 10:28:57] "GET /api/taskmanager/payment/ HTTP/1.1" 200 52
+[25/Sep/2023 10:28:57] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 10:28:58] "GET /api/user/me/ HTTP/1.1" 200 187
+[25/Sep/2023 10:28:58] "GET /api/taskmanager/installationConfirm/ HTTP/1.1" 200 174
+[25/Sep/2023 10:28:58] "GET /api/taskmanager/payment/ HTTP/1.1" 200 52
+[25/Sep/2023 10:28:58] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 10:28:58] "GET /api/sales/contract/ HTTP/1.1" 200 147347
+[25/Sep/2023 10:28:59] "OPTIONS /api/taskmanager/task/3/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:59] "OPTIONS /api/taskmanager/installation/?id=3 HTTP/1.1" 200 0
+[25/Sep/2023 10:28:59] "OPTIONS /api/taskmanager/task/3/ HTTP/1.1" 200 0
+[25/Sep/2023 10:28:59] "OPTIONS /api/taskmanager/linkDetails/?id=3 HTTP/1.1" 200 0
+[25/Sep/2023 10:28:59] "OPTIONS /api/taskmanager/taskLog/?id=3 HTTP/1.1" 200 0
+[25/Sep/2023 10:28:59] "GET /api/taskmanager/installation/?id=3 HTTP/1.1" 200 52
+/home/sales_mis/Task_Manager_Platform/env/lib/python3.10/site-packages/rest_framework/pagination.py:200: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'core.models.LinkDetails'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+[25/Sep/2023 10:28:59] "GET /api/taskmanager/linkDetails/?id=3 HTTP/1.1" 200 52
+[25/Sep/2023 10:28:59] "GET /api/taskmanager/task/3/ HTTP/1.1" 200 817
+[25/Sep/2023 10:28:59] "GET /api/taskmanager/taskLog/?id=3 HTTP/1.1" 200 384
+[25/Sep/2023 10:28:59] "GET /api/taskmanager/task/3/ HTTP/1.1" 200 817
+[25/Sep/2023 10:29:00] "GET /api/sales/contract/ HTTP/1.1" 200 147347
+[25/Sep/2023 10:29:01] "OPTIONS /api/taskmanager/installation/?id=3 HTTP/1.1" 200 0
+[25/Sep/2023 10:29:01] "OPTIONS /api/taskmanager/linkDetails/?id=3 HTTP/1.1" 200 0
+[25/Sep/2023 10:29:01] "GET /api/taskmanager/installation/?id=3 HTTP/1.1" 200 52
+[25/Sep/2023 10:29:01] "OPTIONS /api/taskmanager/taskLog/?id=3 HTTP/1.1" 200 0
+[25/Sep/2023 10:29:01] "GET /api/taskmanager/linkDetails/?id=3 HTTP/1.1" 200 52
+[25/Sep/2023 10:29:02] "GET /api/taskmanager/taskLog/?id=3 HTTP/1.1" 200 384
+Not Found: /uploads/user/57925e3f-cf4a-4a4f-8f74-5d28e9bf4733.jpg
+[25/Sep/2023 10:29:05] "GET /uploads/user/57925e3f-cf4a-4a4f-8f74-5d28e9bf4733.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/26eb6e8d-aa35-4032-b564-439ddbde463a.jpg
+[25/Sep/2023 10:29:05] "GET /uploads/user/26eb6e8d-aa35-4032-b564-439ddbde463a.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/21916a40-1865-4583-bd0f-8d3c84a3c525.jpg
+[25/Sep/2023 10:29:05] "GET /uploads/user/21916a40-1865-4583-bd0f-8d3c84a3c525.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/b3c92f43-a458-4bea-8076-448aca8495f6.jpg
+[25/Sep/2023 10:29:05] "GET /uploads/user/b3c92f43-a458-4bea-8076-448aca8495f6.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/31309ece-29d1-462c-bb28-9436ef370aee.jpg
+[25/Sep/2023 10:29:05] "GET /uploads/user/31309ece-29d1-462c-bb28-9436ef370aee.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/55027785-295c-4c51-9f03-b1ed05e0ce8f.jpg
+[25/Sep/2023 10:29:05] "GET /uploads/user/55027785-295c-4c51-9f03-b1ed05e0ce8f.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/2e9aea7b-10c9-47fb-91ed-aa52bc3e8612.jpg
+[25/Sep/2023 10:29:05] "GET /uploads/user/2e9aea7b-10c9-47fb-91ed-aa52bc3e8612.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 10:29:16] "OPTIONS /api/sales/contract/?user=&contract_number=230924-6047&contract_id=&date_after=&date_before=&status=&contractpackage__package= HTTP/1.1" 200 0
+[25/Sep/2023 10:29:16] "GET /api/sales/contract/?user=&contract_number=230924-6047&contract_id=&date_after=&date_before=&status=&contractpackage__package= HTTP/1.1" 200 52
+[25/Sep/2023 10:29:21] "GET /api/sales/contract/?user=&contract_number=230924-6047&contract_id=&date_after=&date_before=&status=&contractpackage__package= HTTP/1.1" 200 52
+[25/Sep/2023 10:29:21] "GET /api/sales/contract/?user=&contract_number=230924-6047&contract_id=&date_after=&date_before=&status=&contractpackage__package= HTTP/1.1" 200 52
+[25/Sep/2023 10:29:25] "OPTIONS /api/sales/contract/?user=&contract_number=230924-6048&contract_id=&date_after=&date_before=&status=&contractpackage__package= HTTP/1.1" 200 0
+[25/Sep/2023 10:29:25] "GET /api/sales/contract/?user=&contract_number=230924-6048&contract_id=&date_after=&date_before=&status=&contractpackage__package= HTTP/1.1" 200 52
+[25/Sep/2023 10:29:27] "GET /api/sales/contract/?user=&contract_number=230924-6048&contract_id=&date_after=&date_before=&status=&contractpackage__package= HTTP/1.1" 200 52
+[25/Sep/2023 10:29:33] "OPTIONS /api/sales/contract/?user=&contract_number=230924-6046&contract_id=&date_after=&date_before=&status=&contractpackage__package= HTTP/1.1" 200 0
+[25/Sep/2023 10:29:33] "GET /api/sales/contract/?user=&contract_number=230924-6046&contract_id=&date_after=&date_before=&status=&contractpackage__package= HTTP/1.1" 200 52
+[25/Sep/2023 10:29:34] "GET /api/sales/contract/?user=&contract_number=230924-6046&contract_id=&date_after=&date_before=&status=&contractpackage__package= HTTP/1.1" 200 52
+[25/Sep/2023 10:29:34] "GET /api/sales/contract/?user=&contract_number=230924-6046&contract_id=&date_after=&date_before=&status=&contractpackage__package= HTTP/1.1" 200 52
+[25/Sep/2023 10:29:34] "GET /api/sales/contract/?user=&contract_number=230924-6046&contract_id=&date_after=&date_before=&status=&contractpackage__package= HTTP/1.1" 200 52
+[25/Sep/2023 10:29:34] "GET /api/sales/contract/?user=&contract_number=230924-6046&contract_id=&date_after=&date_before=&status=&contractpackage__package= HTTP/1.1" 200 52
+[25/Sep/2023 10:29:34] "GET /api/sales/contract/?user=&contract_number=230924-6046&contract_id=&date_after=&date_before=&status=&contractpackage__package= HTTP/1.1" 200 52
+[25/Sep/2023 10:29:34] "GET /api/sales/contract/?user=&contract_number=230924-6046&contract_id=&date_after=&date_before=&status=&contractpackage__package= HTTP/1.1" 200 52
+[25/Sep/2023 10:29:34] "GET /api/sales/contract/?user=&contract_number=230924-6046&contract_id=&date_after=&date_before=&status=&contractpackage__package= HTTP/1.1" 200 52
+[25/Sep/2023 10:29:35] "GET /api/sales/contract/?user=&contract_number=230924-6046&contract_id=&date_after=&date_before=&status=&contractpackage__package= HTTP/1.1" 200 52
+[25/Sep/2023 10:29:35] "GET /api/sales/contract/?user=&contract_number=230924-6046&contract_id=&date_after=&date_before=&status=&contractpackage__package= HTTP/1.1" 200 52
+[25/Sep/2023 10:29:35] "GET /api/sales/contract/?user=&contract_number=230924-6046&contract_id=&date_after=&date_before=&status=&contractpackage__package= HTTP/1.1" 200 52
+[25/Sep/2023 10:29:38] "GET /api/sales/contract/?user=&contract_number=230924-6046&contract_id=&date_after=&date_before=&status=&contractpackage__package= HTTP/1.1" 200 52
+[25/Sep/2023 10:29:38] "GET /api/sales/contract/?user=&contract_number=230924-6046&contract_id=&date_after=&date_before=&status=&contractpackage__package= HTTP/1.1" 200 52
+[25/Sep/2023 10:29:49] "GET /api/user/me/ HTTP/1.1" 200 186
+[25/Sep/2023 10:29:49] "GET /api/sales/router/ HTTP/1.1" 200 2329
+[25/Sep/2023 10:29:49] "GET /api/sales/antenna/ HTTP/1.1" 200 2149
+[25/Sep/2023 10:29:49] "GET /api/sales/contract-types/ HTTP/1.1" 200 153
+[25/Sep/2023 10:29:49] "GET /api/sales/contract-status/ HTTP/1.1" 200 204
+[25/Sep/2023 10:29:49] "GET /api/sales/contract-currency/ HTTP/1.1" 200 95
+[25/Sep/2023 10:29:49] "GET /api/sales/packages/ HTTP/1.1" 200 35579
+[25/Sep/2023 10:29:50] "GET /api/user/me/ HTTP/1.1" 200 186
+[25/Sep/2023 10:29:50] "GET /api/sales/router/ HTTP/1.1" 200 2329
+[25/Sep/2023 10:29:50] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 10:29:50] "GET /api/sales/contract-types/ HTTP/1.1" 200 153
+[25/Sep/2023 10:29:50] "GET /api/sales/antenna/ HTTP/1.1" 200 2149
+[25/Sep/2023 10:29:50] "GET /api/sales/contract-currency/ HTTP/1.1" 200 95
+[25/Sep/2023 10:29:50] "GET /api/sales/contract-status/ HTTP/1.1" 200 204
+[25/Sep/2023 10:29:50] "GET /api/user/me/ HTTP/1.1" 200 186
+[25/Sep/2023 10:29:50] "GET /api/sales/packages/ HTTP/1.1" 200 35579
+[25/Sep/2023 10:29:50] "GET /api/user/me/ HTTP/1.1" 200 186
+[25/Sep/2023 10:29:50] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 10:29:51] "GET /api/sales/contract/ HTTP/1.1" 200 147347
+[25/Sep/2023 10:29:52] "GET /api/sales/contract/ HTTP/1.1" 200 147347
+[25/Sep/2023 10:30:01] "GET /api/sales/contract/?user=&contract_number=230924-6047&contract_id=&date_after=&date_before=&status=&contractpackage__package= HTTP/1.1" 200 52
+[25/Sep/2023 10:30:06] "GET /api/sales/contract/?user=&contract_number=230924-6046&contract_id=&date_after=&date_before=&status=&contractpackage__package= HTTP/1.1" 200 52
+[25/Sep/2023 10:30:08] "GET /api/sales/contract/?user=&contract_number=230924-6046&contract_id=&date_after=&date_before=&status=&contractpackage__package= HTTP/1.1" 200 52
+[25/Sep/2023 10:30:43] "GET /api/user/me/ HTTP/1.1" 200 187
+[25/Sep/2023 10:30:43] "GET /api/user/me/ HTTP/1.1" 200 187
+[25/Sep/2023 10:30:44] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:30:44] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:32:48] "OPTIONS /api/user/token/ HTTP/1.1" 200 0
+[25/Sep/2023 10:32:49] "POST /api/user/token/ HTTP/1.1" 200 52
+[25/Sep/2023 10:32:49] "OPTIONS /api/user/me/ HTTP/1.1" 200 0
+[25/Sep/2023 10:32:49] "OPTIONS /api/user/me/ HTTP/1.1" 200 0
+[25/Sep/2023 10:32:49] "OPTIONS /api/sales/contract/?contract-status=1 HTTP/1.1" 200 0
+[25/Sep/2023 10:32:49] "OPTIONS /api/sales/contract/?contract-status=1 HTTP/1.1" 200 0
+[25/Sep/2023 10:32:49] "GET /api/user/me/ HTTP/1.1" 200 183
+[25/Sep/2023 10:32:50] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:32:50] "GET /api/user/me/ HTTP/1.1" 200 183
+[25/Sep/2023 10:32:50] "GET /uploads/user/45688fe3-d268-419a-86f0-1d54eb1a13b5.png HTTP/1.1" 200 250306
+[25/Sep/2023 10:32:50] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:33:00] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:33:00] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:33:24] "GET /api/user/me/ HTTP/1.1" 200 187
+[25/Sep/2023 10:33:24] "GET /api/user/me/ HTTP/1.1" 200 187
+[25/Sep/2023 10:33:24] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:33:24] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:33:40] "OPTIONS /api/sales/packages/ HTTP/1.1" 200 0
+[25/Sep/2023 10:33:40] "OPTIONS /api/user/users/ HTTP/1.1" 200 0
+[25/Sep/2023 10:33:40] "OPTIONS /api/taskmanager/payment/ HTTP/1.1" 200 0
+[25/Sep/2023 10:33:40] "OPTIONS /api/sales/contract-status/ HTTP/1.1" 200 0
+[25/Sep/2023 10:33:40] "OPTIONS /api/sales/contract/ HTTP/1.1" 200 0
+[25/Sep/2023 10:33:40] "GET /api/user/me/ HTTP/1.1" 200 183
+[25/Sep/2023 10:33:40] "OPTIONS /api/taskmanager/installationConfirm/ HTTP/1.1" 200 0
+[25/Sep/2023 10:33:40] "OPTIONS /api/taskmanager/stage/ HTTP/1.1" 200 0
+[25/Sep/2023 10:33:40] "OPTIONS /api/taskmanager/task/ HTTP/1.1" 200 0
+[25/Sep/2023 10:33:40] "OPTIONS /api/taskmanager/project/ HTTP/1.1" 200 0
+[25/Sep/2023 10:33:40] "OPTIONS /api/user/users/ HTTP/1.1" 200 0
+[25/Sep/2023 10:33:40] "OPTIONS /api/taskmanager/tag/ HTTP/1.1" 200 0
+[25/Sep/2023 10:33:40] "OPTIONS /api/sales/contract/ HTTP/1.1" 200 0
+[25/Sep/2023 10:33:40] "OPTIONS /api/user/users/ HTTP/1.1" 200 0
+[25/Sep/2023 10:33:40] "OPTIONS /api/sales/packages/ HTTP/1.1" 200 0
+[25/Sep/2023 10:33:40] "OPTIONS /api/sales/contract-status/ HTTP/1.1" 200 0
+[25/Sep/2023 10:33:40] "OPTIONS /api/taskmanager/payment/ HTTP/1.1" 200 0
+[25/Sep/2023 10:33:40] "OPTIONS /api/taskmanager/installationConfirm/ HTTP/1.1" 200 0
+[25/Sep/2023 10:33:40] "OPTIONS /api/taskmanager/task/ HTTP/1.1" 200 0
+[25/Sep/2023 10:33:40] "OPTIONS /api/taskmanager/stage/ HTTP/1.1" 200 0
+[25/Sep/2023 10:33:40] "OPTIONS /api/taskmanager/project/ HTTP/1.1" 200 0
+[25/Sep/2023 10:33:40] "OPTIONS /api/user/users/ HTTP/1.1" 200 0
+[25/Sep/2023 10:33:40] "OPTIONS /api/taskmanager/tag/ HTTP/1.1" 200 0
+[25/Sep/2023 10:33:40] "GET /api/user/me/ HTTP/1.1" 200 183
+[25/Sep/2023 10:33:40] "GET /api/sales/contract-status/ HTTP/1.1" 200 204
+[25/Sep/2023 10:33:40] "GET /api/sales/packages/ HTTP/1.1" 200 35579
+[25/Sep/2023 10:33:40] "GET /api/taskmanager/payment/ HTTP/1.1" 200 52
+[25/Sep/2023 10:33:40] "GET /api/taskmanager/tag/ HTTP/1.1" 200 101
+[25/Sep/2023 10:33:40] "GET /api/taskmanager/project/ HTTP/1.1" 200 208
+[25/Sep/2023 10:33:40] "GET /api/taskmanager/installationConfirm/ HTTP/1.1" 200 174
+[25/Sep/2023 10:33:40] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 10:33:40] "GET /api/taskmanager/stage/ HTTP/1.1" 200 158
+[25/Sep/2023 10:33:40] "GET /api/sales/contract-status/ HTTP/1.1" 200 204
+[25/Sep/2023 10:33:41] "GET /api/taskmanager/tag/ HTTP/1.1" 200 101
+[25/Sep/2023 10:33:41] "GET /api/taskmanager/payment/ HTTP/1.1" 200 52
+[25/Sep/2023 10:33:41] "GET /api/sales/packages/ HTTP/1.1" 200 35579
+[25/Sep/2023 10:33:41] "GET /api/taskmanager/task/ HTTP/1.1" 200 2724
+[25/Sep/2023 10:33:41] "GET /api/taskmanager/project/ HTTP/1.1" 200 208
+[25/Sep/2023 10:33:41] "GET /api/taskmanager/stage/ HTTP/1.1" 200 158
+[25/Sep/2023 10:33:41] "GET /api/taskmanager/installationConfirm/ HTTP/1.1" 200 174
+[25/Sep/2023 10:33:41] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 10:33:41] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 10:33:41] "GET /api/taskmanager/task/ HTTP/1.1" 200 2724
+[25/Sep/2023 10:33:41] "GET /api/user/users/ HTTP/1.1" 200 4824
+Not Found: /uploads/user/57925e3f-cf4a-4a4f-8f74-5d28e9bf4733.jpg
+[25/Sep/2023 10:33:42] "GET /uploads/user/57925e3f-cf4a-4a4f-8f74-5d28e9bf4733.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 10:33:42] "GET /uploads/user/39b920ce-9e0d-4042-a68e-9b35cc5dc8cf.png HTTP/1.1" 200 250306
+[25/Sep/2023 10:33:42] "GET /uploads/user/8d8c1452-5a2b-40b2-a2e1-f362291ba640.png HTTP/1.1" 200 250306
+[25/Sep/2023 10:33:42] "GET /uploads/user/cb5a6c43-6530-4561-8be7-9174024d5e92.png HTTP/1.1" 200 250306
+[25/Sep/2023 10:33:42] "GET /uploads/user/371ef277-b75e-4e65-bdce-6d6aaf21295c.png HTTP/1.1" 200 250306
+[25/Sep/2023 10:33:42] "GET /uploads/user/ed556967-2dc7-48dd-ada3-f9984a5482b7.png HTTP/1.1" 200 250306
+[25/Sep/2023 10:33:42] "GET /uploads/user/861cd542-c5d7-4d2c-8f14-58e98900be9f.png HTTP/1.1" 200 250306
+[25/Sep/2023 10:33:42] "GET /uploads/user/b521b434-6a65-4d92-abd1-26d34956e1e1.png HTTP/1.1" 200 250306
+Not Found: /uploads/user/26eb6e8d-aa35-4032-b564-439ddbde463a.jpg
+[25/Sep/2023 10:33:42] "GET /api/sales/contract/ HTTP/1.1" 200 147347
+[25/Sep/2023 10:33:42] "GET /uploads/user/26eb6e8d-aa35-4032-b564-439ddbde463a.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 10:33:42] "GET /uploads/user/7b6cb20b-bf23-4b28-be41-061df98f9455.png HTTP/1.1" 200 250306
+[25/Sep/2023 10:33:42] "GET /uploads/user/e513c145-a738-4683-8a57-d0677fd6ddf2.png HTTP/1.1" 200 250306
+Not Found: /uploads/user/21916a40-1865-4583-bd0f-8d3c84a3c525.jpg
+[25/Sep/2023 10:33:43] "GET /uploads/user/21916a40-1865-4583-bd0f-8d3c84a3c525.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 10:33:43] "GET /uploads/user/8bd14d84-b8c5-407f-8017-f93d2fc4a2aa.png HTTP/1.1" 200 250306
+[25/Sep/2023 10:33:43] "GET /uploads/user/6afe8232-1a24-4788-81f0-d98ba5a3bb41.png HTTP/1.1" 200 250306
+Not Found: /uploads/user/b3c92f43-a458-4bea-8076-448aca8495f6.jpg
+[25/Sep/2023 10:33:43] "GET /uploads/user/b3c92f43-a458-4bea-8076-448aca8495f6.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 10:33:43] "GET /uploads/user/0463d160-f0e9-44c7-a457-062621e314d9.png HTTP/1.1" 200 250306
+[25/Sep/2023 10:33:43] "GET /uploads/user/ba081bea-0b10-4de0-a6b8-c919630ad4fa.png HTTP/1.1" 200 250306
+[25/Sep/2023 10:33:43] "GET /uploads/user/e43bcce1-7328-4fa7-b540-8a367fac43ba.png HTTP/1.1" 200 250306
+Not Found: /uploads/user/31309ece-29d1-462c-bb28-9436ef370aee.jpg
+[25/Sep/2023 10:33:43] "GET /uploads/user/31309ece-29d1-462c-bb28-9436ef370aee.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/55027785-295c-4c51-9f03-b1ed05e0ce8f.jpg
+[25/Sep/2023 10:33:43] "GET /uploads/user/55027785-295c-4c51-9f03-b1ed05e0ce8f.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 10:33:43] "GET /uploads/user/ed2728a5-2199-40af-b569-2a25bc362110.png HTTP/1.1" 200 250306
+[25/Sep/2023 10:33:43] "GET /api/sales/contract/ HTTP/1.1" 200 147347
+[25/Sep/2023 10:33:43] "GET /uploads/user/48c4c1f7-9ee7-4fd0-8d19-c50238e5be3c.jpg HTTP/1.1" 200 73856
+[25/Sep/2023 10:33:44] "GET /uploads/user/4c1dc25d-b315-447a-9013-6e897517a9a4.png HTTP/1.1" 200 250306
+Not Found: /uploads/user/2e9aea7b-10c9-47fb-91ed-aa52bc3e8612.jpg
+[25/Sep/2023 10:33:44] "GET /uploads/user/2e9aea7b-10c9-47fb-91ed-aa52bc3e8612.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 10:33:44] "GET /uploads/user/b517dc93-0f58-4821-90ce-7ca357403a57.png HTTP/1.1" 200 250306
+[25/Sep/2023 10:34:07] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:34:07] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:34:32] "OPTIONS /api/user/me/ HTTP/1.1" 200 0
+[25/Sep/2023 10:34:32] "OPTIONS /api/sales/contract/?contract-status=1 HTTP/1.1" 200 0
+[25/Sep/2023 10:34:32] "OPTIONS /api/user/me/ HTTP/1.1" 200 0
+[25/Sep/2023 10:34:32] "OPTIONS /api/sales/contract/?contract-status=1 HTTP/1.1" 200 0
+[25/Sep/2023 10:34:33] "GET /api/user/me/ HTTP/1.1" 200 194
+[25/Sep/2023 10:34:33] "GET /uploads/user/ed556967-2dc7-48dd-ada3-f9984a5482b7.png HTTP/1.1" 304 0
+[25/Sep/2023 10:34:33] "GET /api/user/me/ HTTP/1.1" 200 194
+[25/Sep/2023 10:34:33] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:34:34] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:35:03] "OPTIONS /api/user/token/ HTTP/1.1" 200 0
+[25/Sep/2023 10:35:04] "POST /api/user/token/ HTTP/1.1" 200 52
+[25/Sep/2023 10:35:04] "OPTIONS /api/user/me/ HTTP/1.1" 200 0
+[25/Sep/2023 10:35:04] "OPTIONS /api/sales/contract/?contract-status=1 HTTP/1.1" 200 0
+[25/Sep/2023 10:35:04] "OPTIONS /api/user/me/ HTTP/1.1" 200 0
+[25/Sep/2023 10:35:04] "OPTIONS /api/sales/contract/?contract-status=1 HTTP/1.1" 200 0
+[25/Sep/2023 10:35:05] "GET /api/user/me/ HTTP/1.1" 200 185
+[25/Sep/2023 10:35:05] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:35:05] "GET /api/user/me/ HTTP/1.1" 200 185
+[25/Sep/2023 10:35:06] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:35:06] "GET /uploads/user/e513c145-a738-4683-8a57-d0677fd6ddf2.png HTTP/1.1" 200 250306
+[25/Sep/2023 10:35:57] "GET /api/user/me/ HTTP/1.1" 200 194
+[25/Sep/2023 10:35:57] "GET /api/user/me/ HTTP/1.1" 200 194
+[25/Sep/2023 10:35:57] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:35:57] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:36:01] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:36:01] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:36:05] "OPTIONS /api/sales/contract/ HTTP/1.1" 200 0
+[25/Sep/2023 10:36:05] "OPTIONS /api/user/users/ HTTP/1.1" 200 0
+[25/Sep/2023 10:36:05] "OPTIONS /api/sales/packages/ HTTP/1.1" 200 0
+[25/Sep/2023 10:36:05] "OPTIONS /api/sales/contract-status/ HTTP/1.1" 200 0
+[25/Sep/2023 10:36:05] "OPTIONS /api/taskmanager/payment/ HTTP/1.1" 200 0
+[25/Sep/2023 10:36:05] "GET /api/user/me/ HTTP/1.1" 200 194
+[25/Sep/2023 10:36:05] "OPTIONS /api/taskmanager/installationConfirm/ HTTP/1.1" 200 0
+[25/Sep/2023 10:36:05] "OPTIONS /api/taskmanager/task/ HTTP/1.1" 200 0
+[25/Sep/2023 10:36:05] "OPTIONS /api/taskmanager/stage/ HTTP/1.1" 200 0
+[25/Sep/2023 10:36:05] "OPTIONS /api/user/users/ HTTP/1.1" 200 0
+[25/Sep/2023 10:36:05] "OPTIONS /api/taskmanager/project/ HTTP/1.1" 200 0
+[25/Sep/2023 10:36:05] "OPTIONS /api/taskmanager/tag/ HTTP/1.1" 200 0
+[25/Sep/2023 10:36:05] "OPTIONS /api/sales/contract/ HTTP/1.1" 200 0
+[25/Sep/2023 10:36:05] "OPTIONS /api/user/users/ HTTP/1.1" 200 0
+[25/Sep/2023 10:36:05] "OPTIONS /api/sales/packages/ HTTP/1.1" 200 0
+[25/Sep/2023 10:36:05] "OPTIONS /api/sales/contract-status/ HTTP/1.1" 200 0
+[25/Sep/2023 10:36:05] "OPTIONS /api/taskmanager/payment/ HTTP/1.1" 200 0
+[25/Sep/2023 10:36:05] "OPTIONS /api/taskmanager/installationConfirm/ HTTP/1.1" 200 0
+[25/Sep/2023 10:36:05] "OPTIONS /api/taskmanager/task/ HTTP/1.1" 200 0
+[25/Sep/2023 10:36:05] "OPTIONS /api/taskmanager/stage/ HTTP/1.1" 200 0
+[25/Sep/2023 10:36:05] "OPTIONS /api/user/users/ HTTP/1.1" 200 0
+[25/Sep/2023 10:36:05] "OPTIONS /api/taskmanager/project/ HTTP/1.1" 200 0
+[25/Sep/2023 10:36:05] "OPTIONS /api/taskmanager/tag/ HTTP/1.1" 200 0
+[25/Sep/2023 10:36:05] "GET /api/sales/contract-status/ HTTP/1.1" 200 204
+[25/Sep/2023 10:36:06] "GET /api/taskmanager/payment/ HTTP/1.1" 200 52
+[25/Sep/2023 10:36:06] "GET /api/taskmanager/installationConfirm/ HTTP/1.1" 200 174
+[25/Sep/2023 10:36:06] "GET /api/sales/packages/ HTTP/1.1" 200 35579
+[25/Sep/2023 10:36:06] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 10:36:06] "GET /api/user/me/ HTTP/1.1" 200 194
+[25/Sep/2023 10:36:06] "GET /api/taskmanager/stage/ HTTP/1.1" 200 158
+[25/Sep/2023 10:36:06] "GET /api/taskmanager/tag/ HTTP/1.1" 200 101
+[25/Sep/2023 10:36:06] "GET /api/sales/contract-status/ HTTP/1.1" 200 204
+[25/Sep/2023 10:36:06] "GET /api/taskmanager/project/ HTTP/1.1" 200 208
+[25/Sep/2023 10:36:06] "GET /api/taskmanager/task/ HTTP/1.1" 200 2724
+[25/Sep/2023 10:36:06] "GET /api/sales/packages/ HTTP/1.1" 200 35579
+[25/Sep/2023 10:36:06] "GET /api/taskmanager/payment/ HTTP/1.1" 200 52
+[25/Sep/2023 10:36:06] "GET /api/taskmanager/installationConfirm/ HTTP/1.1" 200 174
+[25/Sep/2023 10:36:06] "GET /api/taskmanager/stage/ HTTP/1.1" 200 158
+[25/Sep/2023 10:36:06] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 10:36:06] "GET /api/taskmanager/tag/ HTTP/1.1" 200 101
+[25/Sep/2023 10:36:06] "GET /api/taskmanager/project/ HTTP/1.1" 200 208
+[25/Sep/2023 10:36:06] "GET /uploads/user/39b920ce-9e0d-4042-a68e-9b35cc5dc8cf.png HTTP/1.1" 304 0
+[25/Sep/2023 10:36:06] "GET /api/taskmanager/task/ HTTP/1.1" 200 2724
+[25/Sep/2023 10:36:06] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 10:36:07] "GET /uploads/user/8d8c1452-5a2b-40b2-a2e1-f362291ba640.png HTTP/1.1" 304 0
+[25/Sep/2023 10:36:07] "GET /uploads/user/cb5a6c43-6530-4561-8be7-9174024d5e92.png HTTP/1.1" 304 0
+Not Found: /uploads/user/57925e3f-cf4a-4a4f-8f74-5d28e9bf4733.jpg
+[25/Sep/2023 10:36:07] "GET /uploads/user/45688fe3-d268-419a-86f0-1d54eb1a13b5.png HTTP/1.1" 304 0
+[25/Sep/2023 10:36:07] "GET /uploads/user/57925e3f-cf4a-4a4f-8f74-5d28e9bf4733.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 10:36:07] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 10:36:07] "GET /uploads/user/371ef277-b75e-4e65-bdce-6d6aaf21295c.png HTTP/1.1" 304 0
+[25/Sep/2023 10:36:07] "GET /uploads/user/861cd542-c5d7-4d2c-8f14-58e98900be9f.png HTTP/1.1" 304 0
+[25/Sep/2023 10:36:07] "OPTIONS /api/sales/contract/?user=&contract_number=&contract_id=&date_after=&date_before=&activation=&valid=&status=&contract_type=&contractpackage__package=&contractrouter__router=&ordering=contract_number&contractantenna__antenna= HTTP/1.1" 200 0
+[25/Sep/2023 10:36:07] "GET /uploads/user/b521b434-6a65-4d92-abd1-26d34956e1e1.png HTTP/1.1" 304 0
+Not Found: /uploads/user/26eb6e8d-aa35-4032-b564-439ddbde463a.jpg
+[25/Sep/2023 10:36:07] "GET /uploads/user/26eb6e8d-aa35-4032-b564-439ddbde463a.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 10:36:07] "GET /uploads/user/7b6cb20b-bf23-4b28-be41-061df98f9455.png HTTP/1.1" 304 0
+[25/Sep/2023 10:36:07] "GET /uploads/user/e513c145-a738-4683-8a57-d0677fd6ddf2.png HTTP/1.1" 304 0
+[25/Sep/2023 10:36:07] "GET /uploads/user/6afe8232-1a24-4788-81f0-d98ba5a3bb41.png HTTP/1.1" 304 0
+[25/Sep/2023 10:36:07] "GET /uploads/user/8bd14d84-b8c5-407f-8017-f93d2fc4a2aa.png HTTP/1.1" 304 0
+Not Found: /uploads/user/21916a40-1865-4583-bd0f-8d3c84a3c525.jpg
+[25/Sep/2023 10:36:07] "GET /uploads/user/21916a40-1865-4583-bd0f-8d3c84a3c525.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/b3c92f43-a458-4bea-8076-448aca8495f6.jpg
+[25/Sep/2023 10:36:07] "GET /uploads/user/b3c92f43-a458-4bea-8076-448aca8495f6.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 10:36:07] "GET /uploads/user/0463d160-f0e9-44c7-a457-062621e314d9.png HTTP/1.1" 304 0
+[25/Sep/2023 10:36:07] "GET /uploads/user/e43bcce1-7328-4fa7-b540-8a367fac43ba.png HTTP/1.1" 304 0
+[25/Sep/2023 10:36:07] "GET /uploads/user/ba081bea-0b10-4de0-a6b8-c919630ad4fa.png HTTP/1.1" 304 0
+Not Found: /uploads/user/31309ece-29d1-462c-bb28-9436ef370aee.jpg
+[25/Sep/2023 10:36:07] "GET /uploads/user/31309ece-29d1-462c-bb28-9436ef370aee.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/55027785-295c-4c51-9f03-b1ed05e0ce8f.jpg
+[25/Sep/2023 10:36:07] "GET /uploads/user/4c1dc25d-b315-447a-9013-6e897517a9a4.png HTTP/1.1" 304 0
+[25/Sep/2023 10:36:07] "GET /uploads/user/55027785-295c-4c51-9f03-b1ed05e0ce8f.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 10:36:07] "GET /uploads/user/ed2728a5-2199-40af-b569-2a25bc362110.png HTTP/1.1" 304 0
+[25/Sep/2023 10:36:07] "GET /api/sales/contract/ HTTP/1.1" 200 147347
+[25/Sep/2023 10:36:08] "GET /uploads/user/b517dc93-0f58-4821-90ce-7ca357403a57.png HTTP/1.1" 304 0
+Not Found: /uploads/user/2e9aea7b-10c9-47fb-91ed-aa52bc3e8612.jpg
+[25/Sep/2023 10:36:08] "GET /uploads/user/2e9aea7b-10c9-47fb-91ed-aa52bc3e8612.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 10:36:09] "GET /api/sales/contract/?user=&contract_number=&contract_id=&date_after=&date_before=&activation=&valid=&status=&contract_type=&contractpackage__package=&contractrouter__router=&ordering=contract_number&contractantenna__antenna= HTTP/1.1" 200 148508
+[25/Sep/2023 10:36:09] "GET /api/sales/contract/ HTTP/1.1" 200 147347
+[25/Sep/2023 10:36:10] "OPTIONS /api/sales/contract/?user=&contract_number=&contract_id=&date_after=&date_before=&activation=&valid=&status=1&contract_type=&contractpackage__package=&contractrouter__router=&ordering=contract_number&contractantenna__antenna= HTTP/1.1" 200 0
+[25/Sep/2023 10:36:11] "GET /api/sales/contract/?user=&contract_number=&contract_id=&date_after=&date_before=&activation=&valid=&status=1&contract_type=&contractpackage__package=&contractrouter__router=&ordering=contract_number&contractantenna__antenna= HTTP/1.1" 200 31448
+[25/Sep/2023 10:36:47] "POST /api/user/token/ HTTP/1.1" 200 52
+[25/Sep/2023 10:36:47] "GET /api/user/me/ HTTP/1.1" 200 183
+[25/Sep/2023 10:36:47] "GET /api/user/me/ HTTP/1.1" 200 183
+[25/Sep/2023 10:36:47] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:36:48] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:36:57] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:36:58] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:36:58] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:36:58] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:36:59] "OPTIONS /api/user/users/ HTTP/1.1" 200 0
+Unauthorized: /api/taskmanager/task/
+[25/Sep/2023 10:36:59] "OPTIONS /api/taskmanager/project/ HTTP/1.1" 200 0
+[25/Sep/2023 10:36:59] "OPTIONS /api/taskmanager/tag/ HTTP/1.1" 200 0
+[25/Sep/2023 10:36:59] "GET /api/taskmanager/task/ HTTP/1.1" 401 58
+[25/Sep/2023 10:36:59] "OPTIONS /api/sales/contract/ HTTP/1.1" 200 0
+[25/Sep/2023 10:36:59] "GET /api/user/me/ HTTP/1.1" 200 185
+[25/Sep/2023 10:36:59] "OPTIONS /api/taskmanager/payment/ HTTP/1.1" 200 0
+[25/Sep/2023 10:36:59] "OPTIONS /api/taskmanager/installationConfirm/ HTTP/1.1" 200 0
+[25/Sep/2023 10:36:59] "OPTIONS /api/taskmanager/task/ HTTP/1.1" 200 0
+[25/Sep/2023 10:36:59] "OPTIONS /api/taskmanager/stage/ HTTP/1.1" 200 0
+[25/Sep/2023 10:36:59] "OPTIONS /api/user/users/ HTTP/1.1" 200 0
+[25/Sep/2023 10:36:59] "OPTIONS /api/user/users/ HTTP/1.1" 200 0
+[25/Sep/2023 10:37:00] "OPTIONS /api/taskmanager/project/ HTTP/1.1" 200 0
+[25/Sep/2023 10:37:00] "OPTIONS /api/taskmanager/tag/ HTTP/1.1" 200 0
+[25/Sep/2023 10:37:00] "OPTIONS /api/sales/contract/ HTTP/1.1" 200 0
+[25/Sep/2023 10:37:00] "OPTIONS /api/taskmanager/payment/ HTTP/1.1" 200 0
+[25/Sep/2023 10:37:00] "OPTIONS /api/taskmanager/installationConfirm/ HTTP/1.1" 200 0
+[25/Sep/2023 10:37:00] "OPTIONS /api/taskmanager/task/ HTTP/1.1" 200 0
+[25/Sep/2023 10:37:00] "OPTIONS /api/taskmanager/stage/ HTTP/1.1" 200 0
+[25/Sep/2023 10:37:00] "OPTIONS /api/user/users/ HTTP/1.1" 200 0
+Unauthorized: /api/taskmanager/task/
+[25/Sep/2023 10:37:00] "GET /api/taskmanager/task/ HTTP/1.1" 401 58
+[25/Sep/2023 10:37:00] "GET /api/taskmanager/project/ HTTP/1.1" 200 208
+[25/Sep/2023 10:37:00] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 10:37:00] "GET /api/taskmanager/tag/ HTTP/1.1" 200 101
+[25/Sep/2023 10:37:00] "GET /api/user/me/ HTTP/1.1" 200 185
+[25/Sep/2023 10:37:00] "GET /api/taskmanager/payment/ HTTP/1.1" 200 52
+[25/Sep/2023 10:37:00] "GET /api/taskmanager/installationConfirm/ HTTP/1.1" 200 174
+[25/Sep/2023 10:37:00] "GET /api/taskmanager/stage/ HTTP/1.1" 200 158
+[25/Sep/2023 10:37:00] "GET /api/taskmanager/project/ HTTP/1.1" 200 208
+[25/Sep/2023 10:37:00] "GET /api/taskmanager/payment/ HTTP/1.1" 200 52
+[25/Sep/2023 10:37:00] "GET /api/taskmanager/tag/ HTTP/1.1" 200 101
+[25/Sep/2023 10:37:01] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 10:37:01] "GET /api/taskmanager/task/ HTTP/1.1" 200 2724
+[25/Sep/2023 10:37:01] "GET /api/taskmanager/installationConfirm/ HTTP/1.1" 200 174
+[25/Sep/2023 10:37:01] "GET /api/taskmanager/stage/ HTTP/1.1" 200 158
+[25/Sep/2023 10:37:01] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 10:37:01] "GET /api/taskmanager/task/ HTTP/1.1" 200 2724
+[25/Sep/2023 10:37:01] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 10:37:01] "GET /uploads/user/39b920ce-9e0d-4042-a68e-9b35cc5dc8cf.png HTTP/1.1" 200 250306
+[25/Sep/2023 10:37:01] "GET /uploads/user/8d8c1452-5a2b-40b2-a2e1-f362291ba640.png HTTP/1.1" 200 250306
+[25/Sep/2023 10:37:01] "GET /uploads/user/cb5a6c43-6530-4561-8be7-9174024d5e92.png HTTP/1.1" 200 250306
+[25/Sep/2023 10:37:01] "GET /uploads/user/45688fe3-d268-419a-86f0-1d54eb1a13b5.png HTTP/1.1" 200 250306
+Not Found: /uploads/user/57925e3f-cf4a-4a4f-8f74-5d28e9bf4733.jpg
+[25/Sep/2023 10:37:01] "GET /uploads/user/57925e3f-cf4a-4a4f-8f74-5d28e9bf4733.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 10:37:02] "GET /api/sales/contract/ HTTP/1.1" 200 147347
+[25/Sep/2023 10:37:02] "GET /uploads/user/ed556967-2dc7-48dd-ada3-f9984a5482b7.png HTTP/1.1" 200 250306
+[25/Sep/2023 10:37:02] "GET /uploads/user/371ef277-b75e-4e65-bdce-6d6aaf21295c.png HTTP/1.1" 200 250306
+[25/Sep/2023 10:37:02] "GET /uploads/user/861cd542-c5d7-4d2c-8f14-58e98900be9f.png HTTP/1.1" 200 250306
+[25/Sep/2023 10:37:02] "GET /uploads/user/b521b434-6a65-4d92-abd1-26d34956e1e1.png HTTP/1.1" 200 250306
+Not Found: /uploads/user/26eb6e8d-aa35-4032-b564-439ddbde463a.jpg
+[25/Sep/2023 10:37:02] "GET /uploads/user/26eb6e8d-aa35-4032-b564-439ddbde463a.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/21916a40-1865-4583-bd0f-8d3c84a3c525.jpg
+[25/Sep/2023 10:37:02] "GET /uploads/user/21916a40-1865-4583-bd0f-8d3c84a3c525.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 10:37:02] "GET /uploads/user/8bd14d84-b8c5-407f-8017-f93d2fc4a2aa.png HTTP/1.1" 200 250306
+Not Found: /uploads/user/b3c92f43-a458-4bea-8076-448aca8495f6.jpg
+[25/Sep/2023 10:37:02] "GET /uploads/user/b3c92f43-a458-4bea-8076-448aca8495f6.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 10:37:02] "GET /uploads/user/7b6cb20b-bf23-4b28-be41-061df98f9455.png HTTP/1.1" 200 250306
+[25/Sep/2023 10:37:02] "GET /uploads/user/6afe8232-1a24-4788-81f0-d98ba5a3bb41.png HTTP/1.1" 200 250306
+[25/Sep/2023 10:37:02] "GET /uploads/user/e43bcce1-7328-4fa7-b540-8a367fac43ba.png HTTP/1.1" 200 250306
+Not Found: /uploads/user/31309ece-29d1-462c-bb28-9436ef370aee.jpg
+[25/Sep/2023 10:37:03] "GET /uploads/user/0463d160-f0e9-44c7-a457-062621e314d9.png HTTP/1.1" 200 250306
+[25/Sep/2023 10:37:03] "GET /uploads/user/31309ece-29d1-462c-bb28-9436ef370aee.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 10:37:03] "GET /uploads/user/4c1dc25d-b315-447a-9013-6e897517a9a4.png HTTP/1.1" 200 250306
+Not Found: /uploads/user/55027785-295c-4c51-9f03-b1ed05e0ce8f.jpg
+[25/Sep/2023 10:37:03] "GET /uploads/user/55027785-295c-4c51-9f03-b1ed05e0ce8f.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 10:37:03] "GET /uploads/user/48c4c1f7-9ee7-4fd0-8d19-c50238e5be3c.jpg HTTP/1.1" 200 73856
+[25/Sep/2023 10:37:03] "GET /uploads/user/ed2728a5-2199-40af-b569-2a25bc362110.png HTTP/1.1" 200 250306
+Not Found: /uploads/user/2e9aea7b-10c9-47fb-91ed-aa52bc3e8612.jpg
+[25/Sep/2023 10:37:03] "GET /uploads/user/2e9aea7b-10c9-47fb-91ed-aa52bc3e8612.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 10:37:03] "GET /uploads/user/ba081bea-0b10-4de0-a6b8-c919630ad4fa.png HTTP/1.1" 200 250306
+[25/Sep/2023 10:37:03] "GET /api/sales/contract/ HTTP/1.1" 200 147347
+[25/Sep/2023 10:37:03] "GET /uploads/user/b517dc93-0f58-4821-90ce-7ca357403a57.png HTTP/1.1" 200 250306
+Unauthorized: /api/taskmanager/task/
+[25/Sep/2023 10:37:05] "GET /api/taskmanager/task/ HTTP/1.1" 401 58
+[25/Sep/2023 10:37:05] "GET /api/user/me/ HTTP/1.1" 200 183
+[25/Sep/2023 10:37:05] "GET /api/taskmanager/tag/ HTTP/1.1" 200 101
+[25/Sep/2023 10:37:05] "GET /api/taskmanager/project/ HTTP/1.1" 200 208
+[25/Sep/2023 10:37:05] "GET /api/taskmanager/payment/ HTTP/1.1" 200 52
+[25/Sep/2023 10:37:05] "GET /api/taskmanager/installationConfirm/ HTTP/1.1" 200 174
+[25/Sep/2023 10:37:05] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 10:37:05] "GET /api/taskmanager/stage/ HTTP/1.1" 200 158
+[25/Sep/2023 10:37:05] "GET /api/user/me/ HTTP/1.1" 200 183
+[25/Sep/2023 10:37:05] "GET /api/taskmanager/tag/ HTTP/1.1" 200 101
+[25/Sep/2023 10:37:05] "GET /api/taskmanager/payment/ HTTP/1.1" 200 52
+[25/Sep/2023 10:37:05] "GET /api/taskmanager/project/ HTTP/1.1" 200 208
+[25/Sep/2023 10:37:05] "GET /api/taskmanager/task/ HTTP/1.1" 200 2724
+Unauthorized: /api/taskmanager/task/
+[25/Sep/2023 10:37:05] "GET /api/taskmanager/task/ HTTP/1.1" 401 58
+[25/Sep/2023 10:37:05] "GET /api/taskmanager/installationConfirm/ HTTP/1.1" 200 174
+[25/Sep/2023 10:37:05] "GET /api/taskmanager/stage/ HTTP/1.1" 200 158
+[25/Sep/2023 10:37:05] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 10:37:06] "GET /api/taskmanager/task/ HTTP/1.1" 200 2724
+[25/Sep/2023 10:37:06] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 10:37:06] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 10:37:06] "GET /api/sales/contract/ HTTP/1.1" 200 147347
+Not Found: /uploads/user/26eb6e8d-aa35-4032-b564-439ddbde463a.jpg
+[25/Sep/2023 10:37:07] "GET /uploads/user/26eb6e8d-aa35-4032-b564-439ddbde463a.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/21916a40-1865-4583-bd0f-8d3c84a3c525.jpg
+Not Found: /uploads/user/57925e3f-cf4a-4a4f-8f74-5d28e9bf4733.jpg
+[25/Sep/2023 10:37:07] "GET /uploads/user/21916a40-1865-4583-bd0f-8d3c84a3c525.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/b3c92f43-a458-4bea-8076-448aca8495f6.jpg
+[25/Sep/2023 10:37:07] "GET /uploads/user/b3c92f43-a458-4bea-8076-448aca8495f6.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 10:37:07] "GET /uploads/user/57925e3f-cf4a-4a4f-8f74-5d28e9bf4733.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/31309ece-29d1-462c-bb28-9436ef370aee.jpg
+[25/Sep/2023 10:37:07] "GET /uploads/user/31309ece-29d1-462c-bb28-9436ef370aee.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/55027785-295c-4c51-9f03-b1ed05e0ce8f.jpg
+Not Found: /uploads/user/2e9aea7b-10c9-47fb-91ed-aa52bc3e8612.jpg
+[25/Sep/2023 10:37:07] "GET /uploads/user/55027785-295c-4c51-9f03-b1ed05e0ce8f.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 10:37:07] "GET /uploads/user/2e9aea7b-10c9-47fb-91ed-aa52bc3e8612.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 10:37:08] "GET /api/sales/contract/ HTTP/1.1" 200 147347
+[25/Sep/2023 10:37:10] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:37:10] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:37:14] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:37:14] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:37:57] "OPTIONS /api/taskmanager/task/?contract__contract_number=&created_after=&created_before=&deadline_after=&deadline_before=&ordering=contract&project=&stage=&tag=&user=&assigned__id=&contract__contract_id= HTTP/1.1" 200 0
+[25/Sep/2023 10:37:57] "GET /api/taskmanager/task/?contract__contract_number=&created_after=&created_before=&deadline_after=&deadline_before=&ordering=contract&project=&stage=&tag=&user=&assigned__id=&contract__contract_id= HTTP/1.1" 200 2724
+[25/Sep/2023 10:38:17] "GET /api/user/me/ HTTP/1.1" 200 185
+[25/Sep/2023 10:38:17] "GET /api/user/me/ HTTP/1.1" 200 185
+[25/Sep/2023 10:38:21] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:38:21] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:38:50] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:38:50] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+Unauthorized: /api/taskmanager/task/
+[25/Sep/2023 10:39:01] "GET /api/taskmanager/task/ HTTP/1.1" 401 58
+[25/Sep/2023 10:39:01] "GET /api/user/me/ HTTP/1.1" 200 185
+[25/Sep/2023 10:39:01] "GET /api/taskmanager/project/ HTTP/1.1" 200 208
+[25/Sep/2023 10:39:01] "GET /api/taskmanager/tag/ HTTP/1.1" 200 101
+[25/Sep/2023 10:39:01] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 10:39:01] "GET /api/taskmanager/payment/ HTTP/1.1" 200 52
+[25/Sep/2023 10:39:01] "GET /api/taskmanager/installationConfirm/ HTTP/1.1" 200 174
+[25/Sep/2023 10:39:01] "GET /api/taskmanager/stage/ HTTP/1.1" 200 158
+[25/Sep/2023 10:39:01] "GET /api/taskmanager/project/ HTTP/1.1" 200 208
+[25/Sep/2023 10:39:01] "GET /api/user/me/ HTTP/1.1" 200 185
+[25/Sep/2023 10:39:01] "GET /api/taskmanager/task/ HTTP/1.1" 200 2724
+[25/Sep/2023 10:39:01] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 10:39:01] "GET /api/taskmanager/payment/ HTTP/1.1" 200 52
+[25/Sep/2023 10:39:01] "GET /api/taskmanager/tag/ HTTP/1.1" 200 101
+Unauthorized: /api/taskmanager/task/
+[25/Sep/2023 10:39:01] "GET /api/taskmanager/task/ HTTP/1.1" 401 58
+[25/Sep/2023 10:39:01] "GET /api/taskmanager/installationConfirm/ HTTP/1.1" 200 174
+[25/Sep/2023 10:39:01] "GET /api/taskmanager/stage/ HTTP/1.1" 200 158
+[25/Sep/2023 10:39:02] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 10:39:02] "GET /api/taskmanager/task/ HTTP/1.1" 200 2724
+[25/Sep/2023 10:39:02] "GET /api/user/users/ HTTP/1.1" 200 4824
+Not Found: /uploads/user/57925e3f-cf4a-4a4f-8f74-5d28e9bf4733.jpg
+[25/Sep/2023 10:39:02] "GET /uploads/user/57925e3f-cf4a-4a4f-8f74-5d28e9bf4733.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/26eb6e8d-aa35-4032-b564-439ddbde463a.jpg
+[25/Sep/2023 10:39:02] "GET /uploads/user/26eb6e8d-aa35-4032-b564-439ddbde463a.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/21916a40-1865-4583-bd0f-8d3c84a3c525.jpg
+[25/Sep/2023 10:39:02] "GET /uploads/user/21916a40-1865-4583-bd0f-8d3c84a3c525.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/b3c92f43-a458-4bea-8076-448aca8495f6.jpg
+[25/Sep/2023 10:39:02] "GET /uploads/user/b3c92f43-a458-4bea-8076-448aca8495f6.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/55027785-295c-4c51-9f03-b1ed05e0ce8f.jpg
+Not Found: /uploads/user/31309ece-29d1-462c-bb28-9436ef370aee.jpg
+[25/Sep/2023 10:39:02] "GET /uploads/user/31309ece-29d1-462c-bb28-9436ef370aee.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 10:39:02] "GET /uploads/user/55027785-295c-4c51-9f03-b1ed05e0ce8f.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/2e9aea7b-10c9-47fb-91ed-aa52bc3e8612.jpg
+[25/Sep/2023 10:39:02] "GET /uploads/user/2e9aea7b-10c9-47fb-91ed-aa52bc3e8612.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 10:39:03] "GET /api/sales/contract/ HTTP/1.1" 200 147347
+[25/Sep/2023 10:39:04] "GET /api/sales/contract/ HTTP/1.1" 200 147347
+[25/Sep/2023 10:39:25] "OPTIONS /api/sales/antenna/ HTTP/1.1" 200 0
+[25/Sep/2023 10:39:25] "OPTIONS /api/sales/router/ HTTP/1.1" 200 0
+[25/Sep/2023 10:39:25] "GET /api/sales/contract-status/ HTTP/1.1" 200 204
+[25/Sep/2023 10:39:25] "OPTIONS /api/sales/contract-types/ HTTP/1.1" 200 0
+[25/Sep/2023 10:39:25] "OPTIONS /api/sales/contract-currency/ HTTP/1.1" 200 0
+[25/Sep/2023 10:39:25] "OPTIONS /api/sales/contract-package/?contract=5620 HTTP/1.1" 200 0
+[25/Sep/2023 10:39:25] "GET /api/sales/packages/ HTTP/1.1" 200 35579
+[25/Sep/2023 10:39:25] "OPTIONS /api/sales/contract-antenna/?contract=5620 HTTP/1.1" 200 0
+[25/Sep/2023 10:39:26] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 10:39:26] "GET /api/taskmanager/task/ HTTP/1.1" 200 2724
+[25/Sep/2023 10:39:26] "OPTIONS /api/sales/contract-router/?contract=5620 HTTP/1.1" 200 0
+[25/Sep/2023 10:39:26] "OPTIONS /api/sales/contract-other-service/?contract=5620 HTTP/1.1" 200 0
+[25/Sep/2023 10:39:26] "OPTIONS /api/sales/contract-payment/?contract=5620 HTTP/1.1" 200 0
+[25/Sep/2023 10:39:26] "OPTIONS /api/sales/antenna/ HTTP/1.1" 200 0
+[25/Sep/2023 10:39:26] "OPTIONS /api/sales/router/ HTTP/1.1" 200 0
+[25/Sep/2023 10:39:26] "OPTIONS /api/sales/contract-types/ HTTP/1.1" 200 0
+[25/Sep/2023 10:39:26] "OPTIONS /api/sales/contract-currency/ HTTP/1.1" 200 0
+[25/Sep/2023 10:39:26] "OPTIONS /api/sales/contract-package/?contract=5620 HTTP/1.1" 200 0
+[25/Sep/2023 10:39:26] "OPTIONS /api/sales/contract-antenna/?contract=5620 HTTP/1.1" 200 0
+[25/Sep/2023 10:39:26] "OPTIONS /api/sales/contract-router/?contract=5620 HTTP/1.1" 200 0
+[25/Sep/2023 10:39:26] "OPTIONS /api/sales/contract-other-service/?contract=5620 HTTP/1.1" 200 0
+[25/Sep/2023 10:39:26] "OPTIONS /api/sales/contract-payment/?contract=5620 HTTP/1.1" 200 0
+[25/Sep/2023 10:39:26] "GET /api/sales/antenna/ HTTP/1.1" 200 2149
+[25/Sep/2023 10:39:26] "GET /api/sales/router/ HTTP/1.1" 200 2329
+[25/Sep/2023 10:39:26] "GET /api/sales/contract-status/ HTTP/1.1" 200 204
+[25/Sep/2023 10:39:26] "GET /api/sales/contract-types/ HTTP/1.1" 200 153
+[25/Sep/2023 10:39:26] "GET /api/sales/contract-currency/ HTTP/1.1" 200 95
+[25/Sep/2023 10:39:26] "GET /api/sales/packages/ HTTP/1.1" 200 35579
+/home/sales_mis/Task_Manager_Platform/env/lib/python3.10/site-packages/rest_framework/pagination.py:200: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'core.models.ContractPackage'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+[25/Sep/2023 10:39:26] "GET /api/sales/contract-package/?contract=5620 HTTP/1.1" 200 609
+/home/sales_mis/Task_Manager_Platform/env/lib/python3.10/site-packages/rest_framework/pagination.py:200: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'core.models.ContractAntenna'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+[25/Sep/2023 10:39:26] "GET /api/sales/contract-antenna/?contract=5620 HTTP/1.1" 200 52
+/home/sales_mis/Task_Manager_Platform/env/lib/python3.10/site-packages/rest_framework/pagination.py:200: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'core.models.ContractRouter'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+/home/sales_mis/Task_Manager_Platform/env/lib/python3.10/site-packages/rest_framework/pagination.py:200: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'core.models.ContractOtherService'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+[25/Sep/2023 10:39:26] "GET /api/sales/contract-router/?contract=5620 HTTP/1.1" 200 52
+[25/Sep/2023 10:39:26] "GET /api/sales/contract-other-service/?contract=5620 HTTP/1.1" 200 52
+/home/sales_mis/Task_Manager_Platform/env/lib/python3.10/site-packages/rest_framework/pagination.py:200: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'core.models.ContractPayment'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+[25/Sep/2023 10:39:26] "GET /api/sales/contract-payment/?contract=5620 HTTP/1.1" 200 671
+[25/Sep/2023 10:39:26] "GET /api/taskmanager/task/ HTTP/1.1" 200 2724
+[25/Sep/2023 10:39:26] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 10:39:26] "GET /api/sales/antenna/ HTTP/1.1" 200 2149
+[25/Sep/2023 10:39:26] "GET /api/sales/router/ HTTP/1.1" 200 2329
+[25/Sep/2023 10:39:27] "GET /api/sales/contract-types/ HTTP/1.1" 200 153
+[25/Sep/2023 10:39:27] "GET /api/sales/contract-currency/ HTTP/1.1" 200 95
+[25/Sep/2023 10:39:27] "GET /api/sales/contract-package/?contract=5620 HTTP/1.1" 200 609
+[25/Sep/2023 10:39:27] "GET /api/sales/contract-router/?contract=5620 HTTP/1.1" 200 52
+[25/Sep/2023 10:39:27] "GET /api/sales/contract-antenna/?contract=5620 HTTP/1.1" 200 52
+[25/Sep/2023 10:39:27] "GET /api/sales/contract-other-service/?contract=5620 HTTP/1.1" 200 52
+[25/Sep/2023 10:39:27] "GET /api/sales/contract-payment/?contract=5620 HTTP/1.1" 200 671
+[25/Sep/2023 10:39:44] "GET /api/sales/contract-status/ HTTP/1.1" 200 204
+[25/Sep/2023 10:39:44] "GET /api/user/me/ HTTP/1.1" 200 194
+[25/Sep/2023 10:39:44] "GET /api/sales/packages/ HTTP/1.1" 200 35579
+[25/Sep/2023 10:39:44] "GET /api/taskmanager/payment/ HTTP/1.1" 200 52
+[25/Sep/2023 10:39:44] "GET /api/taskmanager/installationConfirm/ HTTP/1.1" 200 174
+[25/Sep/2023 10:39:44] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 10:39:45] "GET /api/taskmanager/task/ HTTP/1.1" 200 2724
+[25/Sep/2023 10:39:45] "GET /api/taskmanager/tag/ HTTP/1.1" 200 101
+[25/Sep/2023 10:39:45] "GET /api/sales/contract-status/ HTTP/1.1" 200 204
+[25/Sep/2023 10:39:45] "GET /api/taskmanager/stage/ HTTP/1.1" 200 158
+[25/Sep/2023 10:39:45] "GET /api/taskmanager/project/ HTTP/1.1" 200 208
+[25/Sep/2023 10:39:45] "GET /api/user/me/ HTTP/1.1" 200 194
+[25/Sep/2023 10:39:45] "GET /api/sales/packages/ HTTP/1.1" 200 35579
+[25/Sep/2023 10:39:45] "GET /api/taskmanager/payment/ HTTP/1.1" 200 52
+[25/Sep/2023 10:39:45] "GET /api/taskmanager/installationConfirm/ HTTP/1.1" 200 174
+[25/Sep/2023 10:39:45] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 10:39:45] "GET /api/taskmanager/tag/ HTTP/1.1" 200 101
+[25/Sep/2023 10:39:45] "GET /api/taskmanager/project/ HTTP/1.1" 200 208
+[25/Sep/2023 10:39:45] "GET /api/taskmanager/stage/ HTTP/1.1" 200 158
+Not Found: /uploads/user/57925e3f-cf4a-4a4f-8f74-5d28e9bf4733.jpg
+[25/Sep/2023 10:39:45] "GET /uploads/user/57925e3f-cf4a-4a4f-8f74-5d28e9bf4733.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/26eb6e8d-aa35-4032-b564-439ddbde463a.jpg
+[25/Sep/2023 10:39:45] "GET /uploads/user/26eb6e8d-aa35-4032-b564-439ddbde463a.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 10:39:45] "GET /api/taskmanager/task/ HTTP/1.1" 200 2724
+[25/Sep/2023 10:39:45] "GET /api/user/users/ HTTP/1.1" 200 4824
+Not Found: /uploads/user/21916a40-1865-4583-bd0f-8d3c84a3c525.jpg
+[25/Sep/2023 10:39:45] "GET /uploads/user/21916a40-1865-4583-bd0f-8d3c84a3c525.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/31309ece-29d1-462c-bb28-9436ef370aee.jpg
+Not Found: /uploads/user/b3c92f43-a458-4bea-8076-448aca8495f6.jpg
+[25/Sep/2023 10:39:46] "GET /uploads/user/b3c92f43-a458-4bea-8076-448aca8495f6.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 10:39:46] "GET /uploads/user/31309ece-29d1-462c-bb28-9436ef370aee.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/55027785-295c-4c51-9f03-b1ed05e0ce8f.jpg
+[25/Sep/2023 10:39:46] "GET /uploads/user/55027785-295c-4c51-9f03-b1ed05e0ce8f.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/2e9aea7b-10c9-47fb-91ed-aa52bc3e8612.jpg
+[25/Sep/2023 10:39:46] "GET /uploads/user/2e9aea7b-10c9-47fb-91ed-aa52bc3e8612.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 10:39:46] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 10:39:46] "GET /api/sales/contract/ HTTP/1.1" 200 147347
+[25/Sep/2023 10:39:47] "GET /api/sales/contract/ HTTP/1.1" 200 147347
+[25/Sep/2023 10:39:53] "OPTIONS /api/sales/contract/?user=&contract_number=&contract_id=&date_after=&date_before=&activation=&valid=&status=1&contract_type=&contractpackage__package=&contractrouter__router=&ordering=date&contractantenna__antenna= HTTP/1.1" 200 0
+[25/Sep/2023 10:39:54] "GET /api/sales/contract/?user=&contract_number=&contract_id=&date_after=&date_before=&activation=&valid=&status=1&contract_type=&contractpackage__package=&contractrouter__router=&ordering=date&contractantenna__antenna= HTTP/1.1" 200 31448
+[25/Sep/2023 10:40:02] "OPTIONS /api/sales/contract/?user=&contract_number=&contract_id=&date_after=&date_before=&activation=&valid=&status=1&contract_type=&contractpackage__package=&contractrouter__router=&ordering=-date&contractantenna__antenna= HTTP/1.1" 200 0
+[25/Sep/2023 10:40:03] "GET /api/sales/contract/?user=&contract_number=&contract_id=&date_after=&date_before=&activation=&valid=&status=1&contract_type=&contractpackage__package=&contractrouter__router=&ordering=-date&contractantenna__antenna= HTTP/1.1" 200 31448
+[25/Sep/2023 10:43:00] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:43:01] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:43:05] "OPTIONS /api/sales/contract/?user=&contract_number=%D9%81%D8%A7%D8%B2%20%D8%B3%D9%88%D9%85%20&contract_id=&date_after=&date_before=&status=&contractpackage__package= HTTP/1.1" 200 0
+[25/Sep/2023 10:43:05] "GET /api/sales/contract/?user=&contract_number=%D9%81%D8%A7%D8%B2%20%D8%B3%D9%88%D9%85%20&contract_id=&date_after=&date_before=&status=&contractpackage__package= HTTP/1.1" 200 52
+[25/Sep/2023 10:43:09] "OPTIONS /api/sales/contract/?user=&contract_number=%D9%81%D8%A7%D8%B2%203&contract_id=&date_after=&date_before=&status=&contractpackage__package= HTTP/1.1" 200 0
+[25/Sep/2023 10:43:09] "GET /api/sales/contract/?user=&contract_number=%D9%81%D8%A7%D8%B2%203&contract_id=&date_after=&date_before=&status=&contractpackage__package= HTTP/1.1" 200 52
+[25/Sep/2023 10:43:15] "GET /api/sales/contract/?user=&contract_number=%D9%81%D8%A7%D8%B2%203&contract_id=&date_after=&date_before=&status=&contractpackage__package= HTTP/1.1" 200 52
+[25/Sep/2023 10:43:16] "GET /api/sales/contract/?user=&contract_number=%D9%81%D8%A7%D8%B2%203&contract_id=&date_after=&date_before=&status=&contractpackage__package= HTTP/1.1" 200 52
+[25/Sep/2023 10:43:17] "GET /api/sales/contract/?user=&contract_number=%D9%81%D8%A7%D8%B2%203&contract_id=&date_after=&date_before=&status=&contractpackage__package= HTTP/1.1" 200 52
+[25/Sep/2023 10:43:17] "GET /api/sales/contract/?user=&contract_number=%D9%81%D8%A7%D8%B2%203&contract_id=&date_after=&date_before=&status=&contractpackage__package= HTTP/1.1" 200 52
+[25/Sep/2023 10:43:21] "OPTIONS /api/sales/contract/?user=&contract_number=%D8%B4%D9%87%D8%B1%DA%A9%20&contract_id=&date_after=&date_before=&status=&contractpackage__package= HTTP/1.1" 200 0
+[25/Sep/2023 10:43:21] "GET /api/sales/contract/?user=&contract_number=%D8%B4%D9%87%D8%B1%DA%A9%20&contract_id=&date_after=&date_before=&status=&contractpackage__package= HTTP/1.1" 200 52
+[25/Sep/2023 10:43:45] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:43:45] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:46:17] "OPTIONS /api/sales/contract/?user=&contract_number=&contract_id=&date_after=&date_before=&activation=&valid=&status=&contract_type=&contractpackage__package=&contractrouter__router=&ordering=date&contractantenna__antenna= HTTP/1.1" 200 0
+[25/Sep/2023 10:46:19] "GET /api/sales/contract/?user=&contract_number=&contract_id=&date_after=&date_before=&activation=&valid=&status=&contract_type=&contractpackage__package=&contractrouter__router=&ordering=date&contractantenna__antenna= HTTP/1.1" 200 147540
+[25/Sep/2023 10:46:21] "GET /api/sales/contract/?user=&contract_number=&contract_id=&date_after=&date_before=&activation=&valid=&status=&contract_type=&contractpackage__package=&contractrouter__router=&ordering=date&contractantenna__antenna= HTTP/1.1" 200 147540
+[25/Sep/2023 10:46:40] "GET /api/sales/contract/?user=&contract_number=&contract_id=&date_after=&date_before=&activation=&valid=&status=&contract_type=&contractpackage__package=&contractrouter__router=&ordering=contract_number&contractantenna__antenna= HTTP/1.1" 200 148508
+[25/Sep/2023 10:47:14] "GET /api/sales/contract/?user=&contract_number=&contract_id=&date_after=&date_before=&activation=&valid=&status=&contract_type=&contractpackage__package=&contractrouter__router=&ordering=contract_number&contractantenna__antenna= HTTP/1.1" 200 148508
+[25/Sep/2023 10:48:05] "OPTIONS /api/sales/contract/?user=&contract_number=&contract_id=&date_after=&date_before=&activation=&valid=&status=&contract_type=&contractpackage__package=&contractrouter__router=&ordering=-contract_number&contractantenna__antenna= HTTP/1.1" 200 0
+[25/Sep/2023 10:48:07] "GET /api/sales/contract/?user=&contract_number=&contract_id=&date_after=&date_before=&activation=&valid=&status=&contract_type=&contractpackage__package=&contractrouter__router=&ordering=-contract_number&contractantenna__antenna= HTTP/1.1" 200 150046
+[25/Sep/2023 10:48:41] "GET /api/sales/contract/?user=&contract_number=&contract_id=&date_after=&date_before=&activation=&valid=&status=&contract_type=&contractpackage__package=&contractrouter__router=&ordering=contract_number&contractantenna__antenna= HTTP/1.1" 200 148508
+[25/Sep/2023 10:49:15] "GET /api/sales/contract/?user=&contract_number=&contract_id=&date_after=&date_before=&activation=&valid=&status=&contract_type=&contractpackage__package=&contractrouter__router=&ordering=contract_number&contractantenna__antenna= HTTP/1.1" 200 148508
+[25/Sep/2023 10:49:59] "GET /api/sales/contract/?user=&contract_number=&contract_id=&date_after=&date_before=&activation=&valid=&status=1&contract_type=&contractpackage__package=&contractrouter__router=&ordering=contract_number&contractantenna__antenna= HTTP/1.1" 200 31448
+[25/Sep/2023 10:50:09] "OPTIONS /api/user/token/ HTTP/1.1" 200 0
+[25/Sep/2023 10:50:10] "POST /api/user/token/ HTTP/1.1" 200 52
+[25/Sep/2023 10:50:10] "OPTIONS /api/user/me/ HTTP/1.1" 200 0
+[25/Sep/2023 10:50:10] "OPTIONS /api/sales/contract/?contract-status=1 HTTP/1.1" 200 0
+[25/Sep/2023 10:50:10] "OPTIONS /api/user/me/ HTTP/1.1" 200 0
+[25/Sep/2023 10:50:10] "OPTIONS /api/sales/contract/?contract-status=1 HTTP/1.1" 200 0
+[25/Sep/2023 10:50:11] "GET /api/user/me/ HTTP/1.1" 200 183
+[25/Sep/2023 10:50:11] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:50:11] "GET /api/user/me/ HTTP/1.1" 200 183
+[25/Sep/2023 10:50:11] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:50:12] "GET /uploads/user/7b6cb20b-bf23-4b28-be41-061df98f9455.png HTTP/1.1" 200 250306
+[25/Sep/2023 10:50:19] "OPTIONS /api/sales/contract/?user=&contract_number=&contract_id=&date_after=&date_before=&activation=&valid=&status=1&contract_type=&contractpackage__package=&contractrouter__router=&ordering=-contract_number&contractantenna__antenna= HTTP/1.1" 200 0
+[25/Sep/2023 10:50:20] "GET /api/sales/contract/?user=&contract_number=&contract_id=&date_after=&date_before=&activation=&valid=&status=1&contract_type=&contractpackage__package=&contractrouter__router=&ordering=-contract_number&contractantenna__antenna= HTTP/1.1" 200 31448
+[25/Sep/2023 10:50:36] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:50:36] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:50:43] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:50:43] "GET /api/sales/contract/?contract-status=1 HTTP/1.1" 200 31448
+[25/Sep/2023 10:51:02] "OPTIONS /api/sales/contract/?user=&contract_number=&contract_id=&date_after=&date_before=&activation=&valid=&status=&contract_type=&contractpackage__package=&contractrouter__router=&ordering=-date&contractantenna__antenna= HTTP/1.1" 200 0
+[25/Sep/2023 10:51:03] "GET /api/sales/contract/?user=&contract_number=&contract_id=&date_after=&date_before=&activation=&valid=&status=&contract_type=&contractpackage__package=&contractrouter__router=&ordering=-date&contractantenna__antenna= HTTP/1.1" 200 152292
+[25/Sep/2023 10:53:38] "GET /api/sales/contract/?user=&contract_number=&contract_id=&date_after=&date_before=&activation=&valid=&status=&contract_type=&contractpackage__package=&contractrouter__router=&ordering=contract_number&contractantenna__antenna= HTTP/1.1" 200 148508
+[25/Sep/2023 11:00:33] "GET /api/sales/contract/?user=&contract_number=&contract_id=&date_after=&date_before=&activation=&valid=&status=&contract_type=&contractpackage__package=&contractrouter__router=&ordering=contract_number&contractantenna__antenna= HTTP/1.1" 200 148508
+[25/Sep/2023 11:00:38] "GET /api/sales/contract/?user=&contract_number=&contract_id=&date_after=&date_before=&activation=&valid=&status=&contract_type=&contractpackage__package=&contractrouter__router=&ordering=contract_number&contractantenna__antenna= HTTP/1.1" 200 148508
+[25/Sep/2023 11:00:46] "GET /api/sales/contract/?user=&contract_number=&contract_id=&date_after=&date_before=&activation=&valid=&status=&contract_type=&contractpackage__package=&contractrouter__router=&ordering=contract_number&contractantenna__antenna= HTTP/1.1" 200 148508
+[25/Sep/2023 11:00:48] "GET /api/user/me/ HTTP/1.1" 200 194
+[25/Sep/2023 11:00:48] "GET /api/sales/contract-status/ HTTP/1.1" 200 204
+[25/Sep/2023 11:00:48] "GET /api/taskmanager/payment/ HTTP/1.1" 200 52
+[25/Sep/2023 11:00:48] "GET /api/sales/packages/ HTTP/1.1" 200 35579
+[25/Sep/2023 11:00:48] "GET /api/taskmanager/installationConfirm/ HTTP/1.1" 200 174
+[25/Sep/2023 11:00:48] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 11:00:48] "GET /api/taskmanager/stage/ HTTP/1.1" 200 158
+[25/Sep/2023 11:00:48] "GET /api/taskmanager/project/ HTTP/1.1" 200 208
+[25/Sep/2023 11:00:48] "GET /api/taskmanager/task/ HTTP/1.1" 200 2724
+[25/Sep/2023 11:00:48] "GET /api/taskmanager/tag/ HTTP/1.1" 200 101
+[25/Sep/2023 11:00:48] "GET /api/user/me/ HTTP/1.1" 200 194
+[25/Sep/2023 11:00:48] "GET /api/sales/contract-status/ HTTP/1.1" 200 204
+[25/Sep/2023 11:00:49] "GET /api/taskmanager/payment/ HTTP/1.1" 200 52
+[25/Sep/2023 11:00:49] "GET /api/taskmanager/installationConfirm/ HTTP/1.1" 200 174
+[25/Sep/2023 11:00:49] "GET /api/taskmanager/stage/ HTTP/1.1" 200 158
+[25/Sep/2023 11:00:49] "GET /api/sales/packages/ HTTP/1.1" 200 35579
+[25/Sep/2023 11:00:49] "GET /api/taskmanager/project/ HTTP/1.1" 200 208
+[25/Sep/2023 11:00:49] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 11:00:49] "GET /api/user/me/ HTTP/1.1" 200 194
+[25/Sep/2023 11:00:49] "GET /api/taskmanager/task/ HTTP/1.1" 200 2724
+[25/Sep/2023 11:00:49] "GET /api/taskmanager/tag/ HTTP/1.1" 200 101
+[25/Sep/2023 11:00:49] "GET /api/user/me/ HTTP/1.1" 200 194
+[25/Sep/2023 11:00:49] "GET /api/user/users/ HTTP/1.1" 200 4824
+[25/Sep/2023 11:00:49] "GET /api/user/users/ HTTP/1.1" 200 4824
+Not Found: /uploads/user/57925e3f-cf4a-4a4f-8f74-5d28e9bf4733.jpg
+[25/Sep/2023 11:00:49] "GET /uploads/user/57925e3f-cf4a-4a4f-8f74-5d28e9bf4733.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/26eb6e8d-aa35-4032-b564-439ddbde463a.jpg
+[25/Sep/2023 11:00:50] "GET /uploads/user/26eb6e8d-aa35-4032-b564-439ddbde463a.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/21916a40-1865-4583-bd0f-8d3c84a3c525.jpg
+[25/Sep/2023 11:00:50] "GET /uploads/user/21916a40-1865-4583-bd0f-8d3c84a3c525.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/b3c92f43-a458-4bea-8076-448aca8495f6.jpg
+[25/Sep/2023 11:00:50] "GET /uploads/user/b3c92f43-a458-4bea-8076-448aca8495f6.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/31309ece-29d1-462c-bb28-9436ef370aee.jpg
+[25/Sep/2023 11:00:50] "GET /uploads/user/31309ece-29d1-462c-bb28-9436ef370aee.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/55027785-295c-4c51-9f03-b1ed05e0ce8f.jpg
+[25/Sep/2023 11:00:50] "GET /api/sales/contract/ HTTP/1.1" 200 147347
+[25/Sep/2023 11:00:50] "GET /uploads/user/55027785-295c-4c51-9f03-b1ed05e0ce8f.jpg HTTP/1.1" 404 3223
+Not Found: /uploads/user/2e9aea7b-10c9-47fb-91ed-aa52bc3e8612.jpg
+[25/Sep/2023 11:00:50] "GET /uploads/user/2e9aea7b-10c9-47fb-91ed-aa52bc3e8612.jpg HTTP/1.1" 404 3223
+[25/Sep/2023 11:00:51] "GET /api/sales/contract/ HTTP/1.1" 200 147347
+[25/Sep/2023 11:00:55] "GET /api/sales/contract/?user=&contract_number=&contract_id=&date_after=&date_before=&activation=&valid=&status=1&contract_type=&contractpackage__package=&contractrouter__router=&ordering=contract_number&contractantenna__antenna= HTTP/1.1" 200 31448
+[25/Sep/2023 11:01:45] "GET /api/sales/contract/?user=&contract_number=&contract_id=&date_after=&date_before=&activation=&valid=&status=1&contract_type=&contractpackage__package=&contractrouter__router=&ordering=-contract_number&contractantenna__antenna= HTTP/1.1" 200 31448

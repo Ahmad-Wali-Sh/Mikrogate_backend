@@ -8,7 +8,7 @@ from core import models
 from import_export.admin import ImportExportModelAdmin
 
 
-class UserAdmin(BaseUserAdmin):
+class UserAdmin(BaseUserAdmin, ImportExportModelAdmin):
     ordering = ['id']
     list_display = ['email', 'name']
     fieldsets = (
