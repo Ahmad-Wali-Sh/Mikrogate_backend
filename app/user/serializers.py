@@ -6,6 +6,7 @@ from rest_framework import serializers
 from core.models import User
 
 
+
 class UserSerializer(serializers.ModelSerializer):
     """Serializer for the users object"""
     # user_permissions = serializers.SerializerMethodField()
@@ -13,13 +14,14 @@ class UserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = get_user_model()
-        fields = ('id', 'email', 'password', 'name', 'avatar', 'user_permissions')
+        fields = ('id', 'email', 'password', 'name', 'avatar', 'user_permissions','groups')
         extra_kwargs = {'password': {'write_only': True, 'min_length': 5}}
 
     # def get_user_permissions(self, obj):
     #     return list(obj.user_permissions.all())
     # def get_user_permissions(self, obj):
     #     return list(obj.user_permissions.all()) # I'm not sure list type casting is necessary
+
 
     def create(self, validated_data):
         """Create a new user with encrypted password and return it"""
