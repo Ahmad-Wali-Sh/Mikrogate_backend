@@ -154,7 +154,7 @@ class Contracts(models.Model):
         return object_details
 
     def save (self, *args, **kwargs):
-        last_id_obj = Contracts.objects.latest('contract_id')
+        last_id_obj = Contracts.objects.order_by('-pk')[0]
         if (self.contract_id):
             pass
         else: 
