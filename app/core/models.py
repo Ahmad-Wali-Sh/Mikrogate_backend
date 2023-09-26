@@ -153,14 +153,29 @@ class Contracts(models.Model):
         }
         return object_details
 
-    def save (self, *args, **kwargs):
-        last_id_obj = Contracts.objects.order_by('-pk')[0]
-        if (self.contract_id):
+    def update_model(instance, *args, **kwargs):
+        last_id_obj = Contracts.objects.order_by('-pk')[1]
+        last_id_obj_origin = Contracts.objects.order_by('-pk')[0]
+        if (instance.contract_id):
+            pass
+        if (instance.id < last_id_obj_origin.id):
             pass
         else: 
             if (last_id_obj):
-                self.contract_id = "id" + str(int(last_id_obj.contract_id[2:10]) + 1)
+                instance.contract_id = "id" + str(int(last_id_obj.contract_id[2:10]) + 1)
+        super(Contracts, instance).save(*args, **kwargs)
+
+    def save (self, *args, **kwargs):
+        # last_id_obj = Contracts.objects.order_by('-pk')[0]
+        # if (instance.contract_id):
+        #     pass
+        # if (instance.id < last_id_obj.id):
+        #     pass
+        # else: 
+        #     if (last_id_obj):
+        #         instance.contract_id = "id" + str(int(last_id_obj.contract_id[2:10]) + 1)
         super(Contracts, self).save(*args, **kwargs)
+        self.update_model()
 
 
     def __str__(self):
