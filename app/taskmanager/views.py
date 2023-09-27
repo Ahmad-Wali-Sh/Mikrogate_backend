@@ -281,12 +281,14 @@ class MessageViewSet(viewsets.GenericViewSet,
         serializer.save(user=self.request.user)
 
 
-class PaymentViewSet(viewsets.GenericViewSet,
-                        mixins.ListModelMixin,
-                        mixins.CreateModelMixin):
+class PaymentViewSet(viewsets.ModelViewSet):
     """ Payment Clear Serializer"""
     queryset = Payment.objects.all()
     serializer_class = serializers.PaymentSerializer
+    filter_backends = [DjangoFilterBackend,filters.OrderingFilter]
+    filterset_fields = ['id', 'task']
+    permission_classes = (IsAuthenticated,)
+    ordering_fields = ['created', 'deadline', 'contract']
     authentication_classes = (TokenAuthentication,)
     permission_classes = (IsAuthenticated,D7896DjangoModelPermissions)
 
@@ -296,17 +298,24 @@ class PaymentViewSet(viewsets.GenericViewSet,
     def perform_create(self, serializer):
         serializer.save(user=self.request.user)
 
-class InstallationConfirmViewSet(viewsets.GenericViewSet,
-                        mixins.ListModelMixin,
-                        mixins.CreateModelMixin):
+class InstallationConfirmViewSet(viewsets.ModelViewSet):
     """ Installation Confirm Serializer"""
     queryset = InstallationConfirm.objects.all()
     serializer_class = serializers.InstallationConfirmSerializer
     authentication_classes = (TokenAuthentication,)
+    filter_backends = [DjangoFilterBackend,filters.OrderingFilter]
+    filterset_fields = ['id', 'task']
+    permission_classes = (IsAuthenticated,)
+    ordering_fields = ['created', 'deadline', 'contract']
     permission_classes = (IsAuthenticated, D7896DjangoModelPermissions)
 
+
     def get_queryset(self):
-        return self.queryset
+        task_id = self.request.query_params.get('id')
+        if task_id:
+            return self.queryset.filter(id=task_id)
+        else:
+            return self.queryset
 
     def perform_create(self, serializer):
         serializer.save(user=self.request.user)
