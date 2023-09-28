@@ -3,13 +3,22 @@ from rest_framework.response import Response
 from rest_framework import generics, viewsets, status
 from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework.settings import api_settings
+from rest_framework import viewsets, filters
 
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.permissions import IsAuthenticated
-
+from django_filters.rest_framework import DjangoFilterBackend
 from user.serializers import UserSerializer, AuthTokenSerialier, UserAvatarSerializer
+import django_filters
 
 from core.models import User
+
+class UserFilterSet(django_filters.FilterSet):
+    name = django_filters.CharFilter(lookup_expr='icontains')
+    class Meta:
+        model = User
+        fields = ['name',]
+
 
 
 class CreateUserView(generics.CreateAPIView):
@@ -21,6 +30,8 @@ class UserViewSet(viewsets.ModelViewSet):
     """Get users list"""
     queryset = User.objects.all()
     serializer_class = UserSerializer
+    filter_backends = [DjangoFilterBackend,filters.OrderingFilter]
+    filterset_class = UserFilterSet
     authentication_classes = (TokenAuthentication,)
     permission_classes = (IsAuthenticated,)
 
