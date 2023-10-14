@@ -346,6 +346,18 @@ class Task(models.Model):
     def __str__(self):
         return self.title
 
+    def save (self, *args, **kwargs):
+        if (self.stage.name == 'In-Progress'):
+            self.contract.status = ContractStatus.objects.get(name='Pending')
+            self.contract.save()
+        if (self.stage.name == 'Canceled'):
+            self.contract.status = ContractStatus.objects.get(name='Canceled')
+            self.contract.save()
+        if (self.stage.name == 'Pending'):
+            self.contract.status = ContractStatus.objects.get(name='Pending')
+            self.contract.save()
+        super(Task, self).save(*args, **kwargs)
+
 class LinkDetails(models.Model):
     """Link Details Object"""
     task = models.ForeignKey(Task, on_delete=models.DO_NOTHING)
@@ -508,6 +520,14 @@ class InstallationConfirm(models.Model):
 
     class Meta: 
         ordering = ['-updated', '-created']
+
+    def save (self, *args, **kwargs):
+        if (self.confirm):
+            self.task.contract.status = ContractStatus.objects.get(name='Done')
+            self.task.stage = Stage.objects.get(name='Completed')
+            self.task.save()
+            self.task.contract.save()
+        super(InstallationConfirm, self).save(*args, **kwargs)
 
 auditlog.register(User)
 auditlog.register(Contracts)
