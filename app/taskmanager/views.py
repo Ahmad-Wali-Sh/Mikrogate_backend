@@ -59,9 +59,10 @@ class StageViewSet(BaseTaskManagetAttrViewSetWithUser):
 class TaskFilterSet(django_filters.FilterSet):
     created = django_filters.DateTimeFromToRangeFilter()
     deadline = django_filters.DateFromToRangeFilter()
+    stage_net= django_filters.NumberFilter(field_name='stage', exclude=True)
     class Meta:
         model = Task
-        fields = ['user','contract__contract_number', 'project', 'deadline', 'tag', 'stage','assigned__id', 'created','contract__contract_id']
+        fields = ['user','contract__contract_number', 'project', 'deadline', 'tag', 'stage','stage_net','assigned__id', 'created','contract__contract_id']
 
 
 
