@@ -1,5 +1,6 @@
 from django.contrib.auth import get_user_model, authenticate
 from django.utils.translation import gettext as _
+from django.contrib.auth.models import Group
 
 from rest_framework import serializers
 
@@ -11,6 +12,11 @@ class UserSerializer(serializers.ModelSerializer):
     """Serializer for the users object"""
     # user_permissions = serializers.SerializerMethodField()
     # user_permissions = serializers.SerializerMethodField()
+    groups = serializers.SlugRelatedField(
+        many=True,
+        read_only=True,
+        slug_field=('name'),
+    )
 
     class Meta:
         model = get_user_model()

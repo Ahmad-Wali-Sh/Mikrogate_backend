@@ -334,7 +334,7 @@ class Task(models.Model):
     deadline = models.DateTimeField()
     stage = models.ForeignKey(Stage, on_delete=models.DO_NOTHING)
     assigned = models.ManyToManyField(User, related_name="Task")
-    description = models.TextField(null=True)
+    description = models.TextField(null=True, blank=True)
     read = models.BooleanField(default=False)
     updated = models.DateTimeField(auto_now=True)
     created = models.DateTimeField(auto_now_add=True)
@@ -405,7 +405,7 @@ class Troubleshoot(models.Model):
     contact = models.CharField(max_length=50)
     problem = models.CharField(max_length=255)
     service_charge = models.IntegerField()
-    description = models.TextField()
+    description = models.TextField(blank=True)
     updated = models.DateTimeField(auto_now=True)
     created = models.DateTimeField(auto_now_add=True)
 
