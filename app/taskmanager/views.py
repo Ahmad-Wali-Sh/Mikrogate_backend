@@ -115,7 +115,7 @@ class LinkDetailsViewSet(viewsets.ModelViewSet):
             return self.queryset
 
     def perform_create(self, serializer):
-        serializer.save()
+        serializer.save(user=self.request.user)
 
 
 class CheckListViewSet(viewsets.ModelViewSet):
@@ -132,7 +132,7 @@ class CheckListViewSet(viewsets.ModelViewSet):
         return self.queryset
 
     def perform_create(self, serializer):
-        serializer.save()
+        serializer.save(user=self.request.user)
 
 
 class InstallationViewSet(viewsets.ModelViewSet):
@@ -150,7 +150,7 @@ class InstallationViewSet(viewsets.ModelViewSet):
             return self.queryset
 
     def perform_create(self, serializer):
-        serializer.save()
+        serializer.save(user=self.request.user)
 
 
 class TroubleshootViewSet(viewsets.ModelViewSet):
@@ -168,7 +168,7 @@ class TroubleshootViewSet(viewsets.ModelViewSet):
             return self.queryset
 
     def perform_create(self, serializer):
-        serializer.save()
+        serializer.save(user=self.request.user)
 
 
 class ChangeLocationViewSet(viewsets.ModelViewSet):
@@ -185,7 +185,7 @@ class ChangeLocationViewSet(viewsets.ModelViewSet):
         return self.queryset
 
     def perform_create(self, serializer):
-        serializer.save()
+        serializer.save(user=self.request.user)
 
 
 class OnlineSupportViewSet(viewsets.ModelViewSet):
@@ -209,7 +209,7 @@ class OnlineSupportViewSet(viewsets.ModelViewSet):
         return self.serializer_class
 
     def perform_create(self, serializer):
-        serializer.save()
+        serializer.save(user=self.request.user)
 
 
 class AmendmentViewSet(viewsets.GenericViewSet,

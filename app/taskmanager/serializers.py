@@ -86,38 +86,38 @@ class TaskSerializer(serializers.ModelSerializer):
 
 class TaskDetailSerializer(TaskSerializer):
     """Serialize a task detail"""
-    # user = UserSerializer(read_only=True)
+    user = UserSerializer(read_only=True)
     contract = TaskContractSerializer(read_only=True)
     project = ProjectSerializer(read_only=True)
     tag = TagSerializer(read_only=True)
     stage = StageSerializer(read_only=True)
     assigned = UserSerializer(read_only=True, many=True)
-    user = UserSerializer(read_only=True)
 
 
 class LinkDetailsSerializer(serializers.ModelSerializer):
     """Serializer for Task's link details"""
-
+    user = UserSerializer(read_only=True)
     class Meta:
         model = LinkDetails
         fields = ('id', 'task', 'installation_type', 'device', 'access_point', 'signal', 'ccq', 'cable',
-                  'connector', 'payment', 'bill_number', 'installation_date', 'additional_details')
-    read_only_fields = ('id',)
+                  'connector', 'payment', 'bill_number', 'installation_date', 'additional_details', 'user')
+    read_only_fields = ('id','user')
 
 
 class CheckListSerializer(serializers.ModelSerializer):
     """Serialzier for Task's checklist"""
+    user = UserSerializer(read_only=True)
 
     class Meta:
         model = CheckList
         fields = ('id', 'task', 'cable', 'stand', 'router',
-                  'antenna', 'router_os', 'signal', 'dns')
-        read_only_fields = ('id',)
+                  'antenna', 'router_os', 'signal', 'dns', 'user')
+        read_only_fields = ('id','user')
 
 
 class InstallationSerializer(serializers.ModelSerializer):
     """Serialzier for Installation Tasks"""
-
+    user = UserSerializer(read_only=True)
     task = serializers.PrimaryKeyRelatedField(
         queryset=Task.objects.all()
     )
@@ -125,14 +125,14 @@ class InstallationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Installation
         fields = ('id', 'task', 'description', 'pppoe_user',
-                  'pppoe_password')
-        read_only_fields = ('id',)
+                  'pppoe_password', 'user')
+        read_only_fields = ('id','user')
 
 
 
 class TroubleshootSerializer(serializers.ModelSerializer):
     """Serialzier for Troubleshoot Tasks"""
-
+    user = UserSerializer(read_only=True)
     task = serializers.PrimaryKeyRelatedField(
         queryset=Task.objects.all()
     )
@@ -140,34 +140,34 @@ class TroubleshootSerializer(serializers.ModelSerializer):
     class Meta:
         model = Troubleshoot
         fields = ('id', 'task', 'address', 'contact', 'problem',
-                  'service_charge', 'description')
-        read_only_fields = ('id',)
+                  'service_charge', 'description', 'user')
+        read_only_fields = ('id','user')
 
 
 class ChangeLocationSerializer(serializers.ModelSerializer):
     """Serialzier for Change Location Tasks"""
-
+    user = UserSerializer(read_only=True)
     task = serializers.PrimaryKeyRelatedField(
         queryset=Task.objects.all()
     )
 
     class Meta:
         model = ChangeLocation
-        fields = ('id', 'task', 'address', 'contact', 'service_charge', 'description')
-        read_only_fields = ('id',)
+        fields = ('id', 'task', 'address', 'contact', 'service_charge', 'description', 'user')
+        read_only_fields = ('id','user')
 
 
 class OnlineSupportSerializer(serializers.ModelSerializer):
     """Serializer for Online Support Tasks"""
-
+    user = UserSerializer(read_only=True)
     task = serializers.PrimaryKeyRelatedField(
         queryset=Task.objects.all()
     )
 
     class Meta:
         model = OnlineSupport
-        fields = ('id', 'task', 'contact', 'by', 'description')
-        read_only_fields = ('id',)
+        fields = ('id', 'task', 'contact', 'by', 'description', 'user')
+        read_only_fields = ('id','user')
 
 
 class OnlineSupportDetailSerializer(OnlineSupportSerializer):
@@ -185,8 +185,8 @@ class AmendmentSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Amendment
-        fields = ('id', 'task', 'user', 'message', 'created')
-        read_only_fields = ('id',)
+        fields = ('id', 'task', 'user', 'message', 'created', 'user')
+        read_only_fields = ('id','user')
 
 
 class AmendmentDetailSerializer(AmendmentSerializer):
@@ -231,16 +231,16 @@ class MessageSerializer(serializers.ModelSerializer):
 
 class PaymentSerializer(serializers.ModelSerializer):
     """" Serializer for Payment Clear"""
-
+    user = UserSerializer(read_only=True)
     class Meta: 
         model = Payment
-        fields = ('id', 'task', 'payment', 'updated', 'created')
-        read_only_fields = ('id',)
+        fields = ('id', 'task', 'payment', 'updated', 'created', 'user')
+        read_only_fields = ('id','user')
 
 class InstallationConfirmSerializer(serializers.ModelSerializer):
     """ Serializer for InstallationConfirm"""
-
+    user = UserSerializer(read_only=True)
     class Meta: 
         model = InstallationConfirm
-        fields = ('id', 'task', 'confirm', 'updated', 'created')
-        read_only_fields = ('id', )
+        fields = ('id', 'task', 'confirm', 'updated', 'created', 'user')
+        read_only_fields = ('id', 'user')

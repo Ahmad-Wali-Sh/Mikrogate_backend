@@ -372,6 +372,10 @@ class LinkDetails(models.Model):
     bill_number = models.IntegerField(null=True, blank=True)
     installation_date = models.DateTimeField()
     additional_details = models.TextField(blank=True)
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.DO_NOTHING
+    )
 
 
 class CheckList(models.Model):
@@ -384,7 +388,10 @@ class CheckList(models.Model):
     router_os = models.BooleanField(default=False)
     signal = models.BooleanField(default=False)
     dns = models.BooleanField(default=False)
-
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.DO_NOTHING
+    )
 
 class Installation(models.Model):
     task = models.ForeignKey(Task, on_delete=models.DO_NOTHING)
@@ -393,7 +400,10 @@ class Installation(models.Model):
     pppoe_password = models.CharField(max_length=50, blank=True)
     updated = models.DateTimeField(auto_now=True)
     created = models.DateTimeField(auto_now_add=True)
-
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.DO_NOTHING
+    )
     class Meta:
         ordering = ['-updated', '-created']
 
@@ -408,7 +418,10 @@ class Troubleshoot(models.Model):
     description = models.TextField(blank=True)
     updated = models.DateTimeField(auto_now=True)
     created = models.DateTimeField(auto_now_add=True)
-
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.DO_NOTHING
+    )
     class Meta:
         ordering = ['-updated', '-created']
 
@@ -422,7 +435,10 @@ class ChangeLocation(models.Model):
     description = models.TextField(default='')
     updated = models.DateTimeField(auto_now=True)
     created = models.DateTimeField(auto_now_add=True)
-
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.DO_NOTHING
+    )
     class Meta:
         ordering = ['-updated', '-created']
 
@@ -435,7 +451,10 @@ class OnlineSupport(models.Model):
     description = models.TextField(blank=True)
     updated = models.DateTimeField(auto_now=True)
     created = models.DateTimeField(auto_now_add=True)
-
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.DO_NOTHING
+    )
     class Meta:
         ordering = ['-updated', '-created']
 
@@ -450,7 +469,10 @@ class Amendment(models.Model):
     message = models.TextField()
     updated = models.DateTimeField(auto_now=True)
     created = models.DateTimeField(auto_now_add=True)
-
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.DO_NOTHING
+    )
     class Meta:
         ordering = ['-updated', '-created']
 
@@ -502,7 +524,10 @@ class Payment(models.Model):
     payment = models.BooleanField(default=False)
     updated = models.DateTimeField(auto_now=True)
     created = models.DateTimeField(auto_now_add=True)
-
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.DO_NOTHING
+    )
     class Meta: 
         ordering = ['-updated', '-created']
 
@@ -517,7 +542,10 @@ class InstallationConfirm(models.Model):
     confirm = models.BooleanField(default=False)
     updated = models.DateTimeField(auto_now=True)
     created = models.DateTimeField(auto_now_add=True)
-
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.DO_NOTHING
+    )
     class Meta: 
         ordering = ['-updated', '-created']
 
