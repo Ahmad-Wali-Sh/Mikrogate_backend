@@ -2,6 +2,7 @@ from atexit import register
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.utils.translation import gettext as _
+from .resources import ContractResources
 
 from core import models
 
@@ -44,7 +45,7 @@ admin.site.register(models.CheckList, ImportExportModelAdmin)
 admin.site.register(models.LinkDetails, ImportExportModelAdmin)
 admin.site.register(models.TaskLog, ImportExportModelAdmin)
 admin.site.register(models.Message, ImportExportModelAdmin)
-admin.site.register(models.Contracts, ImportExportModelAdmin)
+# admin.site.register(models.Contracts, ImportExportModelAdmin)
 admin.site.register(models.ContractPackage, ImportExportModelAdmin)
 admin.site.register(models.ContractAntenna, ImportExportModelAdmin)
 admin.site.register(models.ContractRouter, ImportExportModelAdmin)
@@ -59,3 +60,8 @@ admin.site.register(models.InstallationConfirm, ImportExportModelAdmin)
 @admin.register(models.Package)
 class PackageAdmin(ImportExportModelAdmin, admin.ModelAdmin):
     list_display = ('name', 'available', 'type', 'price')
+
+
+@admin.register(models.Contracts)
+class ContractAdmin(ImportExportModelAdmin):
+    resource_class = ContractResources
