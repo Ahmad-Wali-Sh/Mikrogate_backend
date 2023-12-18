@@ -360,7 +360,7 @@ class Task(models.Model):
 
 class LinkDetails(models.Model):
     """Link Details Object"""
-    task = models.ForeignKey(Task, on_delete=models.DO_NOTHING)
+    task = models.ForeignKey(Task, on_delete=models.CASCADE)
     installation_type = models.CharField(max_length=100, blank=True)
     device = models.CharField(max_length=255, blank=True)
     access_point = models.CharField(max_length=50, blank=True)
