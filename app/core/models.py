@@ -380,7 +380,7 @@ class LinkDetails(models.Model):
 
 class CheckList(models.Model):
     """Link Checklist Object"""
-    task = models.ForeignKey(Task, on_delete=models.DO_NOTHING)
+    task = models.ForeignKey(Task, on_delete=models.CASCADE)
     cable = models.BooleanField(default=False)
     stand = models.BooleanField(default=False)
     router = models.BooleanField(default=False)
@@ -394,7 +394,7 @@ class CheckList(models.Model):
     )
 
 class Installation(models.Model):
-    task = models.ForeignKey(Task, on_delete=models.DO_NOTHING)
+    task = models.ForeignKey(Task, on_delete=models.CASCADE)
     description = models.TextField(blank=True)
     pppoe_user = models.CharField(max_length=50, blank=True)
     pppoe_password = models.CharField(max_length=50, blank=True)
@@ -410,7 +410,7 @@ class Installation(models.Model):
 
 class Troubleshoot(models.Model):
     """Task-Manager Troubleshoot Object"""
-    task = models.ForeignKey(Task, on_delete=models.DO_NOTHING)
+    task = models.ForeignKey(Task, on_delete=models.CASCADE)
     address = models.CharField(max_length=255)
     contact = models.CharField(max_length=50)
     problem = models.CharField(max_length=255)
@@ -428,7 +428,7 @@ class Troubleshoot(models.Model):
 
 class ChangeLocation(models.Model):
     """Task-Manager Change Location Object"""
-    task = models.ForeignKey(Task, on_delete=models.DO_NOTHING)
+    task = models.ForeignKey(Task, on_delete=models.CASCADE)
     address = models.CharField(max_length=255)
     contact = models.CharField(max_length=50)
     service_charge = models.IntegerField()
@@ -445,7 +445,7 @@ class ChangeLocation(models.Model):
 
 class OnlineSupport(models.Model):
     """Task-Manager Online Support Object"""
-    task = models.ForeignKey(Task, on_delete=models.DO_NOTHING)
+    task = models.ForeignKey(Task, on_delete=models.CASCADE)
     contact = models.CharField(max_length=20)
     by = models.CharField(max_length=20)
     description = models.TextField(blank=True)
@@ -461,7 +461,7 @@ class OnlineSupport(models.Model):
 
 class Amendment(models.Model):
     """Task-Manager Amendment object"""
-    task = models.ForeignKey(Task, on_delete=models.DO_NOTHING)
+    task = models.ForeignKey(Task, on_delete=models.CASCADE)
     user = models.ForeignKey(
         settings.AUTH_USER_MODEL,
         on_delete=models.DO_NOTHING,
@@ -483,7 +483,7 @@ class TaskLog(models.Model):
         settings.AUTH_USER_MODEL,
         on_delete=models.DO_NOTHING
     )
-    task = models.ForeignKey(Task, on_delete=models.DO_NOTHING)
+    task = models.ForeignKey(Task, on_delete=models.CASCADE)
     body = models.TextField()
     updated = models.DateTimeField(auto_now=True)
     created = models.DateTimeField(auto_now_add=True)
@@ -501,7 +501,7 @@ class Message(models.Model):
         settings.AUTH_USER_MODEL,
         on_delete=models.DO_NOTHING
     )
-    task = models.ForeignKey(Task, on_delete=models.DO_NOTHING)
+    task = models.ForeignKey(Task, on_delete=models.CASCADE)
     to = models.ManyToManyField(User, related_name='messages')
     body = models.TextField()
     updated = models.DateTimeField(auto_now=True)
@@ -520,7 +520,7 @@ class Payment(models.Model):
         settings.AUTH_USER_MODEL,
         on_delete=models.DO_NOTHING
     )
-    task = models.ForeignKey(Task, on_delete=models.DO_NOTHING)
+    task = models.ForeignKey(Task, on_delete=models.CASCADE)
     payment = models.BooleanField(default=False)
     updated = models.DateTimeField(auto_now=True)
     created = models.DateTimeField(auto_now_add=True)
@@ -538,7 +538,7 @@ class InstallationConfirm(models.Model):
         settings.AUTH_USER_MODEL,
         on_delete=models.DO_NOTHING
     )
-    task = models.ForeignKey(Task, on_delete=models.DO_NOTHING)
+    task = models.ForeignKey(Task, on_delete=models.CASCADE)
     confirm = models.BooleanField(default=False)
     updated = models.DateTimeField(auto_now=True)
     created = models.DateTimeField(auto_now_add=True)
