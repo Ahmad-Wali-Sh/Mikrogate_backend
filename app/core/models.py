@@ -360,7 +360,7 @@ class Task(models.Model):
 
 class LinkDetails(models.Model):
     """Link Details Object"""
-    task = models.ForeignKey(Task, on_delete=models.CASCADE)
+    task = models.ForeignKey(Task, on_delete=models.CASCADE, unique=True)
     installation_type = models.CharField(max_length=100, blank=True)
     device = models.CharField(max_length=255, blank=True)
     access_point = models.CharField(max_length=50, blank=True)
@@ -380,7 +380,7 @@ class LinkDetails(models.Model):
 
 class CheckList(models.Model):
     """Link Checklist Object"""
-    task = models.ForeignKey(Task, on_delete=models.CASCADE)
+    task = models.ForeignKey(Task, on_delete=models.CASCADE, unique=True)
     cable = models.BooleanField(default=False)
     stand = models.BooleanField(default=False)
     router = models.BooleanField(default=False)
@@ -394,7 +394,7 @@ class CheckList(models.Model):
     )
 
 class Installation(models.Model):
-    task = models.ForeignKey(Task, on_delete=models.CASCADE)
+    task = models.ForeignKey(Task, on_delete=models.CASCADE, unique=True)
     description = models.TextField(blank=True)
     pppoe_user = models.CharField(max_length=50, blank=True)
     pppoe_password = models.CharField(max_length=50, blank=True)
@@ -410,7 +410,7 @@ class Installation(models.Model):
 
 class Troubleshoot(models.Model):
     """Task-Manager Troubleshoot Object"""
-    task = models.ForeignKey(Task, on_delete=models.CASCADE)
+    task = models.ForeignKey(Task, on_delete=models.CASCADE, unique=True)
     address = models.CharField(max_length=255)
     contact = models.CharField(max_length=50)
     problem = models.CharField(max_length=255)
@@ -445,7 +445,7 @@ class ChangeLocation(models.Model):
 
 class OnlineSupport(models.Model):
     """Task-Manager Online Support Object"""
-    task = models.ForeignKey(Task, on_delete=models.CASCADE)
+    task = models.ForeignKey(Task, on_delete=models.CASCADE, unique=True)
     contact = models.CharField(max_length=20)
     by = models.CharField(max_length=20)
     description = models.TextField(blank=True)
@@ -461,7 +461,7 @@ class OnlineSupport(models.Model):
 
 class Amendment(models.Model):
     """Task-Manager Amendment object"""
-    task = models.ForeignKey(Task, on_delete=models.CASCADE)
+    task = models.ForeignKey(Task, on_delete=models.CASCADE, unique=True)
     user = models.ForeignKey(
         settings.AUTH_USER_MODEL,
         on_delete=models.DO_NOTHING,
@@ -520,7 +520,7 @@ class Payment(models.Model):
         settings.AUTH_USER_MODEL,
         on_delete=models.DO_NOTHING
     )
-    task = models.ForeignKey(Task, on_delete=models.CASCADE)
+    task = models.ForeignKey(Task, on_delete=models.CASCADE, unique=True)
     payment = models.BooleanField(default=False)
     updated = models.DateTimeField(auto_now=True)
     created = models.DateTimeField(auto_now_add=True)
@@ -538,7 +538,7 @@ class InstallationConfirm(models.Model):
         settings.AUTH_USER_MODEL,
         on_delete=models.DO_NOTHING
     )
-    task = models.ForeignKey(Task, on_delete=models.CASCADE)
+    task = models.ForeignKey(Task, on_delete=models.CASCADE, unique=True)
     confirm = models.BooleanField(default=False)
     updated = models.DateTimeField(auto_now=True)
     created = models.DateTimeField(auto_now_add=True)
