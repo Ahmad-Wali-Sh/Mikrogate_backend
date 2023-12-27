@@ -46,13 +46,13 @@ class TaskContractSerializer(serializers.ModelSerializer):
         else: return ''
     def get_antenna(self, obj):
         print(obj.id)
-        pack = ContractAntenna.objects.filter(contract=obj.id).values('antenna__name')
+        pack = ContractAntenna.objects.filter(contract=obj.id).values('antenna__name', 'condition')
         if (pack):
             return pack[0]
         else: return ''
     def get_router(self, obj):
         print(obj.id)
-        pack = ContractRouter.objects.filter(contract=obj.id).values('router__name')
+        pack = ContractRouter.objects.filter(contract=obj.id).values('router__name', 'condition')
         if (pack):
             return pack[0]
         else: return ''
