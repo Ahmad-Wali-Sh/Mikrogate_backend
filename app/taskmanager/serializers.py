@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from core.models import Amendment, Message, OnlineSupport, Project,\
      Tag, Stage, Task, LinkDetails, CheckList, Installation,\
-     TaskLog, Troubleshoot, ChangeLocation, Contracts, User, Payment, InstallationConfirm
+     TaskLog, Troubleshoot, ChangeLocation, Contracts, User, Payment, InstallationConfirm, ContractPackage, ContractAntenna, ContractRouter
 
 from user.serializers import UserSerializer
 
@@ -34,10 +34,31 @@ class StageSerializer(serializers.ModelSerializer):
 
 class TaskContractSerializer(serializers.ModelSerializer):
     """Serializer for the task contract"""
+    package = serializers.SerializerMethodField()
+    antenna = serializers.SerializerMethodField()
+    router = serializers.SerializerMethodField()
 
+    def get_package(self, obj):
+        print(obj.id)
+        pack = ContractPackage.objects.filter(contract=obj.id).values('package__name', 'price')
+        if (pack):
+            return pack[0]
+        else: return ''
+    def get_antenna(self, obj):
+        print(obj.id)
+        pack = ContractAntenna.objects.filter(contract=obj.id).values('antenna__name')
+        if (pack):
+            return pack[0]
+        else: return ''
+    def get_router(self, obj):
+        print(obj.id)
+        pack = ContractRouter.objects.filter(contract=obj.id).values('router__name')
+        if (pack):
+            return pack[0]
+        else: return ''
     class Meta:
         model = Contracts
-        fields = ('id', 'contract_number', 'contract_id', 'organization', 'name', 'contact', 'address',)
+        fields = ('id', 'contract_number', 'contract_id', 'organization', 'name', 'contact', 'address', 'package', 'antenna','router')
         read_only_fields = ('id',)
 
 class ChangeHistoryField(serializers.ListField):
