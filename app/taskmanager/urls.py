@@ -24,6 +24,8 @@ router.register('taskLog', views.TaskLogViewSet)
 router.register('message', views.MessageViewSet)
 router.register('installationConfirm', views.InstallationConfirmViewSet)
 router.register('payment', views.PaymentViewSet)
+router.register('notification', views.NotificationViewSet)
+router.register('user-notification', views.UserNotificationViewSet)
 
 app_name = 'taskmanager'
 

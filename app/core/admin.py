@@ -55,6 +55,8 @@ admin.site.register(models.ContractCurrency, ImportExportModelAdmin)
 admin.site.register(models.ContractStatus, ImportExportModelAdmin)
 admin.site.register(models.Payment, ImportExportModelAdmin)
 admin.site.register(models.Amendment, ImportExportModelAdmin)
+admin.site.register(models.Notification, ImportExportModelAdmin)
+admin.site.register(models.UserNotification, ImportExportModelAdmin)
 admin.site.register(models.InstallationConfirm, ImportExportModelAdmin)
 
 @admin.register(models.Package)

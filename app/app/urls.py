@@ -21,6 +21,7 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
+from taskmanager.views import create_notification_all, create_notification_noc,create_notification_users, create_notification_tech,create_notification_l1, create_notification_sales
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -32,7 +33,13 @@ urlpatterns = [
         'api/docs/',
         SpectacularSwaggerView.as_view(url_name='api-schema'),
         name='api-docs',
-    )
+    ),
+    path('api/notification_create_all', create_notification_all, name='create_notification_all'),
+    path('api/notification_create_noc', create_notification_noc, name='create_notification_noc'),
+    path('api/notification_create_tech', create_notification_tech, name='create_notification_tech'),
+    path('api/notification_create_l1', create_notification_l1, name='create_notification_l1'),
+    path('api/notification_create_sales', create_notification_sales, name='create_notification_sales'),
+    path('api/notification_create_users', create_notification_users, name='create_notification_users'),
 ]
 
 if settings.DEBUG:

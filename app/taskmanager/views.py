@@ -6,12 +6,18 @@ from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import viewsets, filters
 import django_filters
 from .permissions import D7896DjangoModelPermissions
+from rest_framework.decorators import authentication_classes, permission_classes
+
+from django.db.models.signals import post_delete
+from django.dispatch import receiver
 
 from django.db.models import Q
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
 
 from core.models import Amendment, Contracts, Project, Tag, Stage, Task, LinkDetails,\
     CheckList, Installation, Troubleshoot, ChangeLocation,\
-    OnlineSupport, TaskLog, Message, Payment, InstallationConfirm
+    OnlineSupport, TaskLog, Message, Payment, InstallationConfirm, Notification, UserNotification, User
 
 from taskmanager import serializers
 
@@ -320,3 +326,208 @@ class InstallationConfirmViewSet(viewsets.ModelViewSet):
 
     def perform_create(self, serializer):
         serializer.save(user=self.request.user)
+
+class NotificationViewSet(viewsets.ModelViewSet):
+    """Manage Change Location in the database"""
+    queryset = Notification.objects.all()
+    serializer_class = serializers.NotificationSerializer
+    authentication_classes = (TokenAuthentication,)
+    permission_classes = (IsAuthenticated, D7896DjangoModelPermissions)
+
+    def get_queryset(self):
+        return self.queryset
+
+    def perform_create(self, serializer):
+        serializer.save(user=self.request.user)
+
+class UserNotificationViewSet(viewsets.ModelViewSet):
+    """Manage Change Location in the database"""
+    queryset = UserNotification.objects.all().order_by('-id')
+    serializer_class = serializers.UserNotificationSerializer
+    authentication_classes = (TokenAuthentication,)
+    filter_backends = [DjangoFilterBackend,filters.OrderingFilter]
+    filterset_fields = ['user']
+    permission_classes = (IsAuthenticated, D7896DjangoModelPermissions)
+
+    def get_queryset(self):
+        return self.queryset
+
+    def perform_create(self, serializer):
+        serializer.save(user=self.request.user)
+
+@api_view(['POST'])
+def create_notification_all(request):
+    auth_user = None
+    if request.user.is_authenticated:
+        auth_user = request.user
+    # sender = request.data.get('sender')
+    contract = request.data.get('contract')
+    contractInstance = None
+    if (contract):
+        contractInstance = list(Contracts.objects.filter(id=contract))[0]
+    content = request.data.get('content')
+    task = request.data.get('task')
+    taskInstance = None
+    if (task):
+        taskInstance = list(Task.objects.filter(id=task))[0]
+    users = User.objects.exclude(pk=auth_user.id)
+    notification = Notification.objects.create(sender=auth_user, content=content, task=taskInstance, contract=contractInstance)
+
+    for user in users:
+        UserNotification.objects.create(user=user, notification=notification)
+
+    return Response({'message': 'Notification Created Successfully'})
+
+@api_view(['POST'])
+def create_notification_noc(request):
+    auth_user = None
+    if request.user.is_authenticated:
+        auth_user = request.user
+    # sender = request.data.get('sender')
+    contract = request.data.get('contract')
+    contractInstance = None
+    if (contract):
+        contractInstance = list(Contracts.objects.filter(id=contract))[0]
+    content = request.data.get('content')
+    task = request.data.get('task')
+    taskInstance = None
+    if (task):
+        taskInstance = list(Task.objects.filter(id=task))[0]
+    users = User.objects.filter(groups__name='NOC Stuff').exclude(pk=auth_user.id)
+    notification = Notification.objects.create(sender=auth_user, content=content, task=taskInstance, contract=contractInstance)
+
+    for user in users:
+        UserNotification.objects.create(user=user, notification=notification)
+
+    return Response({'message': 'Notification Created Successfully'})
+
+@api_view(['POST'])
+def create_notification_tech(request):
+    auth_user = None
+    if request.user.is_authenticated:
+        auth_user = request.user
+    # sender = request.data.get('sender')
+    contract = request.data.get('contract')
+    contractInstance = None
+    if (contract):
+        contractInstance = list(Contracts.objects.filter(id=contract))[0]
+    content = request.data.get('content')
+    task = request.data.get('task')
+    taskInstance = None
+    if (task):
+        taskInstance = list(Task.objects.filter(id=task))[0]
+    notification = Notification.objects.create(sender=auth_user, content=content, task=taskInstance, contract=contractInstance)
+    users = User.objects.filter(groups__name='Technicians').exclude(pk=auth_user.id)
+
+    for user in users:
+        UserNotification.objects.create(user=user, notification=notification)
+
+    return Response({'message': 'Notification Created Successfully'})
+
+@api_view(['POST'])
+def create_notification_l1(request):
+    auth_user = None
+    if request.user.is_authenticated:
+        auth_user = request.user
+    # sender = request.data.get('sender')
+    contract = request.data.get('contract')
+    contractInstance = None
+    if (contract):
+        contractInstance = list(Contracts.objects.filter(id=contract))[0]
+    content = request.data.get('content')
+    task = request.data.get('task')
+    taskInstance = None
+    if (task):
+        taskInstance = list(Task.objects.filter(id=task))[0]
+    users = User.objects.filter(groups__name='L1').exclude(pk=auth_user.id)
+    notification = Notification.objects.create(sender=auth_user, content=content, task=taskInstance, contract=contractInstance)
+
+    for user in users:
+        UserNotification.objects.create(user=user, notification=notification)
+
+    return Response({'message': 'Notification Created Successfully'})
+
+
+@api_view(['POST'])
+def create_notification_sales(request):
+    auth_user = None
+    if request.user.is_authenticated:
+        auth_user = request.user
+    # sender = request.data.get('sender')
+    content = request.data.get('content')
+    contract = request.data.get('contract')
+    contractInstance = None
+    if (contract):
+        contractInstance = list(Contracts.objects.filter(id=contract))[0]
+    task = request.data.get('task')
+    taskInstance = None
+    if (task):
+        taskInstance = list(Task.objects.filter(id=task))[0]
+    users = User.objects.filter(groups__name='Sales Stuff').exclude(pk=auth_user.id)
+    notification = Notification.objects.create(sender=auth_user, content=content, task=taskInstance, contract=contractInstance)
+
+    for user in users:
+        UserNotification.objects.create(user=user, notification=notification)
+
+    return Response({'message': 'Notification Created Successfully'})
+
+
+# @api_view(['POST'])
+# def create_notification_users(request):
+#     auth_user = None
+#     if request.user.is_authenticated:
+#         auth_user = request.user
+#     # sender = request.data.get('sender')
+#     contract = request.data.get('contract')
+#     contractInstance = None
+#     if (contract):
+#         contractInstance = list(Contracts.objects.filter(id=contract))[0]
+#     content = request.data.get('content')
+#     user_ids = request.data.get('user_ids')
+#     numbers_list = [int(num) for num in user_ids.split(',')]
+#     print(user_ids)
+#     task = request.data.get('task')
+#     taskInstance = None
+#     if (task):
+#         taskInstance = list(Task.objects.filter(id=task))[0]
+#     users = User.objects.filter(id__in=numbers_list).exclude(pk=auth_user.id)
+#     notification = Notification.objects.create(sender=auth_user, content=content, task=taskInstance, contract=contractInstance)
+
+#     for user in users:
+#         UserNotification.objects.create(user=user, notification=notification)
+
+#     return Response({'message': 'Notification Created Successfully'})
+
+
+@api_view(['POST'])
+def create_notification_users(request):
+    auth_user = None
+    if request.user.is_authenticated:
+        auth_user = request.user
+
+    contract = request.data.get('contract')
+    contract_instance = None
+    if contract:
+        contract_instance = Contracts.objects.filter(id=contract).first()
+
+    content = request.data.get('content')
+    user_ids = request.data.get('user_ids')
+
+    if user_ids:
+        numbers_list = [int(num) for num in user_ids.split(',')]
+    else:
+        numbers_list = []
+
+    task = request.data.get('task')
+    task_instance = None
+    if task:
+        task_instance = Task.objects.filter(id=task).first()
+
+    users = User.objects.filter(id__in=numbers_list).exclude(pk=auth_user.id)
+
+    notification = Notification.objects.create(sender=auth_user, content=content, task=task_instance, contract=contract_instance)
+
+    for user in users:
+        UserNotification.objects.create(user=user, notification=notification)
+
+    return Response({'message': 'Notification Created Successfully'})

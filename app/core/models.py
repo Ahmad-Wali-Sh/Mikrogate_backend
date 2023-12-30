@@ -12,6 +12,8 @@ from django.conf import settings
 from django.template.defaultfilters import date
 from auditlog.models import AuditlogHistoryField
 from auditlog.registry import AuditlogModelRegistry, auditlog
+from django.db.models.signals import post_delete
+from django.dispatch import receiver
 
 
 m2m_only_auditlog = AuditlogModelRegistry(create=False, update=False, delete=False)
@@ -557,6 +559,20 @@ class InstallationConfirm(models.Model):
             self.task.contract.save()
         super(InstallationConfirm, self).save(*args, **kwargs)
 
+
+class Notification (models.Model):
+    sender = models.ForeignKey(User, related_name='sent_notifications', on_delete=models.CASCADE)
+    content = models.TextField()
+    task = models.ForeignKey(Task, on_delete=models.CASCADE, null=True, blank=True)
+    contract = models.ForeignKey(Contracts, on_delete=models.CASCADE, null=True, blank=True)
+    timestamp = models.DateTimeField(auto_now_add=True)
+
+class UserNotification (models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='notifications')
+    notification = models.ForeignKey(Notification, on_delete=models.CASCADE)
+    is_read = models.BooleanField(default=False)
+
+
 auditlog.register(User)
 auditlog.register(Contracts)
 auditlog.register(ContractPackage)
@@ -564,3 +580,10 @@ auditlog.register(ContractAntenna)
 auditlog.register(ContractOtherService)
 auditlog.register(ContractRouter)
 auditlog.register(ContractPayment)
+
+@receiver(post_delete, sender=UserNotification)
+def delete_notification_if_no_related (sender, instance, **kwargs):
+    notification = instance.notification
+
+    if not UserNotification.objects.filter(notification=notification).exists():
+        notification.delete()

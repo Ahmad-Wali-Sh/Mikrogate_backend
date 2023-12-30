@@ -1,9 +1,11 @@
 from rest_framework import serializers
 from core.models import Amendment, Message, OnlineSupport, Project,\
      Tag, Stage, Task, LinkDetails, CheckList, Installation,\
-     TaskLog, Troubleshoot, ChangeLocation, Contracts, User, Payment, InstallationConfirm, ContractPackage, ContractAntenna, ContractRouter
+     TaskLog, Troubleshoot, ChangeLocation, Contracts, User, Payment, Notification, UserNotification, InstallationConfirm, ContractPackage, ContractAntenna, ContractRouter
 
 from user.serializers import UserSerializer
+
+import json
 
 
 class ProjectSerializer(serializers.ModelSerializer):
@@ -265,3 +267,29 @@ class InstallationConfirmSerializer(serializers.ModelSerializer):
         model = InstallationConfirm
         fields = ('id', 'task', 'confirm', 'updated', 'created', 'user')
         read_only_fields = ('id', 'user')
+
+
+class NotificationSerializer (serializers.ModelSerializer):
+    sender = UserSerializer(read_only=True)
+
+    class Meta:
+        model = Notification 
+        fields = '__all__'
+        read_only_fields = ('id','user')
+
+class UserNotificationSerializer (serializers.ModelSerializer):
+    notification = serializers.PrimaryKeyRelatedField(
+        queryset=Notification.objects.all()
+    )
+    notification_detail = serializers.SerializerMethodField()
+
+    def get_notification_detail (self, obj):
+        queryset = (Notification.objects.filter(id=obj.notification.id).values('id',
+                    'sender_id', 'sender__avatar','sender__name', 'content', 'task_id', 'timestamp', 'contract_id'))
+        data = list(queryset)
+        return data[0]
+
+    class Meta:
+        model = UserNotification 
+        fields = '__all__'
+        read_only_fields = ('id','user')
