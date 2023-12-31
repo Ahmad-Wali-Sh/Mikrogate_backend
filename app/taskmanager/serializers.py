@@ -285,7 +285,7 @@ class UserNotificationSerializer (serializers.ModelSerializer):
 
     def get_notification_detail (self, obj):
         queryset = (Notification.objects.filter(id=obj.notification.id).values('id',
-                    'sender_id', 'sender__avatar','sender__name', 'content', 'task_id', 'timestamp', 'contract_id'))
+                    'sender_id', 'sender__avatar','sender__name', 'content', 'task_id', 'timestamp', 'contract_id', 'task__contract__contract_id', 'contract__contract_id', 'task__title'))
         data = list(queryset)
         return data[0]
 
