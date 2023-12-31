@@ -293,3 +293,10 @@ class UserNotificationSerializer (serializers.ModelSerializer):
         model = UserNotification 
         fields = '__all__'
         read_only_fields = ('id','user')
+
+
+class ModelsCountSerializer (serializers.Serializer):
+    cpe_count = serializers.IntegerField()
+    amendment_count = serializers.IntegerField()
+    online_support_count = serializers.IntegerField()
+    troubleshoot_count = serializers.IntegerField()

@@ -531,3 +531,22 @@ def create_notification_users(request):
         UserNotification.objects.create(user=user, notification=notification)
 
     return Response({'message': 'Notification Created Successfully'})
+
+
+class ModelCountsView(viewsets.ViewSet):
+    def list(self, request):
+        cpe_count = Task.objects.filter(project__name='CPE').exclude(stage__name='Archieved').count()
+        amendment_count = Task.objects.filter(project__name='Amendment').exclude(stage__name='Archieved').count()
+        online_support_count = Task.objects.filter(project__name='Online Support').exclude(stage__name='Archieved').count()
+        troubleshoot_count = Task.objects.filter(project__name='Troubleshoot').exclude(stage__name='Archieved').count() 
+
+        data = {
+            'cpe_count': cpe_count,
+            'amendment_count': amendment_count,
+            'online_support_count': online_support_count,
+            'troubleshoot_count': troubleshoot_count,
+        }
+
+        serializer = serializers.ModelsCountSerializer(data)
+
+        return Response(serializer.data)

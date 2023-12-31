@@ -26,6 +26,7 @@ router.register('installationConfirm', views.InstallationConfirmViewSet)
 router.register('payment', views.PaymentViewSet)
 router.register('notification', views.NotificationViewSet)
 router.register('user-notification', views.UserNotificationViewSet)
+router.register('model-counts', views.ModelCountsView, basename='models_count')
 
 app_name = 'taskmanager'
 
