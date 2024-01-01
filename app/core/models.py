@@ -322,7 +322,7 @@ class Stage(models.Model):
     def __str__(self):
         return self.name
 
-@auditlog.register()
+@auditlog.register(m2m_fields={'assigned'})
 class Task(models.Model):
     user = models.ForeignKey(
         settings.AUTH_USER_MODEL,
@@ -358,6 +358,8 @@ class Task(models.Model):
         if (self.stage.name == 'Pending'):
             self.contract.status = ContractStatus.objects.get(name='Pending')
             self.contract.save()
+        # if (self.payment_confirm == True and self.installation_confirm == True):
+        #     self.stage = Stage.objects.get(name='Archieved')
         super(Task, self).save(*args, **kwargs)
 
 class LinkDetails(models.Model):
