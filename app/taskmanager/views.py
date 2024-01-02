@@ -550,3 +550,23 @@ class ModelCountsView(viewsets.ViewSet):
         serializer = serializers.ModelsCountSerializer(data)
 
         return Response(serializer.data)
+
+class TaskForFinanceView(viewsets.ModelViewSet):
+    queryset = Task.objects.filter(troubleshoot__service_charge__gt=0).distinct()
+    serializer_class = serializers.TaskSerializer
+    filter_backends = [DjangoFilterBackend,filters.OrderingFilter]
+    permission_classes = (IsAuthenticated,)
+    filterset_fields = ['archieved', 'payment_cleared', 'contract__contract_id', 'contract__contract_number']
+    authentication_classes = (TokenAuthentication,)
+    permission_classes = (IsAuthenticated,D7896DjangoModelPermissions)
+
+    def get_serializer_class(self):
+
+        if self.action == 'list' or self.action == 'retrieve':
+            return serializers.TaskDetailSerializer
+
+        return self.serializer_class
+
+    def perform_create(self, serializer):
+        serializer.save(user=self.request.user)
+    

@@ -98,12 +98,20 @@ class TaskSerializer(serializers.ModelSerializer):
         many=True
     )
 
+    troubleshoot_cost = serializers.SerializerMethodField()
+
+    def get_troubleshoot_cost (self, obj):
+        queryset = (Troubleshoot.objects.filter(task__contract=obj.contract.id).values('service_charge'))
+        data = list(queryset)
+        if (queryset):
+            return data[0]['service_charge']
+        else: return ''
+
     changes = ChangeHistoryField(read_only=True)
 
     class Meta:
         model = Task
-        fields = ('id', 'user', 'title', 'contract', 'project',
-                  'tag', 'deadline', 'stage', 'assigned', 'description', 'created', 'changes' )
+        fields = '__all__'
         read_only_fields = ('id', 'user',)
 
 

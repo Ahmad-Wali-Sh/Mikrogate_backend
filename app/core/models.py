@@ -337,7 +337,9 @@ class Task(models.Model):
     stage = models.ForeignKey(Stage, on_delete=models.DO_NOTHING)
     assigned = models.ManyToManyField(User, related_name="Task")
     description = models.TextField(null=True, blank=True)
-    read = models.BooleanField(default=False)
+    archieved = models.BooleanField(default=False)
+    payment_cleared = models.BooleanField(default=False)
+    installation_confirmed = models.BooleanField(default=False)
     updated = models.DateTimeField(auto_now=True)
     created = models.DateTimeField(auto_now_add=True)
     changes = AuditlogHistoryField()
@@ -414,7 +416,7 @@ class Installation(models.Model):
 
 class Troubleshoot(models.Model):
     """Task-Manager Troubleshoot Object"""
-    task = models.ForeignKey(Task, on_delete=models.CASCADE, unique=True)
+    task = models.OneToOneField(Task, on_delete=models.CASCADE, null=True, blank=True, related_name='troubleshoot')
     address = models.CharField(max_length=255)
     contact = models.CharField(max_length=50)
     problem = models.CharField(max_length=255)
