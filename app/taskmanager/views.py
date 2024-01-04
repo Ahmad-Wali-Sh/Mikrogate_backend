@@ -68,7 +68,7 @@ class TaskFilterSet(django_filters.FilterSet):
     stage_net= django_filters.NumberFilter(field_name='stage', exclude=True)
     class Meta:
         model = Task
-        fields = ['user','contract__contract_number', 'project', 'deadline', 'tag', 'stage','stage_net','assigned__id', 'created','contract__contract_id']
+        fields = ['user','contract__contract_number', 'project', 'deadline', 'tag', 'stage','stage_net','assigned__id', 'created','contract__contract_id', 'archieved']
 
 
 
@@ -535,10 +535,10 @@ def create_notification_users(request):
 
 class ModelCountsView(viewsets.ViewSet):
     def list(self, request):
-        cpe_count = Task.objects.filter(project__name='CPE').exclude(stage__name='Archieved').count()
-        amendment_count = Task.objects.filter(project__name='Amendment').exclude(stage__name='Archieved').count()
-        online_support_count = Task.objects.filter(project__name='Online Support').exclude(stage__name='Archieved').count()
-        troubleshoot_count = Task.objects.filter(project__name='Troubleshoot').exclude(stage__name='Archieved').count() 
+        cpe_count = Task.objects.filter(project__name='CPE').exclude(archieved=True).count()
+        amendment_count = Task.objects.filter(project__name='Amendment').exclude(archieved=True).count()
+        online_support_count = Task.objects.filter(project__name='Online Support').exclude(archieved=True).count()
+        troubleshoot_count = Task.objects.filter(project__name='Troubleshoot').exclude(archieved=True).count() 
 
         data = {
             'cpe_count': cpe_count,
